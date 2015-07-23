@@ -17,6 +17,16 @@
 * Indicate the permanent URL of the standard: http://www.tdwg.org/standards/450
 * Include a preferred citation for the standard (as blockquote), including the name, authors and permanent URL
 
+## Preferred citation
+
+> Last name First name`,` Last name First name`.` year`.` Full name of the standard`, Version ` version number or date`. Biodiversity Information Standards (TDWG)` http://www.tdwg.org/standards/id (no trailing slash)
+
+New versions can have more authors. Examples:
+
+> Wieczorek John, Döring Markus, De Giovanni Renato, Robertson Tim, Vieglais Dave, Desmet Peter. 2014. Darwin Core, Version 2014-11-08. Biodiversity Information Standards (TDWG) http://www.tdwg.org/standards/450
+
+> Access to Biological Collections Data task group. 2007. Access to Biological Collection Data (ABCD), Version 2.06. Biodiversity Information Standards (TDWG) http://www.tdwg.org/standards/115
+
 ## Management
 
 * Create a [team to manage the standard](https://github.com/orgs/tdwg/teams)
