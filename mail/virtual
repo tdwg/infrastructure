@@ -1,0 +1,56 @@
+# Virtual aliases for tdwg.org
+
+### Ricardo is nowhere to be found so I setup a blackhole 
+### for his email address rahter than bounce it back
+
+ricardo@tdwg.org	blackhole@localhost
+
+###
+
+
+postmaster@tdwg.org	admin@gbif.org, mdoering@gbif.org
+
+
+#
+# TIP team members
+# 
+lee@tdwg.org            leebelbin@gmail.com
+stan@tdwg.org           stanblum@gmail.com
+markus@tdwg.org         mdoering@gbif.org
+dave@tdwg.org		dave.matthews@ala.org.au
+
+
+#
+# TDWG various roles
+#
+chair@tdwg.org     	csparr@gmail.com
+chairman@tdwg.org       csparr@gmail.com
+
+treasurer@tdwg.org     	william_ulate_r@yahoo.com, stanblum@gmail.com
+secretary@tdwg.org    	Mergen.Patricia@gmail.com
+webmaster@tdwg.org      secretary@tdwg.org, treasurer@tdwg.org
+accounts@tdwg.org       secretary@tdwg.org, treasurer@tdwg.org
+
+#editor@tdwg.org         WEITZMAN@si.edu
+outreach@tdwg.org       stanblum@gmail.com
+
+stdtrack@tdwg.org       stanblum@gmail.com
+charters@tdwg.org       stanblum@gmail.com
+convener@tdwg.org	w.berendsohn@bgbm.org, stk2@cornell.edu, tuco@berkeley.edu, asimpson@usgs.gov, sblum@calacademy.org, G.M.Hagedorn@gmail.com, renato@cria.org.br, leebelbin@gmail.com, richardsk777@gmail, eotuama@gbif.org, WEITZMAN@si.edu, rbeaman@flmnh.ufl.edu, deepreef@bishopmuseum.org, ghw@anbg.gov.au, mole@oeb.harvard.edu, wouter.addink@naturalis.nl, jones@nceas.ucsb.edu, ncellinese@flmnh.ufl.edu, hlapp@nescent.org, steve.baskauf@vanderbilt.edu, jsachs@csee.umbc.edu, morris.bob@gmail.com, jdeck@berkeley.edu
+
+
+xcom@tdwg.org           trobertson@gbif.org, chuck.miller@mobot.org, mergen.Patricia@gmail.com, stanblum@gmail.com, ckahindo@yahoo.com, nozomi@biol.tsukuba.ac.jp, Paul.Flemons@austmus.gov.au, heimo.rainer@nhm-wien.ac.at, saraiva@usp.br, gkamp@illinois.edu, alexasase@gmail.com, ji@ioz.ac.cn, leebelbin@gmail.com, WEITZMAN@si.edu, william_ulate_r@yahoo.com, yjong@uva.nl, peter.desmet.work@gmail.com, pbryan.heidorn@gmail.com, james.macklin@gmail.com, csparr@gmail.com, WiltonA@landcareresearch.co.nz, ctsakem@yahoo.fr, edalcin@jbrj.org, d.koureas@nhm.ac.uk 
+
+
+secretariat@tdwg.org	mergen.patricia@gmail.com, stanblum@gmail.com
+
+systems@tdwg.org	stanblum@gmail.com, william_ulate_r@yahoo.com
+
+root			admin@gbif.org
+
+
+# CONFERENCE
+tdwg2015@tdwg.org       2015@tdwg.org
+2015@tdwg.org	   	mergen.patricia@gmail.com, hbartjr@tulane.edu 
+conference@tdwg.org     hbartjr@tulane.edu, lucy.waruingi@acc.or.ke, gkamp@illinois.edu, mergen.patricia@gmail.com, csparr@gmail.com, stanblum@gmail.com, d.koureas@nhm.ac.uk
+
