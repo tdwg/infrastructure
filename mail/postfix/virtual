@@ -8,16 +8,7 @@ ricardo@tdwg.org	blackhole@localhost
 ###
 
 
-postmaster@tdwg.org	admin@gbif.org, mdoering@gbif.org
-
-
-#
-# TIP team members
-# 
-lee@tdwg.org            leebelbin@gmail.com
-stan@tdwg.org           stanblum@gmail.com
-markus@tdwg.org         mdoering@gbif.org
-dave@tdwg.org		dave.matthews@ala.org.au
+postmaster@tdwg.org	admin@gbif.org
 
 
 #
@@ -44,9 +35,7 @@ xcom@tdwg.org           trobertson@gbif.org, chuck.miller@mobot.org, mergen.Patr
 
 secretariat@tdwg.org	mergen.patricia@gmail.com, stanblum@gmail.com
 
-systems@tdwg.org	stanblum@gmail.com, william_ulate_r@yahoo.com
 
-root			admin@gbif.org
 
 
 # CONFERENCE

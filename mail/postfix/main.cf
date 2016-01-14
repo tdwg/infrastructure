@@ -41,6 +41,12 @@ command_directory = /usr/sbin
 #
 daemon_directory = /usr/libexec/postfix
 
+# The data_directory parameter specifies the location of Postfix-writable
+# data files (caches, random numbers). This directory must be owned
+# by the mail_owner account (see below).
+#
+data_directory = /var/lib/postfix
+
 # QUEUE AND PROCESS OWNERSHIP
 #
 # The mail_owner parameter specifies the owner of the Postfix queue
@@ -107,10 +113,13 @@ myhostname = lists.tdwg.org
 #
 # Note: you need to stop/start Postfix when this parameter changes.
 #
-inet_interfaces = all
+#inet_interfaces = all
 #inet_interfaces = $myhostname
 #inet_interfaces = $myhostname, localhost
-#inet_interfaces = localhost
+inet_interfaces = localhost
+
+# Enable IPv4, and IPv6 if supported
+inet_protocols = all
 
 # The proxy_interfaces parameter specifies the network interface
 # addresses that this mail system receives mail on by way of a
@@ -155,9 +164,7 @@ inet_interfaces = all
 #
 # See also below, section "REJECTING MAIL FOR UNKNOWN LOCAL USERS".
 #
-
-mydestination = $myhostname, localhost.$mydomain, localhost, $mydomain
-
+mydestination = $myhostname, localhost.$mydomain, localhost
 #mydestination = $myhostname, localhost.$mydomain, localhost, $mydomain
 #mydestination = $myhostname, localhost.$mydomain, localhost, $mydomain,
 #	mail.$mydomain, www.$mydomain, ftp.$mydomain
@@ -207,9 +214,6 @@ virtual_maps = hash:/etc/postfix/virtual
 #local_recipient_maps = unix:passwd.byname $alias_maps
 #local_recipient_maps = proxy:unix:passwd.byname $alias_maps
 #local_recipient_maps =
-
-local_recipient_maps = $virtual_maps $alias_maps
-
 
 # The unknown_local_recipient_reject_code specifies the SMTP server
 # response code when a recipient domain matches $mydestination or
@@ -464,6 +468,8 @@ alias_database = hash:/etc/aliases
 # the main.cf file, otherwise the SMTP server will reject mail for    
 # non-UNIX accounts with "User unknown in local recipient table".
 #
+# Cyrus IMAP over LMTP. Specify ``lmtpunix      cmd="lmtpd"
+# listen="/var/imap/socket/lmtp" prefork=0'' in cyrus.conf.
 #mailbox_transport = lmtp:unix:/var/lib/imap/socket/lmtp
 
 # If using the cyrus-imapd IMAP server deliver local mail to the IMAP
@@ -486,7 +492,8 @@ alias_database = hash:/etc/aliases
 # how many simultaneous LMTP sessions will be permitted to the Cyrus
 # message store. 
 #
-# To use the old cyrus deliver program you have to set:
+# Cyrus IMAP via command line. Uncomment the "cyrus...pipe" and
+# subsequent line in master.cf.
 #mailbox_transport = cyrus
 
 # The fallback_transport specifies the optional transport in master.cf
@@ -614,7 +621,7 @@ debug_peer_level = 2
 #
 debugger_command =
 	 PATH=/bin:/usr/bin:/usr/local/bin:/usr/X11R6/bin
-	 xxgdb $daemon_directory/$process_name $process_id & sleep 5
+	 ddd $daemon_directory/$process_name $process_id & sleep 5
 
 # If you can't use X, use this to capture the call stack when a
 # daemon crashes. The result is in a file in the configuration
@@ -671,8 +678,8 @@ manpage_directory = /usr/share/man
 # sample_directory: The location of the Postfix sample configuration files.
 # This parameter is obsolete as of Postfix 2.1.
 #
-sample_directory = /usr/share/doc/postfix-2.3.3/samples
+sample_directory = /usr/share/doc/postfix-2.10.1/samples
 
 # readme_directory: The location of the Postfix README files.
 #
-readme_directory = /usr/share/doc/postfix-2.3.3/README_FILES
+readme_directory = /usr/share/doc/postfix-2.10.1/README_FILES
