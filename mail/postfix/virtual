@@ -3,7 +3,7 @@
 ### Ricardo is nowhere to be found so I setup a blackhole 
 ### for his email address rahter than bounce it back
 
-ricardo@tdwg.org	blackhole@localhost
+ricardo@tdwg.org	blackhole@tdwg.org
 
 jedi@tdwg.org           mdoering@gbif.org
 
