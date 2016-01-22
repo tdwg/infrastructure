@@ -164,7 +164,7 @@ inet_protocols = all
 #
 # See also below, section "REJECTING MAIL FOR UNKNOWN LOCAL USERS".
 #
-mydestination = $myhostname, localhost.$mydomain, localhost
+mydestination = $myhostname, localhost.$mydomain, localhost, $mydomain
 #mydestination = $myhostname, localhost.$mydomain, localhost, $mydomain
 #mydestination = $myhostname, localhost.$mydomain, localhost, $mydomain,
 #	mail.$mydomain, www.$mydomain, ftp.$mydomain
@@ -388,8 +388,8 @@ unknown_local_recipient_reject_code = 550
 # It will take a minute or so before changes become visible.  Use
 # "postfix reload" to eliminate the delay.
 #
+alias_maps = hash:/etc/aliases, hash:/var/lib/mailman/data/aliases
 #alias_maps = dbm:/etc/aliases
-alias_maps = hash:/etc/aliases
 #alias_maps = hash:/etc/aliases, nis:mail.aliases
 #alias_maps = netinfo:/aliases
 
