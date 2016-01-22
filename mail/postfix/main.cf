@@ -83,7 +83,7 @@ myhostname = lists.tdwg.org
 # $mydomain is used as a default value for many other configuration
 # parameters.
 #
-#mydomain = domain.tld
+mydomain = tdwg.org
 
 # SENDING MAIL
 # 
@@ -99,7 +99,7 @@ myhostname = lists.tdwg.org
 # to recipient addresses that have no @domain part.
 #
 #myorigin = $myhostname
-#myorigin = $mydomain
+myorigin = $mydomain
 
 # RECEIVING MAIL
 
