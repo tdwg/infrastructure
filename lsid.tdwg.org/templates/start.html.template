@@ -1,0 +1,66 @@
+<TMPL_INCLUDE name="javascript.html.template">
+
+<h1 id="title">LSID Web Resolver</h1>
+
+<p id="description">
+This web based LSID resolution service allows you to view the <b>data</b> and <b>metadata</b>
+of an LSID with your web browser. This service will display the metadata, formatted as a 
+standard webpage, for any LSID you enter.
+</p>
+
+<p>
+
+<b>Enter an LSID</b>: &nbsp; &nbsp; <TMPL_VAR name="lsid"> <TMPL_VAR name="submit"> 
+</p>
+
+<p>
+Here are some example LSIDs for you to try:
+</p>
+
+<ul class="exampleList">
+<TMPL_LOOP NAME="examples">
+	<li>
+	  <TMPL_VAR NAME="text"> <TMPL_VAR NAME="button">
+	</li>
+</TMPL_LOOP>
+</ul>
+<br/>
+
+<p>To get LSID metadata directly (in RDF format whenever available), use the following syntax:</p>
+
+<blockquote><strong>http://lsid.tdwg.org/urn:lsid:authority:namespace:object</strong></blockquote>
+
+<p>Here are some sample links that will return LSID metadata directly:</p>
+
+<ul class="exampleList">
+<TMPL_LOOP NAME="raw_examples">
+	<li>
+	  <TMPL_VAR NAME="text"> <TMPL_VAR NAME="button">
+	</li>
+</TMPL_LOOP>
+</ul>
+
+
+<br/>
+<p>
+<p><strong>More information</strong></p>
+
+ For further information about LSIDs see the LSID resolution project site at <a href="http://lsid.sourceforge.net">sourceforge.net</a>.
+
+
+<br/>
+<p>
+<p><strong>Important</strong></p>
+
+Browsers and applications providing the links to resolve LSID often have idiosyncrasies that can prevent
+proper display of the LSID metadata or a link to data. For best results, make sure that you are using the
+latest version of your favorite browser (Firefox, Opera, and Internet Explorer may work better than
+Google Chrome or Safari) and that it includes a way of viewing RSS subscriptions. 
+
+<p></P>
+(The current version of Chrome requires that you download an 
+<a href="https://chrome.google.com/extensions/detail/nlbjncdgjeocebhnmkbbbdekmmmcbfjd">extension</a> for this).  
+
+<p></P>
+If your browser does not display XML, you may need to ask your browser to View Source.
+

@@ -1,0 +1,503 @@
+/** ----------------------------------------------------------------------------------
+ * modification of common.css by loic@ultimedia.com.au for TDWG.org
+ *
+ * Copyright (c) 2003-2006 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * Site-wide shared stylesheet.
+ *
+ * $Id: common.css,v 1.35 2006/01/16 19:08:35 alec Exp $
+ ---------------------------------------------------------------------------------- */
+
+
+/** ----------------------------------------------------------------------------------
+ * Common HTML elements //////////////////////////////////////////////////////////////
+ ---------------------------------------------------------------------------------- */
+
+body {
+	background-color: #FFFFFF;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+body,td,th,p,div {
+	font: 12px/1.4 Verdana, Arial, Helvetica, sans-serif;
+	color: #617694;
+}
+div { 
+	text-align: left; /* otherwise a lot of things get centered by default */
+}
+	div.separator {
+		width: 100%;
+		margin-top: 1em;
+		margin-bottom: 0.25em;
+		padding: 0;
+		border-bottom: 1px dotted #000;
+		font-size: 0.5em;
+		line-height: 25%;
+	}
+
+img { 
+	border-style: none;
+}
+
+p {
+	margin-top: 0px;
+	margin-bottom: 20px;
+}
+strong, b {
+	font-weight: bold;
+}
+blockquote {
+	margin: 20px;
+	margin-top: 0px;
+}
+tt {
+	font-size: 125%;
+}
+hr {
+	border:none 0;
+	border-top:1px solid #DDD;
+	height:1px;
+	margin-bottom:20px;
+}
+
+/*----------------------------------------------------   links   */
+
+a:link    { color:#CA6500; text-decoration:none; }
+a:visited { color:#CA6500; text-decoration:none; }
+a:hover   { color:#CA6500; text-decoration:underline; }
+a:active  { color:#CA6500; text-decoration:none; }
+
+a.plain { text-decoration: none;}
+
+/*----------------------------------------------------   headers   */
+
+h1,h2,h3 {
+	font: 19px/1.5 Tahoma, Tahoma, "Times New Roman", sans-serif;
+	color: #6A9832;
+	margin: 0;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+h2 {
+	font-size: 20px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+h3 {
+	font-size: 18px;
+}
+h4,h5,h6 {
+	font: 15px/1.5 Verdana, Arial, Helvetica, sans-serif;
+	color: #6A9832;
+	margin: 0;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+h5 {
+	font-size: 14px;
+}
+h6 {
+	font-size: 13px;
+}
+
+/*----------------------------------------------------   forms   */
+
+form {
+	margin:0;
+}
+label {
+}
+label.error {
+	color: #900;
+}
+span.formError {
+	color: #900;
+	font-weight: bold;
+}
+span.formRequired {
+	color: #333;
+	font-size: 11px;
+}
+
+input.textField, select.selectMenu, textarea.textArea, input.uploadField {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	background-color: #fff;
+	color: #666;
+	padding:1px;
+	border:1px solid #617694;
+}
+/*
+input.button {
+	height:16px;
+	font:11px/1.0 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #CC6633;
+	color: #FFF;
+	padding:0;
+	margin:0;
+	border:none;
+	cursor:pointer;
+}
+input.defaultButton {
+	height:16px;
+	font:11px/1.0 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #CC6633;
+	color: #FFF;
+	padding:0;
+	margin:0;
+	border:none;
+	cursor:pointer;
+}
+*/
+
+#OJSloginBox .textField, #OJSsearchBox .textField {
+	margin-right:3px;
+	border:none;
+}
+#OJSloginBox .formButton, #OJSsearchBox .formButton {
+	height:16px;
+	font:11px/1.0 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #CC6633;
+	color: #FFF;
+	padding:0;
+	margin:0;
+	border:none;
+	cursor:pointer;
+}
+#OJSsearchBox .selectMenu {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	background-color: #fff;
+	color: #666;
+	padding:1px;
+	margin-right:3px;
+	border:none;
+}
+
+/*----------------------------------------------------   lists   */
+ul {
+	margin: 0.25em 0 0.75em 0;
+	padding: 0 0 0 2.5em;
+}
+ul.menu {
+	margin: 0;
+	padding: 0;
+}
+
+ul.menu li {
+	margin: 0;
+	padding: 0;
+	padding-right: 10px;
+	display: inline;
+}
+ul.menu li.current {
+	font-weight: bold;
+}
+ul.menu a {
+	text-transform: uppercase;
+}
+
+ul.steplist {
+	margin: 0;
+	padding: 0;
+	list-style-type: decimal;
+}
+ul.steplist li {
+	margin: 0;
+	padding: 0;
+	padding-right: 0.5em;
+	display: inline;
+	text-transform: uppercase;
+}
+ul.steplist li.current {
+	font-weight: bold;
+}
+ul.steplist a {
+	text-decoration: none;
+}
+
+ul.plain {
+	list-style-type: none;
+	padding-left: 1.5em;
+}
+
+ul.formErrorList {
+	color: #900;
+}
+
+/** ----------------------------------------------------------------------------------
+ * Main layout elements //////////////////////////////////////////////////////////////
+ ---------------------------------------------------------------------------------- */
+
+#container {
+	text-align: left;
+}
+
+/*----------------------------------------------------   page header   */
+
+#OJS-header {
+	height:89px;
+	background: #617694 url(/images/headerImage_OJS.jpg) right top no-repeat;
+}
+	#logo {
+		float:left;
+		margin: 0;
+		padding-right: 20px;
+	}
+	#OJS-header-title {
+		font: 24px/1.2 Georgia, "Times New Roman", sans-serif;
+		color: #E7F2D9;
+		margin: 0;
+		padding-top: 15px;
+	}
+
+#OJS-title-bar {
+	background: #CADDB5 url(/images/OJS-titlebar-right.gif) right bottom no-repeat;
+	height:28px;
+}
+	#OJS-title-bar-menu {
+		padding-top: 5px;
+ 	}
+	#OJSloginBox {
+		float:right;
+		padding-top:5px;
+	}
+	#OJSsearchBox {
+		float:right;
+		padding-top:5px;
+		padding-right:60px;
+		padding-left:20px;
+	}
+	
+/*----------------------------------------------------   main content   */
+
+#left-bar {
+	width: 133px;
+	float:left;
+	background:#617694 url(/images/left-bar-bottom-right.gif) right bottom no-repeat;
+}
+	#left-bar-menu {
+		font: 16px/1.4 Tahoma, Tahoma, "Times New Roman", sans-serif;
+		padding: 0px 0px 20px 10px;
+	}
+	#left-bar-menu a:link { color: #FFCC00; text-decoration:none; }
+	#left-bar-menu a:visited { color:#FFCC00; text-decoration:none; }
+	#left-bar-menu a:hover { color:#FFFFFF; text-decoration:none; }
+	#left-bar-menu a:active { color:#FFFFFF; text-decoration:none; }
+
+#body {
+	margin: 0 auto;
+	margin-top:20px;
+	margin-left:150px;
+}
+
+#sidebar {
+	float: right;
+	width: 150px;
+	margin: 0;
+	padding: 1em 0em 1em 0em;
+}
+	#developedBy {
+		text-transform: uppercase;
+		font-size: 0.95em;
+	}
+	#sidebar div.block {
+		padding-bottom: 1.5em;
+	}
+		#sidebar div.block span.blockTitle {
+			display: block;
+			padding: 0.5em 0 0.5em 0;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+		#sidebar div.block span.blockSubtitle {
+			display: block;
+			padding: 0;
+		}
+	#sidebar input.textField, #sidebar select.selectMenu, #sidebar input.button {
+		font-size: 1em;
+	}
+
+#main {
+	margin-right: 175px;
+	padding: 0.5em 0em 2em 0em;
+}
+	
+#navbar {
+	margin-right: 0;
+	padding-bottom: 0.5em;
+	border-bottom: 2px dotted #ccc;
+}
+	#navbar a {
+		font-size: 12px;
+		/*font-weight: bold;*/
+	}
+		#navbar a:link { }
+		#navbar a:active { }
+		#navbar a:visited { }
+		#navbar a:hover { }
+
+
+#breadcrumb {
+	padding-top: 1em;
+	font-size: 10px;
+}
+	#breadcrumb a.current { font-weight: normal; }
+
+#content {
+	margin: 0;
+	padding: 0;
+	padding-top: 20px;
+	border-top: 2px dotted #ccc;
+}
+
+/*----------------------------------------------------   footer   */
+
+#pageFooter {
+    clear:both;
+	width:auto;
+	text-align:left;
+	margin: 0 auto;  /* has to be here otherwise nothing is centered in Moz */
+	margin-left: 150px; /* for menu to float left */
+	margin-right: 40px; 
+	margin-top: 20px;
+	padding-top:20px;
+	border-top:1px solid #CCCCCC;
+}
+
+#pageFooter p {
+	font: 11px/1.0 Verdana, Arial, Helvetica, sans-serif;
+	margin-bottom: 10px;
+}
+
+/** ----------------------------------------------------------------------------------
+ * Additional text styles ////////////////////////////////////////////////////////////
+ ---------------------------------------------------------------------------------- */
+
+span.disabled, label.disabled {
+	color: #666;
+}
+a.action, a.file {
+	font-size: 10px;
+	text-transform: uppercase;
+}
+a.icon {
+	text-decoration: none;
+}
+a.icon:hover {
+	background: none;
+}
+span.instruct {
+}
+span.heading {
+	text-transform: uppercase;
+}
+span.highlight {
+	border-bottom: 1px dotted #ccc;
+}
+.nowrap {
+	white-space: nowrap;
+}
+
+
+/** ----------------------------------------------------------------------------------
+ * Table styles //////////////////////////////////////////////////////////////////////
+ ---------------------------------------------------------------------------------- */
+
+table.info {
+}
+
+table.info td {
+	padding: 0;
+	padding-bottom: 0.5em;
+	padding-right: 0.5em;
+}
+
+table.listing {
+}
+
+table.listing td {
+	padding: 0.25em 0.5em 0.25em 0.5em;
+}
+
+table.listing tr.heading td, table.listing td.heading, table.info td.heading {
+	font-size: 11px;
+	text-transform: uppercase;
+	font-weight: normal;
+	line-height: 120%;
+	padding: 0.75em 0.5em 1em 0.5em;
+}
+
+table.info td.heading {
+	padding-left: 0;
+}
+
+
+table.listing td.nodata, table.info td.nodata {
+	text-align: center;
+	font-style: italic;
+}
+
+table.listing td.headseparator {
+	border-top: 1px dotted #ccc;
+	font-size: 0.1em;
+	line-height: 1%;
+}
+
+table.listing td.endseparator {
+	border-top: 1px dotted #ccc;
+	font-size: 0.25em;
+	line-height: 10%;
+}
+
+table.listing td.separator, table.info td.separator {
+	border-top: 1px dotted #DDDDD0;
+	font-size: 0.1em;
+	line-height: 1%;
+}
+
+table.data {
+}
+
+table.data tr {
+}
+
+table.data td {
+	padding-bottom: 0.25em;
+}
+
+table.data td.label {
+	padding-right: 1em;
+}
+
+table.data td.value {
+}
+
+table.data td.separator {
+	padding: 0.5em;
+	font-size: 0.1em;
+	line-height: 1%;
+}
+
+table.data td.heading {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+table.nested tr {
+	padding: 0;
+	margin: 0;
+}
+
+span.nested {
+	padding: 0 4px 0 0;
+	font-size: 1.2em;
+}
+
+.ChildReviewCol {
+	font-size: 0.9em;
+}
+

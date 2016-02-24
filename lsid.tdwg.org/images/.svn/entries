@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="590"
+   name=""
+   committed-date="2007-03-17T18:46:57.828413Z"
+   url="https://rs.tdwg.org/svn/tdwg-dev/lsid-web-proxy/images"
+   last-author="RicardoPereira"
+   kind="dir"
+   uuid="067d4426-5b0e-0410-9db7-b32a1737a04f"
+   revision="596"/>
+<entry
+   committed-rev="590"
+   name="logo_OJS.gif"
+   text-time="2007-03-17T18:33:45.000000Z"
+   committed-date="2007-03-17T18:46:57.828413Z"
+   checksum="b968508168e9bf390ff075183e49ad2a"
+   last-author="RicardoPereira"
+   kind="file"
+   prop-time="2007-03-17T18:46:02.000000Z"/>
+<entry
+   committed-rev="588"
+   name="logo.jpg"
+   text-time="2007-03-17T18:09:32.000000Z"
+   committed-date="2007-03-17T18:17:57.145578Z"
+   checksum="a3e7bd259ecce743e79a5b7cf9195bac"
+   last-author="RicardoPereira"
+   kind="file"
+   prop-time="2007-03-17T18:17:16.000000Z"/>
+<entry
+   committed-rev="588"
+   name="moore_logo.jpg"
+   text-time="2007-03-17T18:09:32.000000Z"
+   committed-date="2007-03-17T18:17:57.145578Z"
+   checksum="793f9c819efc8213e95338e7276f0932"
+   last-author="RicardoPereira"
+   kind="file"
+   prop-time="2007-03-17T18:17:16.000000Z"/>
+<entry
+   committed-rev="588"
+   name="headerImagePayPal.PNG"
+   text-time="2007-03-17T18:09:32.000000Z"
+   committed-date="2007-03-17T18:17:57.145578Z"
+   checksum="37dbd3d2cd6a2cc5a30a6f1c47d728a1"
+   last-author="RicardoPereira"
+   kind="file"
+   prop-time="2007-03-17T18:17:16.000000Z"/>
+<entry
+   committed-rev="590"
+   name="edprocesslarge.png"
+   text-time="2007-03-17T18:33:45.000000Z"
+   committed-date="2007-03-17T18:46:57.828413Z"
+   checksum="66e58432711d53ea786ca1b63a4d4a30"
+   last-author="RicardoPereira"
+   kind="file"
+   prop-time="2007-03-17T18:46:02.000000Z"/>
+<entry
+   committed-rev="590"
+   name="headerImage_OJS.jpg"
+   text-time="2007-03-17T18:33:45.000000Z"
+   committed-date="2007-03-17T18:46:57.828413Z"
+   checksum="2155e9aa32585d184b4b43f4de8aecf5"
+   last-author="RicardoPereira"
+   kind="file"
+   prop-time="2007-03-17T18:46:02.000000Z"/>
+<entry
+   committed-rev="590"
+   name="mail.gif"
+   text-time="2007-03-17T18:33:45.000000Z"
+   committed-date="2007-03-17T18:46:57.828413Z"
+   checksum="b23db9c9b2dfa1e7e36d409ac76ce44e"
+   last-author="RicardoPereira"
+   kind="file"
+   prop-time="2007-03-17T18:46:02.000000Z"/>
+<entry
+   committed-rev="588"
+   name="listBullet.gif"
+   text-time="2007-03-17T18:09:32.000000Z"
+   committed-date="2007-03-17T18:17:57.145578Z"
+   checksum="0fa5a49b6cc9e36ef7b819b1a8ebf807"
+   last-author="RicardoPereira"
+   kind="file"
+   prop-time="2007-03-17T18:17:16.000000Z"/>
+<entry
+   committed-rev="590"
+   name="help.gif"
+   text-time="2007-03-17T18:33:45.000000Z"
+   committed-date="2007-03-17T18:46:57.828413Z"
+   checksum="2b274815311bd3629c2b34b2e4a50ebe"
+   last-author="RicardoPereira"
+   kind="file"
+   prop-time="2007-03-17T18:46:02.000000Z"/>
+<entry
+   committed-rev="590"
+   name="pkp.gif"
+   text-time="2007-03-17T18:33:45.000000Z"
+   committed-date="2007-03-17T18:46:57.828413Z"
+   checksum="4183a530a3bc16ebf72d74eb07501a46"
+   last-author="RicardoPereira"
+   kind="file"
+   prop-time="2007-03-17T18:46:02.000000Z"/>
+<entry
+   committed-rev="587"
+   name="arrow.gif"
+   text-time="2007-03-17T16:34:12.000000Z"
+   committed-date="2007-03-17T16:33:34.673624Z"
+   checksum="0db215d8a02c7b61f046236fbb59a85a"
+   last-author="RicardoPereira"
+   kind="file"
+   prop-time="2007-03-17T16:34:12.000000Z"/>
+<entry
+   committed-rev="590"
+   name="info.gif"
+   text-time="2007-03-17T18:33:45.000000Z"
+   committed-date="2007-03-17T18:46:57.828413Z"
+   checksum="0ff58f38fc639209635f1a780d655554"
+   last-author="RicardoPereira"
+   kind="file"
+   prop-time="2007-03-17T18:46:02.000000Z"/>
+<entry
+   committed-rev="590"
+   name="left-bar-top.gif"
+   text-time="2007-03-17T18:33:45.000000Z"
+   committed-date="2007-03-17T18:46:57.828413Z"
+   checksum="819a392d8ff59b41993b05ff86c7bdc9"
+   last-author="RicardoPereira"
+   kind="file"
+   prop-time="2007-03-17T18:46:02.000000Z"/>
+<entry
+   committed-rev="590"
+   name="lockss.gif"
+   text-time="2007-03-17T18:33:45.000000Z"
+   committed-date="2007-03-17T18:46:57.828413Z"
+   checksum="895e4b3661f90032b87faf5173aaf2d9"
+   last-author="RicardoPereira"
+   kind="file"
+   prop-time="2007-03-17T18:46:02.000000Z"/>
+<entry
+   committed-rev="588"
+   name="external_link_new_window.gif"
+   text-time="2007-03-17T18:09:32.000000Z"
+   committed-date="2007-03-17T18:17:57.145578Z"
+   checksum="e8c28678c04096ed452cb0ef2d3fe00f"
+   last-author="RicardoPereira"
+   kind="file"
+   prop-time="2007-03-17T18:17:16.000000Z"/>
+<entry
+   committed-rev="590"
+   name="letter.gif"
+   text-time="2007-03-17T18:33:45.000000Z"
+   committed-date="2007-03-17T18:46:57.828413Z"
+   checksum="15546db18fa9166dc92e93bdbf3182cb"
+   last-author="RicardoPereira"
+   kind="file"
+   prop-time="2007-03-17T18:46:02.000000Z"/>
+<entry
+   committed-rev="588"
+   name="headerMiddleBgd.jpg"
+   text-time="2007-03-17T18:09:32.000000Z"
+   committed-date="2007-03-17T18:17:57.145578Z"
+   checksum="f0083de0a203e6a7c3637f83db48f1f6"
+   last-author="RicardoPereira"
+   kind="file"
+   prop-time="2007-03-17T18:17:16.000000Z"/>
+<entry
+   committed-rev="588"
+   name="logo.gif"
+   text-time="2007-03-17T18:09:32.000000Z"
+   committed-date="2007-03-17T18:17:57.145578Z"
+   checksum="64edcbb2e65f6a35f022766f80f9b193"
+   last-author="RicardoPereira"
+   kind="file"
+   prop-time="2007-03-17T18:17:16.000000Z"/>
+<entry
+   committed-rev="590"
+   name="menulist.gif"
+   text-time="2007-03-17T18:33:45.000000Z"
+   committed-date="2007-03-17T18:46:57.828413Z"
+   checksum="c29f93534b19da04f620a5c46318575c"
+   last-author="RicardoPereira"
+   kind="file"
+   prop-time="2007-03-17T18:46:02.000000Z"/>
+<entry
+   committed-rev="588"
+   name="menu_bottom.jpg"
+   text-time="2007-03-17T18:09:32.000000Z"
+   committed-date="2007-03-17T18:17:57.145578Z"
+   checksum="24c68956d45f9ff57f2733fc40e1f21c"
+   last-author="RicardoPereira"
+   kind="file"
+   prop-time="2007-03-17T18:17:16.000000Z"/>
+<entry
+   committed-rev="587"
+   name="banner.gif"
+   text-time="2007-03-17T16:34:12.000000Z"
+   committed-date="2007-03-17T16:33:34.673624Z"
+   checksum="1c688b2d0a051ffc8d4ab2c5877dd13b"
+   last-author="RicardoPereira"
+   kind="file"
+   prop-time="2007-03-17T16:34:12.000000Z"/>
+<entry
+   committed-rev="588"
+   name="headerImage.jpg"
+   text-time="2007-03-17T18:09:32.000000Z"
+   committed-date="2007-03-17T18:17:57.145578Z"
+   checksum="4d03388cfa89c250aca954741a32f1ef"
+   last-author="RicardoPereira"
+   kind="file"
+   prop-time="2007-03-17T18:17:16.000000Z"/>
+<entry
+   committed-rev="590"
+   name="edprocess.png"
+   text-time="2007-03-17T18:33:45.000000Z"
+   committed-date="2007-03-17T18:46:57.828413Z"
+   checksum="48d95ecb7cca4633c106f7ac5c7f7b6c"
+   last-author="RicardoPereira"
+   kind="file"
+   prop-time="2007-03-17T18:46:02.000000Z"/>
+<entry
+   committed-rev="590"
+   name="left-bar-bottom-right.gif"
+   text-time="2007-03-17T18:33:45.000000Z"
+   committed-date="2007-03-17T18:46:57.828413Z"
+   checksum="bc5af8df696111e9418487510b2c7cdf"
+   last-author="RicardoPereira"
+   kind="file"
+   prop-time="2007-03-17T18:46:02.000000Z"/>
+<entry
+   committed-rev="590"
+   name="OJS-titlebar-right.gif"
+   text-time="2007-03-17T18:33:45.000000Z"
+   committed-date="2007-03-17T18:46:57.828413Z"
+   checksum="af41e623ab7fcd5f90983410346e28f6"
+   last-author="RicardoPereira"
+   kind="file"
+   prop-time="2007-03-17T18:46:02.000000Z"/>
+</wc-entries>

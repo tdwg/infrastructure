@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="592"
+   name=""
+   committed-date="2007-03-17T21:55:06.730742Z"
+   url="https://rs.tdwg.org/svn/tdwg-dev/lsid-web-proxy/templates"
+   last-author="RicardoPereira"
+   kind="dir"
+   uuid="067d4426-5b0e-0410-9db7-b32a1737a04f"
+   revision="596"/>
+<entry
+   committed-rev="587"
+   name="image.html.template"
+   text-time="2007-03-17T16:34:12.000000Z"
+   committed-date="2007-03-17T16:33:34.673624Z"
+   checksum="a7baf32129f0bd36670798aa9c2e1ef4"
+   last-author="RicardoPereira"
+   kind="file"
+   prop-time="2007-03-17T16:34:12.000000Z"/>
+<entry
+   committed-rev="587"
+   name="advanced.html.template"
+   text-time="2007-03-17T16:34:12.000000Z"
+   committed-date="2007-03-17T16:33:34.673624Z"
+   checksum="e61059e0c5e2aa96f23740e11c83c75c"
+   last-author="RicardoPereira"
+   kind="file"
+   prop-time="2007-03-17T16:34:12.000000Z"/>
+<entry
+   committed-rev="590"
+   name="javascript.html.template"
+   text-time="2007-03-17T18:38:51.000000Z"
+   committed-date="2007-03-17T18:46:57.828413Z"
+   checksum="aaf2b6cad6b0bd359b567b16721c97e6"
+   last-author="RicardoPereira"
+   kind="file"
+   prop-time="2007-03-17T16:34:12.000000Z"/>
+<entry
+   committed-rev="592"
+   name="header.html.template"
+   text-time="2007-03-17T21:31:25.000000Z"
+   committed-date="2007-03-17T21:55:06.730742Z"
+   checksum="fe7c214ffc3055d147c9babbcfbf88b3"
+   last-author="RicardoPereira"
+   kind="file"
+   prop-time="2007-03-17T16:34:12.000000Z"/>
+<entry
+   committed-rev="587"
+   name="authority.html.template"
+   text-time="2007-03-17T16:34:12.000000Z"
+   committed-date="2007-03-17T16:33:34.673624Z"
+   checksum="a38c55ce7fa25a8e79978558d0a12dc8"
+   last-author="RicardoPereira"
+   kind="file"
+   prop-time="2007-03-17T16:34:12.000000Z"/>
+<entry
+   committed-rev="587"
+   name="fetch.html.template"
+   text-time="2007-03-17T16:34:12.000000Z"
+   committed-date="2007-03-17T16:33:34.673624Z"
+   checksum="4ff9cafd7fbd3361f7370183eb49e5fd"
+   last-author="RicardoPereira"
+   kind="file"
+   prop-time="2007-03-17T16:34:12.000000Z"/>
+<entry
+   committed-rev="592"
+   name="start.html.template"
+   text-time="2007-03-17T21:48:22.000000Z"
+   committed-date="2007-03-17T21:55:06.730742Z"
+   checksum="1fead17eb1a35393e60ee32be6d32a41"
+   last-author="RicardoPereira"
+   kind="file"
+   prop-time="2007-03-17T16:34:12.000000Z"/>
+<entry
+   committed-rev="587"
+   name="summary.html.template"
+   text-time="2007-03-17T16:34:12.000000Z"
+   committed-date="2007-03-17T16:33:34.673624Z"
+   checksum="2b07b64287acda52051072851fed98c8"
+   last-author="RicardoPereira"
+   kind="file"
+   prop-time="2007-03-17T16:34:12.000000Z"/>
+<entry
+   committed-rev="590"
+   name="footer.html.template"
+   text-time="2007-03-17T18:40:05.000000Z"
+   committed-date="2007-03-17T18:46:57.828413Z"
+   checksum="a07380d033f72ff256fef15768c42d92"
+   last-author="RicardoPereira"
+   kind="file"
+   prop-time="2007-03-17T16:34:12.000000Z"/>
+</wc-entries>

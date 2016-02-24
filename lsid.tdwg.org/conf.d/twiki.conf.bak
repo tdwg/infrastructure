@@ -1,0 +1,88 @@
+#
+# TWiki configuration
+#
+
+<VirtualHost wiki.tdwg.gbif.org:80>
+
+    ServerName wiki.tdwg.gbif.org
+    ServerAdmin ricardo@tdwg.org
+    DocumentRoot /var/www/html
+
+    RewriteEngine on
+
+    # Rules to point / and /twiki/ to TWiki home
+    RewriteRule ^/$ http://wiki.tdwg.gbif.org/twiki/bin/view/ [L]
+    RewriteRule ^/twiki/$ http://wiki.tdwg.gbif.org/twiki/bin/view/ [L,R]
+
+    # Rules to allow simpler URLs for webs
+    RewriteRule ^/twiki/ - [L]
+
+    RewriteCond {REQUEST_FILENAME} !-f
+    RewriteCond {REQUEST_FILENAME} !-d
+    RewriteCond {REQUEST_FILENAME} !-l
+    RewriteRule /([a-zA-Z0-9]*)$ /twiki/bin/view/$1 [L]
+
+    PerlRequire /var/www/html/twiki/tools/mod_perl_startup.pl
+
+    # Turn on taint checking
+    PerlSwitches -T
+
+    ScriptAlias /twiki/bin/ "/var/www/html/twiki/bin/"
+    Alias /twiki/ "/var/www/html/twiki/"
+
+    <Directory "/var/www/html/twiki/bin">
+        Options +ExecCGI -Indexes
+        SetHandler cgi-script
+        AllowOverride All
+
+	AuthName LDAP
+	AuthType Basic
+	AuthLDAPBindDN cn=admin,dc=tdwgbox,dc=tdwg,dc=gbif,dc=org
+	AuthLDAPBindPassword tdwg
+	AuthLDAPUrl ldap://tdwgbox.tdwg.gbif.org:389/ou=people,dc=tdwgbox,dc=tdwg,dc=gbif,dc=org?displayName
+	AuthLDAPUrl ldap://tdwgbox.tdwg.gbif.org:389/ou=people,dc=tdwgbox,dc=tdwg,dc=gbif,dc=org?uid
+	require valid-user
+
+	# for testing purposes, only localhost and Ricardo can see this
+	#Order deny,allow
+    	#Deny from all
+   	#Allow from 127.0.0.1, .virtua.com.br, .gbif.org
+    	#Allow from ::1
+	#Deny from none
+        #Allow from all
+
+        # Note: do *not* run 'configure' under mod_perl
+        #<FilesMatch "(attach|edit|manage|rename|save|upload|view|.*auth).*">
+        #   SetHandler perl-script
+        #   PerlResponseHandler ModPerl::Registry
+        #   PerlSendHeader On
+        #   PerlOptions +ParseHeaders
+        #</FilesMatch>
+    </Directory>
+
+    <Directory "/var/www/html/twiki/pub">
+        Options FollowSymLinks +Includes
+        AllowOverride None
+
+	# for testing purposes, only localhost and Ricardo can see this
+	#Order deny,allow
+    	#Deny from all
+   	#Allow from 127.0.0.1,  	 201.72.53.76
+    	#Allow from ::1
+	#Deny from none
+        #Allow from all
+    </Directory>
+
+    <Directory "/var/www/html/twiki/data">
+        deny from all
+    </Directory>
+
+    <Directory "/var/www/html/twiki/lib">
+        deny from all
+    </Directory>
+
+    <Directory "/var/www/html/twiki/templates">
+        deny from all
+    </Directory>
+    
+</VirtualHost>

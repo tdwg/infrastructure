@@ -1,0 +1,32 @@
+<div id="container">
+  <div id="OJS-header">
+    <a href="http://www.tdwg.org">
+      <img src="/images/logo_OJS.gif" 
+           width="149" height="89" alt="TDWG logo" id="logo" />
+    </a>
+    <div id="OJS-header-title">LSID Web Resolver</div>
+  </div>
+
+  <div id="OJS-title-bar">
+    <img src="/images/left-bar-top.gif" alt="left bar top" />
+  </div>
+
+  <div id="left-bar">
+    <div id="left-bar-menu">
+      <a href="http://www.tdwg.org">TDWG Home</a>
+      <a href="/">Resolver Home</a>
+      <hr />
+      <a href="http://wiki.tdwg.org/GUID"
+         style="font-size: 90%;">Globally Unique Identifiers Group</a>
+    </div>
+  </div>
+
+  <div id="body">
+    <div id="sidebar">
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+    </div>
+
+    <div id="main">

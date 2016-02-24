@@ -1,0 +1,14 @@
+    </div>
+  </div>
+	
+  <div id="pageFooter">
+    <p>Copyright 2007 Biodiversity Information Standards - TDWG - 
+    <a href="http://www.tdwg.org/about-tdwg/contact-us/">Contact Us</a></p>
+    <p>Hosted by <a href="http://www.gbif.org">GBIF</a> 
+    and <a href="http://www.nhm.ac.uk/">The NHM</a></p>
+    <p>Design by <a href="http://www.ultimedia.com.au" target="_blank">Ultimedia</a></p>
+    <p><a href="http://www.moore.org"><img src="/images/moore_logo.jpg" alt="The Gordon and Betty Moore Foundation"/></a>&nbsp;
+       <a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Transitional" height="31" width="88" /></a>
+    </p>
+  </div>
+</div>
