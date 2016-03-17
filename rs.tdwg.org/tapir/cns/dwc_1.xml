@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cns>
+<schema namespace="http://digir.net/schema/conceptual/darwin/2003/1.0">
+<label>Darwin Core v1</label>
+<alias>dwc_1</alias>
+<location>http:/digir.net/schema/conceptual/darwin/2003/1.0/darwin2.xsd</location>
+<concepts>
+<concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/DateLastModified" required="true">
+<alias>DateLastModified</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#dateTime</datatype>
+<doc>ISO 8601 compliant stamp indicating the date and time in UTC(GMT) when the record was last modified. Example: the instant "November 5, 1994, 8:15:30 am, US Eastern Standard Time" would be represented as "1994-11-05T13:15:30Z" (see W3C Note on Date and Time Formats: http://www.w3.org/TR/NOTE-datetime). (What to do when this date-time is unknown? Use Date-Time first "published"?)</doc>
+</concept>
+<concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/InstitutionCode" required="true">
+<alias>InstitutionCode</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>A "standard" code identifier that identifies the institution to which the collection belongs. No global registry exists for assigning institutional codes. Use the code that is "standard" in your discipline.</doc>
+</concept>
+<concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/CollectionCode" required="true">
+<alias>CollectionCode</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>A unique alphanumeric value which identifies the collection within the institution</doc>
+</concept>
+<concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/CatalogNumber" required="true">
+<alias>CatalogNumber</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>A unique alphanumeric value which identifies an individual record within the collection. It is recommended that this value provides a key by which the actual specimen can be identified. If the specimen has several items such as various types of preparation, this value should identify the individual component of the specimen</doc>
+</concept>
+<concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/ScientificName" required="true">
+<alias>ScientificName</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>The full name of lowest level taxon the Cataloged Item can be identified as a member of; includes genus name, specific epithet, and subspecific epithet (zool.) or infraspecific rank abbreviation, and infraspecific epithet (bot.) Use name of suprageneric taxon (e.g., family name) if Cataloged Item cannot be identified to genus, species, or infraspecific taxon.</doc>
+</concept>
+<concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/BasisOfRecord" required="true">
+<alias>BasisOfRecord</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>An abbreviation indicating whether the record represents an observation (O), living organism (L), specimen (S), germplasm/seed (G), etc.</doc>
+</concept>
+<concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/Kingdom">
+<alias>Kingdom</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>The kingdom to which the organism belongs</doc>
+</concept>
+<concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/Phylum">
+<alias>Phylum</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>The phylum (or division) to which the organism belongs</doc>
+</concept>
+<concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/Class">
+<alias>Class</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>The class name of the organism</doc>
+</concept>
+<concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/Order">
+<alias>Order</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>The order name of the organism</doc>
+</concept>
+<concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/Family">
+<alias>Family</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>The family name of the organism</doc>
+</concept>
+<concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/Genus">
+<alias>Genus</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>The genus name of the organism</doc>
+</concept>
+<concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/Species">
+<alias>Species</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>The specific epithet of the organism</doc>
+</concept>
+<concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/Subspecies">
+<alias>Subspecies</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>The sub-specific epithet of the organism</doc>
+</concept>
+<concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/ScientificNameAuthor">
+<alias>ScientificNameAuthor</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>The author of a scientific name. Author string as applied to the accepted name. Can be more than one author (concatenated string). Should be formatted according to the conventions of the applicable taxonomic discipline.</doc>
+</concept>
+<concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/IdentifiedBy">
+<alias>IdentifiedBy</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>The name(s) of the person(s) who applied the currently accepted Scientific Name to the Cataloged Item.</doc>
+</concept>
+<concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/YearIdentified">
+<alias>YearIdentified</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#gYear</datatype>
+<doc>The year portion of the date when the Collection Item was identified; as four digits [-9999..9999], e.g., 1906, 2002.</doc>
+</concept>
+<concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/MonthIdentified">
+<alias>MonthIdentified</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#decimal</datatype>
+<doc>The month portion of the date when the Collection Item was identified; as two digits [01..12].</doc>
+</concept>
+<concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/DayIdentified">
+<alias>DayIdentified</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#decimal</datatype>
+<doc>The day portion of the date when the Collection Item was identified; as two digits [01..31].</doc>
+</concept>
+<concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/TypeStatus">
+<alias>TypeStatus</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>Indicates the kind of nomenclatural type that a specimen represents. (This is incomplete because type status actually describes the relationship between a name and a specimen [or ternary relatiohnship between a specimen, name, and publication].) In particular, the type status may not apply to the name listed in the scientific name, i.e., current identification. In rare cases, a single specimen may be the type of more than one name.</doc>
+</concept>
+<concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/CollectorNumber">
+<alias>CollectorNumber</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>An identifying "number" (really a string) applied to specimens (in some disciplines) at the time of collection. Establishes a links different parts/preparations of a single specimen and between field notes and the specimen.</doc>
+</concept>
+<concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/FieldNumber">
+<alias>FieldNumber</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>A "number" (really a string) created at collection time to identify all material that resulted from a collecting event.</doc>
+</concept>
+<concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/Collector">
+<alias>Collector</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>The name(s) of the collector(s) responsible for collection the specimen or taking the observation</doc>
+</concept>
+<concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/YearCollected">
+<alias>YearCollected</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#gYear</datatype>
+<doc>The year (expressed as an integer) in which the specimen was collected. The full year should be expressed (e.g. 1972 must be expressed as "1972" not "72"). Must always be a four digit integer [-9999..9999]</doc>
+</concept>
+<concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/MonthCollected">
+<alias>MonthCollected</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#decimal</datatype>
+<doc>The month of year the specimen was collected from the field. Possible values range from 01...12 inclusive</doc>
+</concept>
+<concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/DayCollected">
+<alias>DayCollected</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#decimal</datatype>
+<doc>The day of the month the specimen was collected from the field. Possible value ranges from 01..31 inclusive</doc>
+</concept>
+<concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/JulianDay">
+<alias>JulianDay</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>The ordinal day of the year; i.e., the number of days since January 1 of the same year. (January 1 is Julian Day 1.)</doc>
+</concept>
+<concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/TimeOfDay">
+<alias>TimeOfDay</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#decimal</datatype>
+<doc>The time of day a specimen was collected expressed as decimal hours from midnight local time (e.g. 12.0 = mid day, 13.5 = 1:30pm)</doc>
+</concept>
+<concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/ContinentOcean">
+<alias>ContinentOcean</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>The continent or ocean from which a specimen was collected.</doc>
+</concept>
+<concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/Country">
+<alias>Country</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>The country or major political unit from which the specimen was collected. ISO 3166-1 values (http://www.din.de/gremien/nas/nabd/iso3166ma/codlstp1/db_en.html) should be used. Full country names are currently in use. A future recommendation is to use ISO3166-1 two letter codes or the full name when searching</doc>
+</concept>
+<concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/StateProvince">
+<alias>StateProvince</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>The state, province or region (i.e. next political region smaller than Country) from which the specimen was collected. There is some suggestion to use the values described in ISO 3166-2 (http://www.iso.ch/cate/d8349.html), however these values are in a continual state of flux and it appears unlikely that an appropriate mechanism (by ISO) will be in place to manage these changes. Hence it is recommended that where possible, the full, unabbreviated name should be used for storing information. The server should optionally handle abbreviations as an access point. Note: this is a recurring theme (country and state) abbreviations. Check the existence of an attribute type to deal with abbreviations from the bib-1 profile</doc>
+</concept>
+<concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/County">
+<alias>County</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>The county (or shire, or next political region smaller than State / Province) from which the specimen was collected</doc>
+</concept>
+<concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/Locality">
+<alias>Locality</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>The locality description (place name plus optionally a displacement from the place name) from which the specimen was collected. Where a displacement from a location is provided, it should be in un-projected units of measurement</doc>
+</concept>
+<concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/Longitude">
+<alias>Longitude</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#decimal</datatype>
+<doc>The longitude of the location from which the specimen was collected. This value should be expressed in decimal degrees with a datum such as WGS-84</doc>
+</concept>
+<concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/Latitude">
+<alias>Latitude</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#decimal</datatype>
+<doc>The latitude of the location from which the specimen was collected. This value should be expressed in decimal degrees with a datum such as WGS-84</doc>
+</concept>
+<concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/CoordinatePrecision">
+<alias>CoordinatePrecision</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#decimal</datatype>
+<doc>An estimate of how tightly the collecting locality was specified; expressed as a distance, in meters, that corresponds to a radius around the latitude-longitude coordinates. Use NULL where precision is unknown, cannot be estimated, or is not applicable.</doc>
+</concept>
+<concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/BoundingBox">
+<alias>BoundingBox</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>This access point provides a mechanism for performing searches using a bounding box. A Bounding Box element is not typically present in the database, but rather is derived from the Latitude and Longitude columns by the data provider</doc>
+</concept>
+<concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/MinimumElevation">
+<alias>MinimumElevation</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#decimal</datatype>
+<doc>The minimum distance in meters above (positive) or below sea level of the collecting locality.</doc>
+</concept>
+<concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/MaximumElevation">
+<alias>MaximumElevation</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#decimal</datatype>
+<doc>The maximum distance in meters above (positive) or below sea level of the collecting locality.</doc>
+</concept>
+<concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/MinimumDepth">
+<alias>MinimumDepth</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#decimal</datatype>
+<doc>The minimum distance in meters below the surface of the water at which the collection was made; all material collected was at least this deep. Positive below the surface, negative above (e.g. collecting above sea level in tidal areas).</doc>
+</concept>
+<concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/MaximumDepth">
+<alias>MaximumDepth</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#decimal</datatype>
+<doc>The maximum distance in meters below the surface of the water at which the collection was made; all material collected was at most this deep. Positive below the surface, negative above (e.g. collecting above sea level in tidal areas).</doc>
+</concept>
+<concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/Sex">
+<alias>Sex</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>The sex of a specimen. The domain should be a controlled set of terms (codes) based on community consensus. Proposed values: M=Male; F=Female; H=Hermaphrodite; I=Indeterminate (examined but could not be determined; U=Unkown (not examined); T=Transitional (between sexes; useful for sequential hermaphrodites)</doc>
+</concept>
+<concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/PreparationType">
+<alias>PreparationType</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>The type of preparation (skin. slide, etc). Probably best to add this as a record element rather than access point. Should be a list of preparations for a single collection record.</doc>
+</concept>
+<concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/IndividualCount">
+<alias>IndividualCount</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#decimal</datatype>
+<doc>The number of individuals present in the lot or container. Not an estimate of abundance or density at the collecting locality.</doc>
+</concept>
+<concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/PreviousCatalogNumber">
+<alias>PreviousCatalogNumber</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>The previous (fully qualified) catalog number of the Cataloged Item if the item earlier identified by another Catalog Number, either in the current catalog or another Institution / catalog. A fully qualified Catalog Number is preceded by Institution Code and Collection Code, with a space separating the each subelement. Referencing a previous Catalog Number does not imply that a record for the referenced item is or is not present in the corresponding catalog, or even that the referenced catalog still exists. This access point is intended to provide a way to retrieve this record by previously used identifier, which may used in the literature. In future versions of this schema this attribute should be set-valued.</doc>
+</concept>
+<concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/RelationshipType">
+<alias>RelationshipType</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>A named or coded valued that identifies the kind relationship between this Collection Item and the referenced Collection Item. Named values include: "parasite of", "epiphyte on", "progeny of", etc. In future versions of this schema this attribute should be set-valued.</doc>
+</concept>
+<concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/RelatedCatalogItem">
+<alias>RelatedCatalogItem</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>The fully qualified identifier of a related Catalog Item (a reference to another specimen); Institution Code, Collection Code, and Catalog Number of the related Cataloged Item, where a space separates the three subelements.</doc>
+</concept>
+<concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/Notes">
+<alias>Notes</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>Free text notes attached to the specimen record</doc>
+</concept>
+</concepts>
+</schema>
+</cns>

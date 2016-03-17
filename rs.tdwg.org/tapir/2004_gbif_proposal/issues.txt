@@ -1,0 +1,33 @@
+= Pending issues =
+
+
+== Short term ==
+
+- Change BioCASE to BioCASe when if refers to software/protocol.
+
+- Change "lesser" to "less" in the report!
+
+- Supported operators in capabilities section needs an additional space separating it from the previous subsection.
+
+- "refresh" view attribute in "searchParameters" type was not described in the report.
+
+- Can we simplify the view definition?
+
+- Rename "TaxonNames" in the report to "Taxon Concept Schema (TCS)".
+
+
+== Middle term ==
+
+- Can we address message brokers?
+
+- Can we include spatial operators?
+
+- Can we include functions?
+
+
+== Long term (really) ==
+
+- When datasources expose independent parts of a database in the same service:
+
+-- What should be the default behaviour when inventory requests include more than one concept that are not inter-related in the underlying database?
+

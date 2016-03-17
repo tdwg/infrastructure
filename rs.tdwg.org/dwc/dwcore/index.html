@@ -1,0 +1,68 @@
+<!-- <!DOCTYPE html PUBLIC "-//XML-DEV//DTD XHTML RDDL 1.0//EN" "http://www.rddl.org/rddl-xhtml.dtd">-->
+<!-- Note: DOCTYPE is commented out in the RDDL example RDDL itself; perhaps otherwise some html clients cause problems. -->
+<html xmlns="http://www.w3.org/1999/xhtml" 
+		xmlns:xlink="http://www.w3.org/1999/xlink"
+		xmlns:rddl="http://www.rddl.org/"
+    xml:base="http://rs.tdwg.org/dwc/dwcore"
+    xml:lang="en-US">
+<head>
+	<title>Resource Directory (RDDL) for the pure Darwin Core</title>
+    <link href="http://www.rddl.org/xrd.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+
+<h1>Resource Directory (RDDL) for the pure Darwin Core</h1>
+
+<div id="overview">
+<h2>Overview</h2>
+<p>This is the root namespace of the pure Darwin Core.
+    For all resources related to Darwin Core please see <a href="http://rs.tdwg.org/dwc">http://rs.tdwg.org/dwc</a>.
+</p>
+
+<p>Note: While this document is human-readable, RDDL-aware processors may use it to automatically retrieve resources 
+    such as different schema versions for validating documents. 
+    See <a href="http://www.rddl.org">http://www.rddl.org</a> for further information.
+</p>
+
+<rddl:resource xlink:type="simple" id="target" 
+	xlink:title="Darwin Core root (target) namespace"
+	xlink:role="http://www.rddl.org/#role"
+	xlink:arcrole="http://www.rddl.org/purposes#target"
+	xlink:href="http://rs.tdwg.org/dwc/dwcore"
+	>
+	<p>The root (target) namespace of Darwin Core is: <code>http://rs.tdwg.org/dwc/dwcore</code>.</p>
+</rddl:resource>
+
+</div>
+
+<h2>Resources</h2>
+<div id="resources" class="resource">
+
+<rddl:resource xlink:type="simple" id="documentation"
+	xlink:title="DwC Element Documentation"
+	xlink:role="http://www.w3.org/1999/xhtml" 
+	xlink:arcrole="http://www.rddl.org/purposes#non-normative-reference"
+	xlink:href="http://wiki.tdwg.org/twiki/bin/view/DarwinCore/DarwinCoreDraftStandard">
+    <ul class="compact">
+	    <a href="http://wiki.tdwg.org/twiki/bin/view/DarwinCore/DarwinCoreDraftStandard">DwC Element Documentation</a>
+    </ul>
+</rddl:resource>
+
+<rddl:resource xlink:type="simple" id="xsd"
+	   xlink:title="W3C XML Schema for document validation (normative)"
+	   xlink:role="http://www.w3.org/2000/10/XMLSchema"
+	   xlink:arcrole="http://www.rddl.org/purposes#schema-validation"
+	   xlink:href="http://rs.tdwg.org/dwc/tdwg_dw_core.xsd">
+       <ul class="compact">
+           <a href="http://rs.tdwg.org/dwc/tdwg_dw_core.xsd">Darwin Core XML Schema for validation (normative)</a>
+       </ul>
+</rddl:resource>
+
+</div>
+
+<div id="footer">
+<p>Copyright (c) July 2008</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<!-- ===================================================================== -->
+<!-- NCD Basic Schema (Mock)                                               -->
+<!-- 																	   -->
+<!-- Specification at: 													   -->
+<!-- http://www.iptc.org/std/photometadata/2008/specification/IPTC-PhotoMetadata-2008_2.pdf        --> 
+<!-- ===================================================================== -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://iptc.org/std/Iptc4xmpExt/2008-02-29/" elementFormDefault="qualified">
+<xsd:annotation><xsd:documentation>$Id: iptc4xmp.xsd 1505 2009-10-19$</xsd:documentation></xsd:annotation>
+	<xsd:element name="CreditLine" type="xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>
+			The credit to person(s) and/or organisation(s) required by the supplier of the item to be used when published. This is a free-text field.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>	
+	<xsd:element name="LocationShown" type="xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>
+			A location the content of the item is about. For photos that is a location shown in the image.	
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>	
+	<xsd:element name="WorldRegion" type="xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>
+			The name of a world region of a location. This element is at the first (topI) level of a top-down geographical hierarchy.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>		
+	<xsd:element name="CountryCode" type="xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>
+			Code of the country the content is focussing on -- either the country shown in visual media or referenced in text or audio media. 
+			This element is at the top/first level of a top-down geographical hierarchy. 
+			The code should be taken from ISO 3166 two or three letter code. The full name of a country should go to the "Country" element.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>		
+	<xsd:element name="CountryName" type="xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>
+			The name of a country of a location. This element is at the second level of a top-down geographical hierarchy.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>		
+	<xsd:element name="ProvinceState" type="xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>
+			The name of a subregion of a country - a province or state - of a location. This element is at the third level of a top-down geographical hierarchy.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>		
+	<xsd:element name="Sublocation" type="xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>
+			Name of a sublocation the content is focussing on -- either the location shown in visual media or referenced by text or audio media. 
+			This location name could either be the name of a sublocation to a city or the name of a well known location or (natural) monument outside a city. 
+			In the sense of a sublocation to a city this element is at the fourth level of a top-down geographical hierarchy.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="City" type="xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>
+			Name of the city the content is focussing on -- either the place shown in visual media or referenced by text or audio media. 
+			This element is at the third level of a top-down geographical hierarchy.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>	
+	<xsd:element name="Cvterm" type="xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>
+			A term to describe the content of the image by a value from a Controlled Vocabulary.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>	
+	<xsd:element name="LocationCreated" type="xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>
+			The location the content of the item was created.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>						
+</xsd:schema>

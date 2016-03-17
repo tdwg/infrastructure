@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<outputModel xmlns="http://rs.tdwg.org/tapir/1.0"
+             xmlns:xs="http://www.w3.org/2001/XMLSchema"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+             xsi:schemaLocation="http://rs.tdwg.org/tapir/1.0
+                                 http://rs.tdwg.org/tapir/1.0/schema/tapir.xsd
+                                 http://www.w3.org/2001/XMLSchema  
+                                 http://www.w3.org/2001/XMLSchema.xsd">
+  <label>RSS2 (DarwinCore)</label>
+  <documentation>Simple RSS2 model for RSS feeds. Mappings based on DarwinCore</documentation>
+  <structure>
+    <schema location="http://rs.tdwg.org/tapir/rs/rss2.xsd"/>
+  </structure>
+  
+  <indexingElement path="/rss/channel/item" />
+  
+  <mapping>
+    <node path="/rss/@version">
+      <literal value="2.0" />
+    </node>
+    <node path="/rss/channel/title">
+      <variable name="dataSourceName" />
+    </node>
+    <node path="/rss/channel/link">
+      <variable name="accessPoint" />
+    </node>
+    <node path="/rss/channel/description">
+      <variable name="dataSourceDescription" />
+    </node>
+    <node path="/rss/channel/language">
+      <variable name="dataSourceLanguage" />
+    </node>
+    <node path="/rss/channel/copyright">
+      <variable name="rights" />
+    </node>
+    <node path="/rss/channel/pubDate">
+      <variable name="dateCreated" />
+    </node>
+    <node path="/rss/channel/lastBuildDate">
+      <variable name="lastUpdate" />
+    </node>
+    <node path="/rss/channel/item/guid">
+      <concept id="http://rs.tdwg.org/dwc/dwcore/GlobalUniqueIdentifier" />
+    </node>
+    <node path="/rss/channel/item/title">
+      <concept id="http://rs.tdwg.org/dwc/dwcore/ScientificName" />
+      <literal value=" ("/>
+      <concept id="http://rs.tdwg.org/dwc/dwcore/CatalogNumber" />
+      <literal value=")"/>
+    </node>
+    <node path="/rss/channel/item/link">
+      <concept id="http://rs.tdwg.org/dwc/dwcore/RelatedInformation" />
+    </node>
+    <node path="/rss/channel/item/description">
+      <literal value="New record of "/>
+      <concept id="http://rs.tdwg.org/dwc/dwcore/ScientificName" />
+      <literal value=" with catalogue number "/>
+      <concept id="http://rs.tdwg.org/dwc/dwcore/CatalogNumber" />
+    </node>
+  </mapping>
+</outputModel>

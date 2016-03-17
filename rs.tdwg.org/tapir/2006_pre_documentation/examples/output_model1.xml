@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<outputModel xmlns="http://res.tdwg.org/tapir/1.0"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="
+    		http://res.tdwg.org/tapir/1.0    http://ww2.biocase.org/svn/tapir/trunk/protocol/tapir.xsd
+            http://www.w3.org/2001/XMLSchema 	http://www.w3.org/2001/XMLSchema.xsd
+     ">
+    <structure>
+        <xs:schema targetNamespace="http://example.net/simple_specimen">
+            <xs:element name="dataset">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="specimen" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="identification" maxOccurs="unbounded"
+                                        minOccurs="0">
+                                        <xs:complexType>
+                                            <xs:sequence>
+                                                <xs:element name="name">
+                                                    <xs:complexType>
+                                                        <xs:simpleContent>
+                                                            <xs:extension base="xs:string">
+                                                                <xs:attribute name="family"
+                                                                    type="xs:string"/>
+                                                            </xs:extension>
+                                                        </xs:simpleContent>
+                                                    </xs:complexType>
+                                                </xs:element>
+                                                <xs:element name="identifier" type="xs:string"
+                                                    minOccurs="0"/>
+                                            </xs:sequence>
+                                            <xs:attribute name="date" type="xs:string"
+                                                use="optional"/>
+                                        </xs:complexType>
+                                    </xs:element>
+                                </xs:sequence>
+                                <xs:attribute name="catnum" type="xs:int" use="required"/>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:schema>
+    </structure>
+    <indexingElement path="/dataset/specimen"/>
+    <mapping>
+        <node path="/dataset/specimen@catnum">
+            <concept id="dwc:/CatalogNumber"/>
+        </node>
+        <node path="/dataset/specimen/identification/name">
+            <concept id="dwc:/ScientificName"/>
+        </node>
+        <node path="/dataset/specimen/identification/name@family">
+            <concept id="dwc:/Family"/>
+        </node>
+        <node path="/dataset/specimen/identification/identifier">
+            <concept  id="abcd:/DataSets/DataSet/Units/Unit/Identifications/Identification/Identifier/IdentifierPersonName/PersonName"/>
+        </node>
+        <node path="/dataset/specimen/identification@date">
+            <concept  id="abcd:/DataSets/DataSet/Units/Unit/Identifications/Identification/IdentificationDate/DateText"/>
+        </node>
+    </mapping>
+</outputModel>
+

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+TAPIR Metadata Response example.
+-->
+<response xmlns="http://rs.tdwg.org/tapir/1.0"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+    xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://rs.tdwg.org/tapir/1.0    http://ww2.biocase.org/svn/tapir/trunk/protocol/tapir.xsd">
+   <header xmlns="">
+        <source accesspoint="http://accesspoint_url" sendtime="2005-11-11T12:23:56.023+01:00">
+            <software name="TAPIR_Implementation" version="1.0"/>
+        </source>
+    </header>
+        <metadata>
+            <dc:title>Australian Fruit Flies</dc:title>
+            <dc:type>http://purl.org/dc/dcmitype/Service</dc:type>
+            <accesspoint xmlns="">http://www.flies.au/pywrapper/flies</accesspoint>
+                <dc:description>Australian fruit flies collection of georeferenced records observations</dc:description>
+                <dc:language>EN</dc:language>
+                <dc:subject>fuit flies observation australia diptera Tephritidae</dc:subject>
+                <dct:bibliographicCitation>Australian Fruit Flies TAPIR provider</dct:bibliographicCitation>
+                <dc:rights>free</dc:rights>
+                <dct:modified>2006-01-01T00:00:00</dct:modified>
+                <indexingPreferences xmlns="" startTime="09:30:00Z" maxDuration="PT1H" frequency="P1M" />
+                <relatedEntity xmlns="">
+                    <role>technical host</role>
+                    <entity>
+                        <identifier>someGUID</identifier>
+                        <name>TAPIR working group</name>
+                        <acronym>TAPIR-WG</acronym>
+                        <logoURL>http://somehost/entitylogo.png</logoURL>
+                        <description>Description about the TAPIR working group</description>
+                        <relatedInformation>http://somehost/moreinfo</relatedInformation>
+                        <hasContact>
+                            <role>system administrator</role>
+                            <vcard:VCARD>
+                                <vcard:FN>Frank Sinatra</vcard:FN>
+                                <vcard:TITLE>Main singer</vcard:TITLE>
+                                <vcard:TEL>some phone number</vcard:TEL>
+                                <vcard:EMAIL>f.sinatra@tapir.com</vcard:EMAIL>
+                            </vcard:VCARD>
+                        </hasContact>
+                        <geo:Point>
+                            <geo:lat>45.256</geo:lat>
+                            <geo:long>-71.92</geo:long>
+                        </geo:Point>
+                    </entity>
+                </relatedEntity>
+        </metadata>
+    
+</response>
+

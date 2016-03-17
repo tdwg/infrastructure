@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cns>
+<schema namespace="http://rs.tdwg.org/dwc/geospatial/">
+<label>DarwinCore v1.4 Geospatial Extension</label>
+<alias>dwgeo_1_4</alias>
+<location>http://rs.tdwg.org/dwc/tdwg_dw_geospatial.xsd</location>
+<concepts>
+<concept id="http://rs.tdwg.org/dwc/geospatial/DecimalLatitude">
+<alias>DecimalLatitude</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#double</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/DecimalLatitude</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/geospatial/DecimalLongitude">
+<alias>DecimalLongitude</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#double</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/DecimalLongitude</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/geospatial/GeodeticDatum">
+<alias>GeodeticDatum</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/GeodeticDatum</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/geospatial/CoordinateUncertaintyInMeters">
+<alias>CoordinateUncertaintyInMeters</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#decimal</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/CoordinateUncertaintyInMeters</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/geospatial/PointRadiusSpatialFit">
+<alias>PointRadiusSpatialFit</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/PointRadiusSpatialFit</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/geospatial/FootprintWKT">
+<alias>FootprintWKT</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/FootprintWKT</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/geospatial/FootprintSpatialFit">
+<alias>FootprintSpatialFit</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/FootprintSpatialFit</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/geospatial/VerbatimCoordinates">
+<alias>VerbatimCoordinates</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/VerbatimCoordinates</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/geospatial/VerbatimLatitude">
+<alias>VerbatimLatitude</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/VerbatimLatitude</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/geospatial/VerbatimLongitude">
+<alias>VerbatimLongitude</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/VerbatimLongitude</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/geospatial/VerbatimCoordinateSystem">
+<alias>VerbatimCoordinateSystem</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/VerbatimCoordinateSystem</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/geospatial/GeoreferenceProtocol">
+<alias>GeoreferenceProtocol</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/GeoreferenceProtocol</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/geospatial/GeoreferenceSources">
+<alias>GeoreferenceSources</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/GeoreferenceSources</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/geospatial/GeoreferenceVerificationStatus">
+<alias>GeoreferenceVerificationStatus</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/GeoreferenceVerificationStatus</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/geospatial/GeoreferenceRemarks">
+<alias>GeoreferenceRemarks</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/GeoreferenceRemarks</doc>
+</concept>
+</concepts>
+</schema>
+</cns>

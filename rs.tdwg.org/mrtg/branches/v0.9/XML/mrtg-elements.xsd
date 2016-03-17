@@ -1,0 +1,273 @@
+<?xml version="1.0"  encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://tdwg.mrtg-elements/">
+<xsd:annotation><xsd:documentation>$Id: mrtg-elements.xsd 1505 2010-02-22$</xsd:documentation></xsd:annotation>
+	<xsd:element name="subtype" type="xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>
+			Any of Drawing, Painting, Logo, Icon, Illustration, Graphic, Photograph, Animation, Film, SlideShow, DesignPlan, Diagram, Map, MusicalNotation, IdentificationKey, ScannedText, RecordedText, RecordedOrganism, TaxonPage, MultimediaLearningObject, VirtualRealityEnvironment, GlossaryPage. 
+			These values may either be used in their literal form, or with their full namespace, e.g. mrtg:identificationKey [2]
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>	
+	<xsd:element name="metadataLanguage" type="xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>
+			Language of description and other metadata (but not necessarily of the image itself) represented in ISO639-1 or -3.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>	
+	<xsd:element name="providerManagedID" type="xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>
+			A free-form identifier (a simple number, an alphanumeric code, a URL, etc.) that is unique and meaningful primarily for the data provider.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="commenter" type="xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>
+			If present, then resource has comments. Provider is NOT asserting Commenter has expertise. Must display a name or the literal "anonymous" (= anonymously reviewed).
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>	
+	<xsd:element name="comments" type="xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>
+			Any comment provided on the subject featured in the media item.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>	
+	<xsd:element name="reviewer" type="xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>
+			If present, then resource is peer-reviewed. The notation of whether an expert in the subject featured in the media has reviewed the media item (or collection?) and approved its metadata description. 
+			Must display a name or the literal "anonymous" (= anonymously reviewed).
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>	
+	<xsd:element name="reviewerComments" type="xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>
+			Any comment provided by an expert in the subject featured in the media item.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>	
+	<xsd:element name="licenseLogoURL" type="xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>
+			A URL providing access to a logo that symbolizes the License.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>		
+	<xsd:element name="attributionLogoURL" type="xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>
+			The URL of icon or logo image to appear in source attribution.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>	
+	<xsd:element name="attributionLinkURL" type="xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>
+			The URL where information about ownership, attribution, etc. of the resource may be found.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>	
+	<xsd:element name="provider" type="xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>
+			Person or organization responsible for compiling and presenting the record.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>	
+	<xsd:element name="metadataProvider" type="xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>
+			Person or organization responsible for compiling and presenting this MRTG metadata record.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>		
+	<xsd:element name="caption" type="xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>
+			As alternative or in addition to description, a caption is free-form text to be displayed together with (rather than instead of) a resource that is suitable for captions (especially images).
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>		
+	<xsd:element name="timeOfDay" type="xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>
+			Free text information beyond exact clock times.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>		
+	<xsd:element name="tag" type="xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>
+			Free text information beyond exact clock times.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>	
+	<xsd:element name="physicalSetting" type="xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>
+			The Setting of the content represented in a medium like images, sounds, movies. 
+			Constrained vocabulary of: 
+			"Natural" = Unmodified object in a natural setting of unmodified object (e. g. living organisms in their natural environment); 
+			"Artificial" = Unmodified object in artificial setting of (e. g. living organisms in artificial environment: Zoo, Garden, Greenhouse, Laboratory; photographic background or background sound suppression). 
+			"Irrelevant" (e.g. background of Museum shots).
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>	
+	<xsd:element name="subjectCategoryVocabulary" type="xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>
+			Any vocabulary or formal classification from which additional terms in Subject Category have been drawn.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>			
+	<xsd:element name="taxonCount" type="xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>
+			An exact or estimated number of taxa represented by the media resource.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>	
+	<xsd:element name="scientificNameSynonym" type="xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>
+			One or several scientific names that are synonyms to the Scientific Name may be provided here.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>	
+	<xsd:element name="subjectPart" type="xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>
+			The portion of the organism, environment, etc. shown or particularly well illustrated.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>			
+	<xsd:element name="subjectOrientation" type="xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>
+			Specific orientiation (= direction, view angle) of the subject represented in the media resource with respect to the acquisition device.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>			
+	<xsd:element name="captureDevice" type="xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>
+			Free form text describing the device or devices used to create the resource.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>	
+	<xsd:element name="resourceCreationTechnique" type="xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>
+			Information about technical aspects of the creation and digitization process of the resource. This includes modification steps ("retouching") after the initial resource capture.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>	
+	<xsd:element name="hasServiceAccessPoint" type="xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>
+			Reference to an instance of a class describing network access to the media resource, or related resources, that the metadata describes. 
+			What constitutes a class is dependent on the representation (i.e. XML Schema, RDF, etc.)
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>	
+	<xsd:element name="accessURL" type="xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>
+			URL of the resource itself
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>	
+	<xsd:element name="variant" type="xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>
+			What this ServiceAccessPoint provides. Permitted values are "Thumbnail", "Trailer", "Lower Quality", "Medium Quality", "Good Quality", "Best Quality", "Offline"
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>	
+	<xsd:element name="furtherInformationURL" type="xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>
+			The URL of a Web site that provides additional information about (this version of) the media resource
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>	
+	<xsd:element name="licensingException" type="xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>
+			Required only if this version has different licensing than that of the media resource. E.g. the highest resolution version may be more restricted than lower resolution versions
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>	
+	<xsd:element name="availabilityException" type="xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>
+			The licensing statement for this version of the media resource if different from that given in the Licensing Statement field of the resource
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>	
+	<xsd:element name="versionDescription" type="xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>
+			Text that describes this version
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>		
+	<xsd:element name="containingCollectionID" type="xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>
+			An arbitrary code that is unique among a provider's metadata records of type “Collection” and by which the media resources are linked to their collection.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="derivedFrom" type="xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>
+			A reference to an original resource from which the current one is derived.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>		
+	<xsd:element name="associatedSpecimenReference" type="xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>
+			A reference to a specimen associated with this resource.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>	
+	<xsd:element name="associatedObservationReference" type="xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>
+			A reference to an observation associated with this resource.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>		
+	<xsd:element name="memberIDinCollection" type="xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>
+			A link
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>		
+	<xsd:element name="relatedResourceID" type="xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>
+			Resource related in ways not specified through a collection.
+			- Before-after images
+			- Timelapse series
+			- Different orientations/angles of view
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>		
+	<xsd:element name="providerID" type="xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>
+			A Globally unique ID of the provider of the MRTG record that is being provided.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>	
+</xsd:schema>

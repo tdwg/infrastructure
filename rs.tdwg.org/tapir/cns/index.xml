@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cns_index>
+  <schema namespace="http://rs.tdwg.org/dwc/terms/">
+    <cns location="http://rs.tdwg.org/tapir/cns/dwc_terms_2009_09_23.xml"/>
+  </schema>
+  <schema namespace="http://rs.tdwg.org/dwc/dwcore/">
+    <cns location="http://rs.tdwg.org/tapir/cns/dwc_1_4.xml"/>
+  </schema>
+  <schema namespace="http://rs.tdwg.org/dwc/geospatial/">
+    <cns location="http://rs.tdwg.org/tapir/cns/dwgeo_1_4.xml"/>
+  </schema>
+  <schema namespace="http://rs.tdwg.org/dwc/curatorial/">
+    <cns location="http://rs.tdwg.org/tapir/cns/dwcur_1_4.xml"/>
+  </schema>
+  <schema namespace="http://digir.net/schema/conceptual/darwin/2003/1.0">
+    <cns location="http://rs.tdwg.org/tapir/cns/dwc_1.xml"/>
+  </schema>
+  <schema namespace="http://www.tdwg.org/schemas/abcd/2.06">
+    <cns location="http://rs.tdwg.org/tapir/cns/abcd_2_06.xml"/>
+  </schema>
+  <schema namespace="http://purl.org/dc/elements/1.1/">
+    <cns location="http://rs.tdwg.org/tapir/cns/dublin_core_1_1.xml"/>
+  </schema>
+</cns_index>

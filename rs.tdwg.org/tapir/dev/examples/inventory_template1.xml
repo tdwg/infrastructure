@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inventoryTemplate xmlns="http://rs.tdwg.org/tapir/1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://rs.tdwg.org/tapir/1.0    http://ww2.biocase.org/svn/tapir/trunk/protocol/tapir.xsd">
+    <label>Specimen Names</label>
+    <documentation>Search and list unique scientific names of specimen identifications ordered
+        alphabetically by their name. The filter parameter "name" is used to build the filter</documentation>
+    <concepts>
+        <concept id="dwc:/ScientificName"/>
+    </concepts>
+    <filter>
+        <like>
+            <concept id="dwc:/ScientificName"/>
+            <parameter name="name"/>
+        </like>
+    </filter>
+</inventoryTemplate>

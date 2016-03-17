@@ -1,0 +1,4 @@
+echo "Transforming to Tex format..."
+txt2tags report.txt
+echo "Transforming to PDF format..."
+make report.pdf

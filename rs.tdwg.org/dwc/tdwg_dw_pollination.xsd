@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ===================================================================== -->
+<!-- Introduction                                                          -->
+<!-- ===================================================================== -->
+<!-- Pollination Extension XML schema                                      -->
+<!-- History:                                                              -->
+<!--   version 0.1 2007-06-27 R. De Giovanni: Initial version              -->
+<!--   version 0.2 2007-08-22 R. De Giovanni: Changed all types from       -->
+<!--                                          boolean to the new           -->
+<!--                                          probabilityType (range       -->
+<!--                                          between 0 and 1).            -->
+<!-- Status:                                                               -->
+<!--   Experimental                                                        -->
+<!--   See http://wiki.tdwg.org for current status of this standard.       -->
+
+<!-- ===================================================================== -->
+<!-- Schema                                                                -->
+<!-- ===================================================================== -->
+<xs:schema targetNamespace="http://rs.tdwg.org/dwc/pollination/"
+	xmlns:dwe="http://rs.tdwg.org/dwc/dwelement" 
+	xmlns:dwp="http://rs.tdwg.org/dwc/pollination/" 
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="qualified" version="0.2">
+
+	<!-- ============================================================== -->
+	<!-- Documentation                                                  -->
+	<!-- ============================================================== -->
+	<xs:annotation>
+		<xs:documentation>Protocol independent XML Schema for the Pollination Extension of the Darwin Core Interaction Extension. For element documentation, see http://wiki.tdwg.org/twiki/bin/view/PollinationExtension.
+		</xs:documentation>
+	</xs:annotation>
+
+	<!-- ============================================================== -->
+	<!-- Includes                                                       -->
+	<!-- ============================================================== -->
+	<!-- include - inclusions must be top-level elements (children of   -->
+	<!--   the xs:schema element. Inclusion is restricted to the       -->
+	<!--   definition of a single namespace.                            -->
+	<!-- ============================================================== -->
+	<xs:include schemaLocation="http://rs.tdwg.org/dwc/tdwg_basetypes.xsd"/>
+
+	<!-- ============================================================== -->
+	<!-- Imports                                                        -->
+	<!-- ============================================================== -->
+	<!-- import - must be used to import definitions from other         -->
+	<!--   namespaces.                                                  -->
+	<!-- ============================================================== -->
+	<xs:import namespace="http://rs.tdwg.org/dwc/dwelement"
+                   schemaLocation="http://rs.tdwg.org/dwc/tdwg_dw_element.xsd"/>
+
+	<!-- ============================================================== -->
+	<!-- Elements                                                       -->
+	<!-- ============================================================== -->
+	<xs:element name="PollinationEvidence" type="dwp:probabilityType" substitutionGroup="dwe:dwElement" nillable="true">
+		<xs:annotation>
+			<xs:documentation source="http://wiki.tdwg.org/twiki/bin/view/DarwinCore/PollinationEvidence" xml:lang="en"/>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="PollenRemoval" type="dwp:probabilityType" substitutionGroup="dwe:dwElement" nillable="true">
+		<xs:annotation>
+			<xs:documentation source="http://wiki.tdwg.org/twiki/bin/view/DarwinCore/PollenRemoval" xml:lang="en"/>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="NectarRemoval" type="dwp:probabilityType" substitutionGroup="dwe:dwElement" nillable="true">
+		<xs:annotation>
+			<xs:documentation source="http://wiki.tdwg.org/twiki/bin/view/DarwinCore/NectarRemoval" xml:lang="en"/>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="OilRemoval" type="dwp:probabilityType" substitutionGroup="dwe:dwElement" nillable="true">
+		<xs:annotation>
+			<xs:documentation source="http://wiki.tdwg.org/twiki/bin/view/DarwinCore/OilRemoval" xml:lang="en"/>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="FlowerPredation" type="dwp:probabilityType" substitutionGroup="dwe:dwElement" nillable="true">
+		<xs:annotation>
+			<xs:documentation source="http://wiki.tdwg.org/twiki/bin/view/DarwinCore/FlowerPredation" xml:lang="en"/>
+		</xs:annotation>
+	</xs:element>
+
+</xs:schema>

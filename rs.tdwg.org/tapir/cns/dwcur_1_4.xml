@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cns>
+<schema namespace="http://rs.tdwg.org/dwc/curatorial/">
+<label>DarwinCore v1.4 Curatorial Extension</label>
+<alias>dwcur</alias>
+<location>http://rs.tdwg.org/dwc/tdwg_dw_curatorial.xsd</location>
+<concepts>
+<concept id="http://rs.tdwg.org/dwc/curatorial/CatalogNumberNumeric">
+<alias>CatalogNumberNumeric</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#double</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/CatalogNumberNumeric</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/curatorial/IdentifiedBy">
+<alias>IdentifiedBy</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/IdentifiedBy</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/curatorial/DateIdentified">
+<alias>DateIdentified</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#dateTime</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/DateIdentified</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/curatorial/CollectorNumber">
+<alias>CollectorNumber</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/CollectorNumber</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/curatorial/FieldNumber">
+<alias>FieldNumber</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/FieldNumber</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/curatorial/FieldNotes">
+<alias>FieldNotes</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/FieldNotes</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/curatorial/VerbatimCollectingDate">
+<alias>VerbatimCollectingDate</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/VerbatimCollectingDate</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/curatorial/VerbatimElevation">
+<alias>VerbatimElevation</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/VerbatimElevation</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/curatorial/VerbatimDepth">
+<alias>VerbatimDepth</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/VerbatimDepth</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/curatorial/Preparations">
+<alias>Preparations</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/Preparations</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/curatorial/TypeStatus">
+<alias>TypeStatus</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/TypeStatus</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/curatorial/GenBankNumber">
+<alias>GenBankNumber</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/GenBankNumber</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/curatorial/OtherCatalogNumbers">
+<alias>OtherCatalogNumbers</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/OtherCatalogNumbers</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/curatorial/RelatedCatalogedItems">
+<alias>RelatedCatalogedItems</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/RelatedCatalogedItems</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/curatorial/Disposition">
+<alias>Disposition</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/Disposition</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/curatorial/IndividualCount">
+<alias>IndividualCount</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#decimal</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/IndividualCount</doc>
+</concept>
+</concepts>
+</schema>
+</cns>

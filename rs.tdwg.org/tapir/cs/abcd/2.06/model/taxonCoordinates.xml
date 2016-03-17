@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<outputModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://rs.tdwg.org/tapir/1.0 
+    http://rs.tdwg.org/tapir/1.0/schema/tapir.xsd 
+    http://www.w3.org/2001/XMLSchema 
+    http://www.w3.org/2001/XMLSchema.xsd"
+    xmlns="http://rs.tdwg.org/tapir/1.0"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <label>Taxon Coordinates (abcd2.06)</label>
+    <documentation>Simple model transferring the coordinates of a taxon. In use for BioMoby services. Mappings based on ABCD 2.06</documentation>
+
+    <structure>
+      <schema location="http://rs.tdwg.org/tapir/rs/taxonCoordinates.xsd"/>
+    </structure>
+
+    <indexingElement path="/Collection/Simple"/>
+
+    <mapping>
+
+        <node path="/Collection/@articleName">
+            <literal value="Coordinates"/>
+        </node>
+
+        <node path="/Collection/Simple/Coordinates/LongitudeDecimal/Float">
+            <concept id="http://www.tdwg.org/schemas/abcd/2.06/DataSets/DataSet/Units/Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesLatLong/LongitudeDecimal"/>
+        </node>
+        <node path="/Collection/Simple/Coordinates/LongitudeDecimal/Float/@articleName">
+            <literal value="LongitudeDecimal"/>
+        </node>
+
+        <node path="/Collection/Simple/Coordinates/LatitudeDecimal/Float">
+            <concept id="http://www.tdwg.org/schemas/abcd/2.06/DataSets/DataSet/Units/Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesLatLong/LatitudeDecimal"/>
+        </node>
+        <node path="/Collection/Simple/Coordinates/LatitudeDecimal/Float/@articleName">
+            <literal value="LatitudeDecimal"/>
+        </node>
+
+        <node path="/Collection/Simple/Coordinates/SpatialDatum/String">
+            <literal value="WGS85"/>
+        </node>
+        <node path="/Collection/Simple/Coordinates/SpatialDatum/String/@articleName">
+            <literal value="SpatialDatum"/>
+        </node>
+
+    </mapping>
+
+</outputModel>

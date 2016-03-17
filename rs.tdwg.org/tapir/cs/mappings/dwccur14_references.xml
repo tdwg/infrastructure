@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappingReferences for="http://rs.tdwg.org/dwc/curatorial/">
+  <baseConcept id="http://rs.tdwg.org/dwc/curatorial/IdentifiedBy">
+    <ref>
+      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/IdentifiedBy"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/curatorial/TypeStatus">
+    <ref>
+      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/TypeStatus"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/curatorial/CollectorNumber">
+    <ref>
+      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/CollectorNumber"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/curatorial/FieldNumber">
+    <ref>
+      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/FieldNumber"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/curatorial/Preparations">
+    <ref>
+      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/PreparationType"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/curatorial/IndividualCount">
+    <ref>
+      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/IndividualCount"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/curatorial/OtherCatalogNumbers">
+    <ref>
+      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/PreviousCatalogNumber"/>  
+    </ref>
+  </baseConcept>
+</mappingReferences>

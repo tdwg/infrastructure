@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<searchTemplate xmlns="http://rs.tdwg.org/tapir/1.0" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+    xsi:schemaLocation="http://rs.tdwg.org/tapir/1.0
+    http://rs.tdwg.org/tapir/1.0/schema/tapir.xsd
+    http://www.w3.org/2001/XMLSchema
+    http://www.w3.org/2001/XMLSchema.xsd">
+    <label>Unfiltered Harvest Template for dw14_core_geo_cur</label>
+    <documentation>Unfiltered Harvest Template with DwC 1.4 (Geospatial and Curatorial extensions) as the output model.  Used by harvesters and TAPIRLite providers</documentation>
+    <externalOutputModel location="http://rs.tdwg.org/tapir/cs/dwc/1.4/model/dw_core_geo_cur.xml"/>
+</searchTemplate>

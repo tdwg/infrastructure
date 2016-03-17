@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<response xmlns="http://res.tdwg.org/tapir/1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://res.tdwg.org/tapir/1.0
+    http://ww2.biocase.org/svn/tapir/trunk/protocol/tapir.xsd">
+    <header>
+        <source accesspoint="http://url_from_client" sendtime="2005-11-11T12:23:56.023+01:00"/>
+    </header>
+    <search>
+        <dataset xmlns="http://example.net/simple_specimen"
+            xsi:schemaLocation="http://example.net/simple_specimen
+            http://ww2.biocase.org/svn/tapir/trunk/protocol/examples/schema_used_in_output_model.xsd">
+            <specimen catnum="234">
+                <identification>
+                    <name>Luzula luzuloides</name>
+                </identification>
+            </specimen>
+            <specimen catnum="290">
+                <identification>
+                    <name>Luzula alpestris</name>
+                </identification>
+            </specimen>
+        </dataset>
+        <summary start="0" totalReturned="2"/>
+    </search>
+</response>

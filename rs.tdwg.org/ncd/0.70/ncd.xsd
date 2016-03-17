@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This is version 0.60 May 2007. Please send comments to n.thomson AT nhm.ac.uk -->
+<xs:schema targetNamespace="http://rs.tdwg.org/ncd/0.70" xmlns="http://rs.tdwg.org/ncd/0.70"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2001/vcard-rdf/3.0#"
+	elementFormDefault="qualified" attributeFormDefault="unqualified" version="0.70">
+	<xs:import namespace="http://www.w3.org/2001/vcard-rdf/3.0#" schemaLocation="vcard.xsd"/>
+	<xs:element name="RecordSet">
+		<xs:annotation>
+			<xs:documentation>Root wrapper element</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Collections">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="Collection" minOccurs="0" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Institutions">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="Institution" minOccurs="0" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Persons">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="Person" minOccurs="0" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Collection">
+		<xs:annotation>
+			<xs:documentation>A single collection description record</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="AboutThisRecord" />
+				<xs:element ref="AlternativeIds" minOccurs="0"/>
+				<xs:element name="DescriptiveGroup">
+					<xs:annotation>
+						<xs:documentation>Element Group holding main description of the
+						collection</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="dc_title" type="stringWithLanguage"
+								maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>Name of the collection, often in the form "x
+										collection of y". Attribute indicates the language of the
+										text. Required element.</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="dc_alternative_title" type="xs:string" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Uniform and descriptive english name of the collection. Expected
+										to be in the form "x collection of y"</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="dc_description" maxOccurs="unbounded"
+								type="stringWithLanguage">
+								<xs:annotation>
+									<xs:documentation>Main description element, may be anything from
+										a few words to an essay. Should be suitabe for a general
+										audience. Attribute indicates the language of the text.
+										Required element.</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="DescriptionForSpecialists" type="stringWithLanguage"
+								minOccurs="0" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>Optional additional descriptive text using
+										terms that are more suited to a specialist audience.
+										Attribute indicates the language of the
+									text.</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="KnownToContainTypes" type="xs:boolean" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Flag element to indicate that the collection
+										includes types</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="dc_extent" minOccurs="0" maxOccurs="unbounded" type="xs:string">
+								<xs:annotation>
+									<xs:documentation>Estimate of the size of the collection.
+										Attributes indicate the number of objects and unit of
+										measure e.g. skins / 12 / small cupboards. Repeatable
+										element</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="PrimaryFocus" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Keyword to indicate primary focus of
+										collection e.g. regional / personal archive / taxonomic /
+										expedition / bibliographic / original artwork /
+									other</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:enumeration value="regional"/>
+										<xs:enumeration value="archive"/>
+										<xs:enumeration value="taxonomic"/>
+										<xs:enumeration value="expedition"/>
+										<xs:enumeration value="bibliographic"/>
+										<xs:enumeration value="temporal"/>
+										<xs:enumeration value="artwork"/>
+									</xs:restriction>
+								</xs:simpleType>									
+							</xs:element>
+							<xs:element name="PrimaryPurpose" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Keyword to indicate primary purpose of collection e.g. research / education / exhibition / other</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:enumeration value="research"/>
+											<xs:enumeration value="education"/>
+											<xs:enumeration value="exhibition"/>
+											<xs:enumeration value="ornamental"/>
+										</xs:restriction>
+								</xs:simpleType>									
+							</xs:element>
+							<xs:element name="CiteAs" type="stringWithLanguage" minOccurs="0" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>Preferred citation for the collection, which
+										may include sponsorship acknowledgements</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="Notes" type="stringWithLanguage" minOccurs="0"
+								maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>General notes, for anything that does not fit
+										elsewhere</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="AdministrativeGroup" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Element Group holding administrative
+						information</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CollectionFormationYearsRange" type="xs:string"
+								minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Text description of the time period during
+										which the collection was assembled e.g. Victorian / 1922 -
+										1932 / c. 1750</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="CollectionDevelopmentStatus" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Indicator of whether the collection is "live"
+										e.g. active / passive / closed / lost. An attribute gives
+										the date of this status</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:simpleContent>
+										<xs:extension base="xs:string">
+											<xs:attribute name="date" type="xs:date" use="optional"
+											/>
+										</xs:extension>
+									</xs:simpleContent>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="ConservationStatus" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Indicator of the conservation status of the
+										collection using (for example) the McGinley scale. An
+										attribute gives the date of this status</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:complexContent>
+										<xs:extension base="stringWithSourceID">
+											<xs:attribute name="date" type="xs:date" use="optional"
+											/>
+										</xs:extension>
+									</xs:complexContent>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="dc_format" type="xs:string" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Indicator of format(s) held in digital
+										collections e.g. PDF / PPT / Unknown. Especially important
+										to record unusual formats so they can be matched against a
+										format registry for migration strategy.</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="dc_medium" type="xs:string" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Indicator of physical formats used to store
+										digital data e.g. ZIP disk, DVD-RW, CD-ROM, DAT tape
+									etc.</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="dc_accessRights" type="stringWithLanguage"
+								minOccurs="0" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>Description of any restrictions on access to
+										the collection. May be a URL that points to an
+										institution-wide policy</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="UsageRestriction" type="stringWithLanguage"
+								minOccurs="0" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>Description of any restrictions on the uses
+										that may be made of the collection. May be a URL that points
+										to an institution-wide policy</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="Contact" maxOccurs="unbounded" minOccurs="0">
+								<xs:complexType>
+									<xs:attribute name="agentid" type="xs:IDREF"/>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="Owner" maxOccurs="unbounded" minOccurs="0">
+								<xs:complexType>
+									<xs:attribute name="agentid" type="xs:IDREF"/>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="PhysicalLocation" maxOccurs="unbounded" minOccurs="0">
+								<xs:complexType>
+									<xs:annotation>
+										<xs:documentation>Pointer to the agent (organisation or
+											person) where the collection is
+											located/hosted</xs:documentation>
+									</xs:annotation>
+									<xs:attribute name="agentid" type="xs:IDREF"/>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="dc_rights" type="stringWithLanguage" minOccurs="0"
+								maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>Statement(s) covering the intellectual
+										property rights attached to the
+									collection.</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="dct_provenance" type="stringWithLanguage"
+								minOccurs="0" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>Note to record 1) Previous location of
+										collection and/or 2) New location of collection, where these
+										are institutions other than that identified in this
+									record.</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="KeywordsGroup" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Element group holding keywords. Source attribute may be
+							"verbatim" or identify a published source for controlled
+						terms.</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="TaxonCoverage" type="stringWithSourceAndStrength"
+								minOccurs="0" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>Taxon or taxa in the collection at Family
+										level ot higher. Attributes indicate authority source for
+										the term (or "verbatim"), the ID of the term in that source
+										and a flag to indicate a particular
+									strength.</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="CommonNameCoverage" type="stringWithSourceAndStrength"
+								minOccurs="0" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>Common names or group names. Attributes
+										indicate authority source for the term (or "verbatim"), the
+										ID of the term in that source, a flag to indicate a
+										particular strength and the ISO language.</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="GeospatialCoverage" type="stringWithSourceAndStrength"
+								minOccurs="0" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>Place names and/or coordinates indicating the
+										place(s) from which material in the collection originated.
+										Attributes indicate authority source for the term (or
+										"verbatim"), the ID of the term in that source, a flag to
+										indicate a particular strength and the ISO
+									language.</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="LivingTimePeriod" type="stringWithSourceAndStrength"
+								minOccurs="0" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>Time period during which biological material
+										was alive. Includes palaeontological time periods or other
+										text phrases. Attributes indicate authority source for the
+										term (or "verbatim"), the ID of the term in that source and
+										a flag to indicate a particular strength.</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="CollectionClass" type="stringWithSourceID"
+								minOccurs="0" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>Class of collection. Attributes indicate
+										authority source for the term (or "verbatim"), the ID of the
+										term in that source, a flag to indicate a particular
+										strength and the ISO language.</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="SpecimenPreservationMethod" type="stringWithSourceID"
+								minOccurs="0" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>Preservation method for specimen collections.
+										Attributes indicate authority source for the term, the ID of
+										the term in that source and a flag to indicate a particular
+										strength.</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="ExpeditionName" type="stringWithLanguage"
+								minOccurs="0" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>Uniform name for an expedition or voyage of
+										discovery during which the material was
+									collected.</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="Collector" minOccurs="0" maxOccurs="unbounded" type="xs:string" />
+							<xs:element name="AssociatedAgent" minOccurs="0" maxOccurs="unbounded" type="xs:string" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="RelatedMaterialsGroup" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Element group for details about related resources and
+							collections</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="dc_relation" type="stringWithLanguage"
+								minOccurs="0" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>Repeatable element indicating resources
+										elsewhere that are related to the collection, such as
+										printed catalogues, Websites etc. </xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="RelatedCollection" type="stringWithLanguage"
+								minOccurs="0" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>Repeatable element. Identifier for, or short
+										description of, related collections, such as for the
+										components of a large collection that has been
+									dispersed</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="ItemLevelAccess" type="xs:anyURI" minOccurs="0"
+								maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>URL of an item-level database available over
+										the Web</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="id" type="xs:ID" use="required"/>
+			<xs:attribute name="recordType" use="optional" default="actual">
+				<xs:annotation>
+					<xs:documentation>One of two values: "actual" when the record is decribing a
+						real collection, or "derived" when the record has been derived from a query
+						on an item-level database e.g. all items from Australia.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:NMTOKEN">
+						<xs:enumeration value="actual"/>
+						<xs:enumeration value="derived"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="isPartOfCollectionId" type="xs:IDREF">
+				<xs:annotation>
+					<xs:documentation>Pointer to the institution record this collection belongs
+					too</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Person">
+		<xs:annotation>
+			<xs:documentation>A single person description record</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="AboutThisRecord"/>
+				<xs:element ref="AlternativeIds" minOccurs="0"/>
+				<xs:element ref="vc:VCARD"/>
+			</xs:sequence>
+			<xs:attribute name="id" type="xs:ID" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Institution">
+		<xs:annotation>
+			<xs:documentation>A single institution description record</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="AboutThisRecord"/>
+				<xs:element ref="AlternativeIds" minOccurs="0"/>
+				<xs:element name="InstitutionClass" minOccurs="0" maxOccurs="unbounded" type="institutionTypes">
+					<xs:annotation>
+						<xs:documentation>Keyword description of the institution e.g. Botanic
+							Garden</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="AcronymOrCoden" minOccurs="0" maxOccurs="unbounded" type="xs:string" />				
+				<xs:element ref="vc:VCARD"/>
+			</xs:sequence>
+			<xs:attribute name="id" type="xs:ID" use="required"/>
+			<xs:attribute name="parentId" type="xs:IDREF" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="AboutThisRecord" type="HeaderType">
+		<xs:annotation>
+			<xs:documentation>Element group holding information about this collection
+				description record</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="HeaderType">
+		<xs:sequence>
+			<xs:element name="dc_source" type="xs:string" minOccurs="0"/>
+			<xs:element name="dc_identifier" type="xs:string" />
+			<xs:element name="dct_created" type="xs:date" />
+			<xs:element name="dct_creator" type="xs:string" minOccurs="0"/>
+			<xs:element name="dct_modified" type="xs:date" />
+			<xs:element name="dct_contributor" type="xs:string" minOccurs="0" />
+			<xs:element name="Notes" type="xs:string" minOccurs="0">
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:element name="AlternativeIds">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Identifier" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:annotation>
+							<xs:documentation>Alternative identifier for the person. An attribute
+								gives the source</xs:documentation>
+						</xs:annotation>
+						<xs:attribute name="id" type="xs:string" use="required"/>
+						<xs:attribute name="source" type="xs:string" use="required"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+
+	<xs:simpleType name="institutionTypes">
+		<xs:union memberTypes="xs:string institutionCoreTypes"/>
+	</xs:simpleType>
+	
+	<xs:simpleType name="institutionCoreTypes">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="garden"/>
+			<xs:enumeration value="museum"/>
+			<xs:enumeration value="university"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:complexType name="stringWithLanguage">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="language" type="xs:language" use="optional"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+	<xs:complexType name="stringWithSource">
+		<xs:simpleContent>
+			<xs:extension base="stringWithLanguage">
+				<xs:attribute name="source" type="xs:string" use="optional"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+	<xs:complexType name="stringWithSourceID">
+		<xs:simpleContent>
+			<xs:extension base="stringWithLanguage">
+				<xs:attribute name="idInSource" type="xs:string" use="optional"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+	<xs:complexType name="stringWithSourceAndStrength">
+		<xs:simpleContent>
+			<xs:extension base="stringWithSourceID">
+				<xs:attribute name="strength" type="xs:boolean" use="optional"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	
+</xs:schema>

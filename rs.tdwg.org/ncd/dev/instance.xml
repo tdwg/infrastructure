@@ -1,0 +1,1330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:inst="http://rs.tdwg.org/ontology/voc/Institution#"
+ xmlns:p="http://rs.tdwg.org/ontology/voc/Person#"
+ xmlns:dct="http://purl.org/dc/terms/"
+ xmlns:tcol="http://rs.tdwg.org/ontology/voc/Collection#"
+ xmlns:cd="http://rs.tdwg.org/ontology/voc/ContactDetails#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:ns2="http://www.w3.org/2002/07/owl#"
+ xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:ns6="http://rs.tdwg.org/ontology/voc/Common#"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.w3.org/1999/02/22-rdf-syntax-ns# file:/Users/markus/workspace/tdwg_ncd/dev/ncd.xsd">
+        <tcol:Collection rdf:about="http://www.oxygenxml.com/">
+            <tcol:isPartOfCollection rdf:resource="http://www.oxygenxml.com/" />
+            <tcol:alternativeId>
+                <tcol:TermWithSource>
+                    <tcol:term>RBGE</tcol:term>
+                    <tcol:source>Index Herbariorum</tcol:source>
+                    <tcol:idInSource>???</tcol:idInSource>
+                </tcol:TermWithSource>
+            </tcol:alternativeId>
+            <dc:title xml:lang="en">Royal Botanic Garden Edinburgh Herbarium</dc:title>
+            <dc:title xml:lang="en-US">title2</dc:title>
+            <dct:alternative>RBGE Herbarium</dct:alternative>
+            <dc:description xml:lang="en">A collection of dried plants in a big building.</dc:description>
+            <tcol:collectionType rdf:resource="http://rs.tdwg.org/ontology/voc/CollectionType#archive"/>
+            <tcol:descriptionForSpecialists>descriptionForSpecialists0</tcol:descriptionForSpecialists>
+            <tcol:knownToContainTypes>false</tcol:knownToContainTypes>
+            <dct:extent>extent0</dct:extent>
+            <tcol:primaryFocus rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#archive"/>
+            <tcol:primaryPurpose rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#education"/>
+            <tcol:citeAs>citeAs0</tcol:citeAs>
+            <tcol:formationPeriod>formationPeriod0</tcol:formationPeriod>
+            <tcol:developmentStatus rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#active"/>
+            <tcol:developmentStatusDate>2006-05-04</tcol:developmentStatusDate>
+            <tcol:conservationStatus>
+                <tcol:TermWithSource>
+                    <tcol:term>term1</tcol:term>
+                    <tcol:source>source1</tcol:source>
+                    <tcol:idInSource>idInSource1</tcol:idInSource>
+                </tcol:TermWithSource>
+            </tcol:conservationStatus>
+            <dc:format>format0</dc:format>
+            <dct:medium>medium0</dct:medium>
+            <dct:accessRights>accessRights0</dct:accessRights>
+            <tcol:usageRestrictions>usageRestrictions0</tcol:usageRestrictions>
+            <tcol:hasContact rdf:resource="http://www.oxygenxml.com/">
+                <cd:ContactDetails rdf:about="http://www.oxygenxml.com/">
+                    <vcard:N xml:lang="en-US">
+                        <vcard:Family xml:lang="">Family0</vcard:Family>
+                        <vcard:Given xml:lang="en-US">Given0</vcard:Given>
+                        <vcard:Other xml:lang="">Other0</vcard:Other>
+                        <vcard:Prefix xml:lang="en-US">Prefix0</vcard:Prefix>
+                        <vcard:Suffix xml:lang="">Suffix0</vcard:Suffix>
+                    </vcard:N>
+                    <vcard:ORG xml:lang="en-US">
+                        <vcard:Orgname xml:lang="">Orgname0</vcard:Orgname>
+                        <vcard:Orgunit xml:lang="">Orgunit0</vcard:Orgunit>
+                    </vcard:ORG>
+                    <vcard:TITLE xml:lang="">TITLE0</vcard:TITLE>
+                    <vcard:ROLE xml:lang="en-US">ROLE0</vcard:ROLE>
+                    <vcard:BDAY xml:lang="">BDAY0</vcard:BDAY>
+                    <vcard:TEL vcard:TYPE="voice" xml:lang="en-US">TEL0</vcard:TEL>
+                    <vcard:EMAIL vcard:TYPE="internet" vcard:OTHERTYPE="OTHERTYPE0" xml:lang="en-US">EMAIL0</vcard:EMAIL>
+                    <vcard:ADR vcard:TYPE="intl postal parcel work" xml:lang="">
+                        <vcard:Pobox xml:lang="en-US">Pobox0</vcard:Pobox>
+                        <vcard:Extadd xml:lang="en-US">Extadd0</vcard:Extadd>
+                        <vcard:Street xml:lang="en-US">Street0</vcard:Street>
+                        <vcard:Locality xml:lang="en-US">Locality0</vcard:Locality>
+                        <vcard:Region xml:lang="en-US">Region0</vcard:Region>
+                        <vcard:Pcode xml:lang="en-US">Pcode0</vcard:Pcode>
+                        <vcard:Country xml:lang="">Country0</vcard:Country>
+                    </vcard:ADR>
+                    <vcard:URL/>
+                    <vcard:LOGO vcard:ENCODING="b" vcard:TYPE="TYPE13" xml:lang="en-US">ZGVmYXVsdA==</vcard:LOGO>
+                    <vcard:NOTE xml:lang="">NOTE0</vcard:NOTE>
+                </cd:ContactDetails>
+            </tcol:hasContact>
+            <tcol:hasOwner rdf:resource="http://www.oxygenxml.com/">
+                <p:Person rdf:about="http://www.oxygenxml.com/">
+                    <p:alternativeId>
+                        <tcol:TermWithSource>
+                            <tcol:term>term2</tcol:term>
+                            <tcol:source>source2</tcol:source>
+                            <tcol:idInSource>idInSource2</tcol:idInSource>
+                        </tcol:TermWithSource>
+                    </p:alternativeId>
+                    <p:contactDetails rdf:resource="http://www.oxygenxml.com/">
+                        <cd:ContactDetails rdf:about="http://www.oxygenxml.com/">
+                            <vcard:N xml:lang="en-US">
+                                <vcard:Family xml:lang="">Family1</vcard:Family>
+                                <vcard:Given xml:lang="en-US">Given1</vcard:Given>
+                                <vcard:Other xml:lang="">Other1</vcard:Other>
+                                <vcard:Prefix xml:lang="en-US">Prefix1</vcard:Prefix>
+                                <vcard:Suffix xml:lang="en-US">Suffix1</vcard:Suffix>
+                            </vcard:N>
+                            <vcard:ORG xml:lang="">
+                                <vcard:Orgname xml:lang="en-US">Orgname1</vcard:Orgname>
+                                <vcard:Orgunit xml:lang="">Orgunit1</vcard:Orgunit>
+                            </vcard:ORG>
+                            <vcard:TITLE xml:lang="">TITLE1</vcard:TITLE>
+                            <vcard:ROLE xml:lang="">ROLE1</vcard:ROLE>
+                            <vcard:BDAY xml:lang="">BDAY1</vcard:BDAY>
+                            <vcard:TEL vcard:TYPE="voice" xml:lang="en-US">TEL1</vcard:TEL>
+                            <vcard:EMAIL vcard:TYPE="internet" vcard:OTHERTYPE="OTHERTYPE1" xml:lang="">EMAIL1</vcard:EMAIL>
+                            <vcard:ADR vcard:TYPE="intl postal parcel work" xml:lang="">
+                                <vcard:Pobox xml:lang="en-US">Pobox1</vcard:Pobox>
+                                <vcard:Extadd xml:lang="en-US">Extadd1</vcard:Extadd>
+                                <vcard:Street xml:lang="en-US">Street1</vcard:Street>
+                                <vcard:Locality xml:lang="">Locality1</vcard:Locality>
+                                <vcard:Region xml:lang="">Region1</vcard:Region>
+                                <vcard:Pcode xml:lang="">Pcode1</vcard:Pcode>
+                                <vcard:Country xml:lang="">Country1</vcard:Country>
+                            </vcard:ADR>
+                            <vcard:URL/>
+                            <vcard:LOGO vcard:ENCODING="b" vcard:TYPE="TYPE41" xml:lang="">ZGVmYXVsdA==</vcard:LOGO>
+                            <vcard:NOTE xml:lang="">NOTE1</vcard:NOTE>
+                        </cd:ContactDetails>
+                    </p:contactDetails>
+                </p:Person>
+            </tcol:hasOwner>
+            <tcol:physicalLocation rdf:resource="http://www.oxygenxml.com/">
+                <p:Person rdf:about="http://www.oxygenxml.com/">
+                    <p:alternativeId>
+                        <tcol:TermWithSource>
+                            <tcol:term>term3</tcol:term>
+                            <tcol:source>source3</tcol:source>
+                            <tcol:idInSource>idInSource3</tcol:idInSource>
+                        </tcol:TermWithSource>
+                    </p:alternativeId>
+                    <p:contactDetails rdf:resource="http://www.oxygenxml.com/">
+                        <cd:ContactDetails rdf:about="http://www.oxygenxml.com/">
+                            <vcard:N xml:lang="en-US">
+                                <vcard:Family xml:lang="">Family2</vcard:Family>
+                                <vcard:Given xml:lang="en-US">Given2</vcard:Given>
+                                <vcard:Other xml:lang="en-US">Other2</vcard:Other>
+                                <vcard:Prefix xml:lang="en-US">Prefix2</vcard:Prefix>
+                                <vcard:Suffix xml:lang="">Suffix2</vcard:Suffix>
+                            </vcard:N>
+                            <vcard:ORG xml:lang="">
+                                <vcard:Orgname xml:lang="">Orgname2</vcard:Orgname>
+                                <vcard:Orgunit xml:lang="">Orgunit2</vcard:Orgunit>
+                            </vcard:ORG>
+                            <vcard:TITLE xml:lang="">TITLE2</vcard:TITLE>
+                            <vcard:ROLE xml:lang="en-US">ROLE2</vcard:ROLE>
+                            <vcard:BDAY xml:lang="">BDAY2</vcard:BDAY>
+                            <vcard:TEL vcard:TYPE="voice" xml:lang="en-US">TEL2</vcard:TEL>
+                            <vcard:EMAIL vcard:TYPE="internet" vcard:OTHERTYPE="OTHERTYPE2" xml:lang="en-US">EMAIL2</vcard:EMAIL>
+                            <vcard:ADR vcard:TYPE="intl postal parcel work" xml:lang="en-US">
+                                <vcard:Pobox xml:lang="">Pobox2</vcard:Pobox>
+                                <vcard:Extadd xml:lang="">Extadd2</vcard:Extadd>
+                                <vcard:Street xml:lang="">Street2</vcard:Street>
+                                <vcard:Locality xml:lang="en-US">Locality2</vcard:Locality>
+                                <vcard:Region xml:lang="">Region2</vcard:Region>
+                                <vcard:Pcode xml:lang="">Pcode2</vcard:Pcode>
+                                <vcard:Country xml:lang="en-US">Country2</vcard:Country>
+                            </vcard:ADR>
+                            <vcard:URL/>
+                            <vcard:LOGO vcard:ENCODING="b" vcard:TYPE="TYPE65" xml:lang="en-US">ZGVmYXVsdA==</vcard:LOGO>
+                            <vcard:NOTE xml:lang="en-US">NOTE2</vcard:NOTE>
+                        </cd:ContactDetails>
+                    </p:contactDetails>
+                </p:Person>
+            </tcol:physicalLocation>
+            <dc:rights xml:lang="">rights0</dc:rights>
+            <dct:provenance>provenance0</dct:provenance>
+            <tcol:taxonCoverage>
+                <tcol:TermWithSource>
+                    <tcol:term>term4</tcol:term>
+                    <tcol:source>source4</tcol:source>
+                    <tcol:idInSource>idInSource4</tcol:idInSource>
+                </tcol:TermWithSource>
+            </tcol:taxonCoverage>
+            <tcol:taxonCoverageStrength>
+                <tcol:TermWithSource>
+                    <tcol:term>term5</tcol:term>
+                    <tcol:source>source5</tcol:source>
+                    <tcol:idInSource>idInSource5</tcol:idInSource>
+                </tcol:TermWithSource>
+            </tcol:taxonCoverageStrength>
+            <tcol:commonNameCoverage>
+                <tcol:TermWithSource>
+                    <tcol:term>term6</tcol:term>
+                    <tcol:source>source6</tcol:source>
+                    <tcol:idInSource>idInSource6</tcol:idInSource>
+                </tcol:TermWithSource>
+            </tcol:commonNameCoverage>
+            <tcol:commonNameCoverageStrength>
+                <tcol:TermWithSource>
+                    <tcol:term>term7</tcol:term>
+                    <tcol:source>source7</tcol:source>
+                    <tcol:idInSource>idInSource7</tcol:idInSource>
+                </tcol:TermWithSource>
+            </tcol:commonNameCoverageStrength>
+            <tcol:geospatialCoverage>
+                <tcol:TermWithSource>
+                    <tcol:term>term8</tcol:term>
+                    <tcol:source>source8</tcol:source>
+                    <tcol:idInSource>idInSource8</tcol:idInSource>
+                </tcol:TermWithSource>
+            </tcol:geospatialCoverage>
+            <tcol:geospatialCoverageStrength>
+                <tcol:TermWithSource>
+                    <tcol:term>term9</tcol:term>
+                    <tcol:source>source9</tcol:source>
+                    <tcol:idInSource>idInSource9</tcol:idInSource>
+                </tcol:TermWithSource>
+            </tcol:geospatialCoverageStrength>
+            <tcol:livingTimePeriodCoverage>
+                <tcol:TermWithSource>
+                    <tcol:term>term10</tcol:term>
+                    <tcol:source>source10</tcol:source>
+                    <tcol:idInSource>idInSource10</tcol:idInSource>
+                </tcol:TermWithSource>
+            </tcol:livingTimePeriodCoverage>
+            <tcol:livingTimePeriodCoverageStrength>
+                <tcol:TermWithSource>
+                    <tcol:term>term11</tcol:term>
+                    <tcol:source>source11</tcol:source>
+                    <tcol:idInSource>idInSource11</tcol:idInSource>
+                </tcol:TermWithSource>
+            </tcol:livingTimePeriodCoverageStrength>
+            <tcol:specimenPreservationMethod rdf:resource="http://rs.tdwg.org/ontology/voc/CollectionType#dried"/>
+            <tcol:expeditionNameCoverage>
+                <tcol:TermWithSource>
+                    <tcol:term>term12</tcol:term>
+                    <tcol:source>source12</tcol:source>
+                    <tcol:idInSource>idInSource12</tcol:idInSource>
+                </tcol:TermWithSource>
+            </tcol:expeditionNameCoverage>
+            <tcol:collectorNameCoverage>
+                <tcol:TermWithSource>
+                    <tcol:term>term13</tcol:term>
+                    <tcol:source>source13</tcol:source>
+                    <tcol:idInSource>idInSource13</tcol:idInSource>
+                </tcol:TermWithSource>
+            </tcol:collectorNameCoverage>
+            <tcol:associatedAgent rdf:resource="http://www.oxygenxml.com/">
+                <p:Person rdf:about="http://www.oxygenxml.com/">
+                    <p:alternativeId>
+                        <tcol:TermWithSource>
+                            <tcol:term>term14</tcol:term>
+                            <tcol:source>source14</tcol:source>
+                            <tcol:idInSource>idInSource14</tcol:idInSource>
+                        </tcol:TermWithSource>
+                    </p:alternativeId>
+                    <p:contactDetails rdf:resource="http://www.oxygenxml.com/">
+                        <cd:ContactDetails rdf:about="http://www.oxygenxml.com/">
+                            <vcard:N xml:lang="en-US">
+                                <vcard:Family xml:lang="">Family3</vcard:Family>
+                                <vcard:Given xml:lang="en-US">Given3</vcard:Given>
+                                <vcard:Other xml:lang="en-US">Other3</vcard:Other>
+                                <vcard:Prefix xml:lang="en-US">Prefix3</vcard:Prefix>
+                                <vcard:Suffix xml:lang="">Suffix3</vcard:Suffix>
+                            </vcard:N>
+                            <vcard:ORG xml:lang="">
+                                <vcard:Orgname xml:lang="">Orgname3</vcard:Orgname>
+                                <vcard:Orgunit xml:lang="">Orgunit3</vcard:Orgunit>
+                            </vcard:ORG>
+                            <vcard:TITLE xml:lang="en-US">TITLE3</vcard:TITLE>
+                            <vcard:ROLE xml:lang="">ROLE3</vcard:ROLE>
+                            <vcard:BDAY xml:lang="en-US">BDAY3</vcard:BDAY>
+                            <vcard:TEL vcard:TYPE="voice" xml:lang="en-US">TEL3</vcard:TEL>
+                            <vcard:EMAIL vcard:TYPE="internet" vcard:OTHERTYPE="OTHERTYPE3" xml:lang="">EMAIL3</vcard:EMAIL>
+                            <vcard:ADR vcard:TYPE="intl postal parcel work" xml:lang="">
+                                <vcard:Pobox xml:lang="">Pobox3</vcard:Pobox>
+                                <vcard:Extadd xml:lang="">Extadd3</vcard:Extadd>
+                                <vcard:Street xml:lang="">Street3</vcard:Street>
+                                <vcard:Locality xml:lang="en-US">Locality3</vcard:Locality>
+                                <vcard:Region xml:lang="">Region3</vcard:Region>
+                                <vcard:Pcode xml:lang="">Pcode3</vcard:Pcode>
+                                <vcard:Country xml:lang="">Country3</vcard:Country>
+                            </vcard:ADR>
+                            <vcard:URL/>
+                            <vcard:LOGO vcard:ENCODING="b" vcard:TYPE="TYPE89" xml:lang="en-US">ZGVmYXVsdA==</vcard:LOGO>
+                            <vcard:NOTE xml:lang="">NOTE3</vcard:NOTE>
+                        </cd:ContactDetails>
+                    </p:contactDetails>
+                </p:Person>
+            </tcol:associatedAgent>
+            <dc:relation rdf:resource="http://www.oxygenxml.com/"/>
+            <tcol:relatedCollection>relatedCollection0</tcol:relatedCollection>
+            <tcol:itemLevelAccess rdf:resource="http://www.oxygenxml.com/"/>
+            <ns6:note>note0</ns6:note>
+        </tcol:Collection>
+        <rdf:Description rdf:about="http://www.oxygenxml.com/">
+            <dc:creator>creator0</dc:creator>
+            <dc:contributor>contributor0</dc:contributor>
+            <dct:created>created0</dct:created>
+            <dct:modified>modified0</dct:modified>
+            <dc:identifier>identifier0</dc:identifier>
+            <dc:source rdf:resource="http://www.oxygenxml.com/"/>
+            <ns6:note>note1</ns6:note>
+        </rdf:Description>
+        <tcol:Collection rdf:about="http://www.oxygenxml.com/">
+            <tcol:isPartOfCollection rdf:resource="http://www.oxygenxml.com/" />
+            <tcol:alternativeId>
+                <tcol:TermWithSource>
+                    <tcol:term>term15</tcol:term>
+                    <tcol:source>source15</tcol:source>
+                    <tcol:idInSource>idInSource15</tcol:idInSource>
+                </tcol:TermWithSource>
+            </tcol:alternativeId>
+            <dc:title xml:lang="en-US">title3</dc:title>
+            <dc:title xml:lang="">title4</dc:title>
+            <dc:title xml:lang="">title5</dc:title>
+            <dct:alternative>alternative1</dct:alternative>
+            <dc:description xml:lang="">description1</dc:description>
+            <tcol:collectionType rdf:resource="http://rs.tdwg.org/ontology/voc/CollectionType#archive"/>
+            <tcol:descriptionForSpecialists>descriptionForSpecialists1</tcol:descriptionForSpecialists>
+            <tcol:knownToContainTypes>false</tcol:knownToContainTypes>
+            <dct:extent>extent1</dct:extent>
+            <tcol:primaryFocus rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#archive"/>
+            <tcol:primaryPurpose rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#education"/>
+            <tcol:citeAs>citeAs1</tcol:citeAs>
+            <tcol:formationPeriod>formationPeriod1</tcol:formationPeriod>
+            <tcol:developmentStatus rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#active"/>
+            <tcol:developmentStatusDate>2006-05-04</tcol:developmentStatusDate>
+            <tcol:conservationStatus>
+                <tcol:TermWithSource>
+                    <tcol:term>term16</tcol:term>
+                    <tcol:source>source16</tcol:source>
+                    <tcol:idInSource>idInSource16</tcol:idInSource>
+                </tcol:TermWithSource>
+            </tcol:conservationStatus>
+            <dc:format>format1</dc:format>
+            <dct:medium>medium1</dct:medium>
+            <dct:accessRights>accessRights1</dct:accessRights>
+            <tcol:usageRestrictions>usageRestrictions1</tcol:usageRestrictions>
+            <tcol:hasContact rdf:resource="http://www.oxygenxml.com/">
+                <cd:ContactDetails rdf:about="http://www.oxygenxml.com/">
+                    <vcard:N xml:lang="en-US">
+                        <vcard:Family xml:lang="en-US">Family4</vcard:Family>
+                        <vcard:Given xml:lang="en-US">Given4</vcard:Given>
+                        <vcard:Other xml:lang="">Other4</vcard:Other>
+                        <vcard:Prefix xml:lang="en-US">Prefix4</vcard:Prefix>
+                        <vcard:Suffix xml:lang="">Suffix4</vcard:Suffix>
+                    </vcard:N>
+                    <vcard:ORG xml:lang="en-US">
+                        <vcard:Orgname xml:lang="en-US">Orgname4</vcard:Orgname>
+                        <vcard:Orgunit xml:lang="">Orgunit4</vcard:Orgunit>
+                    </vcard:ORG>
+                    <vcard:TITLE xml:lang="">TITLE4</vcard:TITLE>
+                    <vcard:ROLE xml:lang="">ROLE4</vcard:ROLE>
+                    <vcard:BDAY xml:lang="">BDAY4</vcard:BDAY>
+                    <vcard:TEL vcard:TYPE="voice" xml:lang="en-US">TEL4</vcard:TEL>
+                    <vcard:EMAIL vcard:TYPE="internet" vcard:OTHERTYPE="OTHERTYPE4" xml:lang="">EMAIL4</vcard:EMAIL>
+                    <vcard:ADR vcard:TYPE="intl postal parcel work" xml:lang="en-US">
+                        <vcard:Pobox xml:lang="">Pobox4</vcard:Pobox>
+                        <vcard:Extadd xml:lang="en-US">Extadd4</vcard:Extadd>
+                        <vcard:Street xml:lang="en-US">Street4</vcard:Street>
+                        <vcard:Locality xml:lang="en-US">Locality4</vcard:Locality>
+                        <vcard:Region xml:lang="">Region4</vcard:Region>
+                        <vcard:Pcode xml:lang="en-US">Pcode4</vcard:Pcode>
+                        <vcard:Country xml:lang="">Country4</vcard:Country>
+                    </vcard:ADR>
+                    <vcard:URL/>
+                    <vcard:LOGO vcard:ENCODING="b" vcard:TYPE="TYPE117" xml:lang="">ZGVmYXVsdA==</vcard:LOGO>
+                    <vcard:NOTE xml:lang="en-US">NOTE4</vcard:NOTE>
+                </cd:ContactDetails>
+            </tcol:hasContact>
+            <tcol:hasOwner rdf:resource="http://www.oxygenxml.com/">
+                <p:Person rdf:about="http://www.oxygenxml.com/">
+                    <p:alternativeId>
+                        <tcol:TermWithSource>
+                            <tcol:term>term17</tcol:term>
+                            <tcol:source>source17</tcol:source>
+                            <tcol:idInSource>idInSource17</tcol:idInSource>
+                        </tcol:TermWithSource>
+                    </p:alternativeId>
+                    <p:contactDetails rdf:resource="http://www.oxygenxml.com/">
+                        <cd:ContactDetails rdf:about="http://www.oxygenxml.com/">
+                            <vcard:N xml:lang="en-US">
+                                <vcard:Family xml:lang="">Family5</vcard:Family>
+                                <vcard:Given xml:lang="en-US">Given5</vcard:Given>
+                                <vcard:Other xml:lang="en-US">Other5</vcard:Other>
+                                <vcard:Prefix xml:lang="en-US">Prefix5</vcard:Prefix>
+                                <vcard:Suffix xml:lang="">Suffix5</vcard:Suffix>
+                            </vcard:N>
+                            <vcard:ORG xml:lang="">
+                                <vcard:Orgname xml:lang="en-US">Orgname5</vcard:Orgname>
+                                <vcard:Orgunit xml:lang="">Orgunit5</vcard:Orgunit>
+                            </vcard:ORG>
+                            <vcard:TITLE xml:lang="">TITLE5</vcard:TITLE>
+                            <vcard:ROLE xml:lang="en-US">ROLE5</vcard:ROLE>
+                            <vcard:BDAY xml:lang="en-US">BDAY5</vcard:BDAY>
+                            <vcard:TEL vcard:TYPE="voice" xml:lang="en-US">TEL5</vcard:TEL>
+                            <vcard:EMAIL vcard:TYPE="internet" vcard:OTHERTYPE="OTHERTYPE5" xml:lang="en-US">EMAIL5</vcard:EMAIL>
+                            <vcard:ADR vcard:TYPE="intl postal parcel work" xml:lang="en-US">
+                                <vcard:Pobox xml:lang="">Pobox5</vcard:Pobox>
+                                <vcard:Extadd xml:lang="">Extadd5</vcard:Extadd>
+                                <vcard:Street xml:lang="en-US">Street5</vcard:Street>
+                                <vcard:Locality xml:lang="">Locality5</vcard:Locality>
+                                <vcard:Region xml:lang="en-US">Region5</vcard:Region>
+                                <vcard:Pcode xml:lang="">Pcode5</vcard:Pcode>
+                                <vcard:Country xml:lang="en-US">Country5</vcard:Country>
+                            </vcard:ADR>
+                            <vcard:URL/>
+                            <vcard:LOGO vcard:ENCODING="b" vcard:TYPE="TYPE138" xml:lang="">ZGVmYXVsdA==</vcard:LOGO>
+                            <vcard:NOTE xml:lang="en-US">NOTE5</vcard:NOTE>
+                        </cd:ContactDetails>
+                    </p:contactDetails>
+                </p:Person>
+            </tcol:hasOwner>
+            <tcol:physicalLocation rdf:resource="http://www.oxygenxml.com/">
+                <p:Person rdf:about="http://www.oxygenxml.com/">
+                    <p:alternativeId>
+                        <tcol:TermWithSource>
+                            <tcol:term>term18</tcol:term>
+                            <tcol:source>source18</tcol:source>
+                            <tcol:idInSource>idInSource18</tcol:idInSource>
+                        </tcol:TermWithSource>
+                    </p:alternativeId>
+                    <p:contactDetails rdf:resource="http://www.oxygenxml.com/">
+                        <cd:ContactDetails rdf:about="http://www.oxygenxml.com/">
+                            <vcard:N xml:lang="">
+                                <vcard:Family xml:lang="">Family6</vcard:Family>
+                                <vcard:Given xml:lang="">Given6</vcard:Given>
+                                <vcard:Other xml:lang="en-US">Other6</vcard:Other>
+                                <vcard:Prefix xml:lang="en-US">Prefix6</vcard:Prefix>
+                                <vcard:Suffix xml:lang="en-US">Suffix6</vcard:Suffix>
+                            </vcard:N>
+                            <vcard:ORG xml:lang="">
+                                <vcard:Orgname xml:lang="en-US">Orgname6</vcard:Orgname>
+                                <vcard:Orgunit xml:lang="">Orgunit6</vcard:Orgunit>
+                            </vcard:ORG>
+                            <vcard:TITLE xml:lang="">TITLE6</vcard:TITLE>
+                            <vcard:ROLE xml:lang="">ROLE6</vcard:ROLE>
+                            <vcard:BDAY xml:lang="en-US">BDAY6</vcard:BDAY>
+                            <vcard:TEL vcard:TYPE="voice" xml:lang="">TEL6</vcard:TEL>
+                            <vcard:EMAIL vcard:TYPE="internet" vcard:OTHERTYPE="OTHERTYPE6" xml:lang="en-US">EMAIL6</vcard:EMAIL>
+                            <vcard:ADR vcard:TYPE="intl postal parcel work" xml:lang="">
+                                <vcard:Pobox xml:lang="en-US">Pobox6</vcard:Pobox>
+                                <vcard:Extadd xml:lang="en-US">Extadd6</vcard:Extadd>
+                                <vcard:Street xml:lang="en-US">Street6</vcard:Street>
+                                <vcard:Locality xml:lang="">Locality6</vcard:Locality>
+                                <vcard:Region xml:lang="">Region6</vcard:Region>
+                                <vcard:Pcode xml:lang="">Pcode6</vcard:Pcode>
+                                <vcard:Country xml:lang="">Country6</vcard:Country>
+                            </vcard:ADR>
+                            <vcard:URL/>
+                            <vcard:LOGO vcard:ENCODING="b" vcard:TYPE="TYPE164" xml:lang="en-US">ZGVmYXVsdA==</vcard:LOGO>
+                            <vcard:NOTE xml:lang="">NOTE6</vcard:NOTE>
+                        </cd:ContactDetails>
+                    </p:contactDetails>
+                </p:Person>
+            </tcol:physicalLocation>
+            <dc:rights xml:lang="">rights1</dc:rights>
+            <dct:provenance>provenance1</dct:provenance>
+            <tcol:taxonCoverage>
+                <tcol:TermWithSource>
+                    <tcol:term>term19</tcol:term>
+                    <tcol:source>source19</tcol:source>
+                    <tcol:idInSource>idInSource19</tcol:idInSource>
+                </tcol:TermWithSource>
+            </tcol:taxonCoverage>
+            <tcol:taxonCoverageStrength>
+                <tcol:TermWithSource>
+                    <tcol:term>term20</tcol:term>
+                    <tcol:source>source20</tcol:source>
+                    <tcol:idInSource>idInSource20</tcol:idInSource>
+                </tcol:TermWithSource>
+            </tcol:taxonCoverageStrength>
+            <tcol:commonNameCoverage>
+                <tcol:TermWithSource>
+                    <tcol:term>term21</tcol:term>
+                    <tcol:source>source21</tcol:source>
+                    <tcol:idInSource>idInSource21</tcol:idInSource>
+                </tcol:TermWithSource>
+            </tcol:commonNameCoverage>
+            <tcol:commonNameCoverageStrength>
+                <tcol:TermWithSource>
+                    <tcol:term>term22</tcol:term>
+                    <tcol:source>source22</tcol:source>
+                    <tcol:idInSource>idInSource22</tcol:idInSource>
+                </tcol:TermWithSource>
+            </tcol:commonNameCoverageStrength>
+            <tcol:geospatialCoverage>
+                <tcol:TermWithSource>
+                    <tcol:term>term23</tcol:term>
+                    <tcol:source>source23</tcol:source>
+                    <tcol:idInSource>idInSource23</tcol:idInSource>
+                </tcol:TermWithSource>
+            </tcol:geospatialCoverage>
+            <tcol:geospatialCoverageStrength>
+                <tcol:TermWithSource>
+                    <tcol:term>term24</tcol:term>
+                    <tcol:source>source24</tcol:source>
+                    <tcol:idInSource>idInSource24</tcol:idInSource>
+                </tcol:TermWithSource>
+            </tcol:geospatialCoverageStrength>
+            <tcol:livingTimePeriodCoverage>
+                <tcol:TermWithSource>
+                    <tcol:term>term25</tcol:term>
+                    <tcol:source>source25</tcol:source>
+                    <tcol:idInSource>idInSource25</tcol:idInSource>
+                </tcol:TermWithSource>
+            </tcol:livingTimePeriodCoverage>
+            <tcol:livingTimePeriodCoverageStrength>
+                <tcol:TermWithSource>
+                    <tcol:term>term26</tcol:term>
+                    <tcol:source>source26</tcol:source>
+                    <tcol:idInSource>idInSource26</tcol:idInSource>
+                </tcol:TermWithSource>
+            </tcol:livingTimePeriodCoverageStrength>
+            <tcol:specimenPreservationMethod rdf:resource="http://rs.tdwg.org/ontology/voc/CollectionType#dried"/>
+            <tcol:expeditionNameCoverage>
+                <tcol:TermWithSource>
+                    <tcol:term>term27</tcol:term>
+                    <tcol:source>source27</tcol:source>
+                    <tcol:idInSource>idInSource27</tcol:idInSource>
+                </tcol:TermWithSource>
+            </tcol:expeditionNameCoverage>
+            <tcol:collectorNameCoverage>
+                <tcol:TermWithSource>
+                    <tcol:term>term28</tcol:term>
+                    <tcol:source>source28</tcol:source>
+                    <tcol:idInSource>idInSource28</tcol:idInSource>
+                </tcol:TermWithSource>
+            </tcol:collectorNameCoverage>
+            <tcol:associatedAgent rdf:resource="http://www.oxygenxml.com/">
+                <p:Person rdf:about="http://www.oxygenxml.com/">
+                    <p:alternativeId>
+                        <tcol:TermWithSource>
+                            <tcol:term>term29</tcol:term>
+                            <tcol:source>source29</tcol:source>
+                            <tcol:idInSource>idInSource29</tcol:idInSource>
+                        </tcol:TermWithSource>
+                    </p:alternativeId>
+                    <p:contactDetails rdf:resource="http://www.oxygenxml.com/">
+                        <cd:ContactDetails rdf:about="http://www.oxygenxml.com/">
+                            <vcard:N xml:lang="en-US">
+                                <vcard:Family xml:lang="en-US">Family7</vcard:Family>
+                                <vcard:Given xml:lang="en-US">Given7</vcard:Given>
+                                <vcard:Other xml:lang="">Other7</vcard:Other>
+                                <vcard:Prefix xml:lang="en-US">Prefix7</vcard:Prefix>
+                                <vcard:Suffix xml:lang="">Suffix7</vcard:Suffix>
+                            </vcard:N>
+                            <vcard:ORG xml:lang="en-US">
+                                <vcard:Orgname xml:lang="">Orgname7</vcard:Orgname>
+                                <vcard:Orgunit xml:lang="en-US">Orgunit7</vcard:Orgunit>
+                            </vcard:ORG>
+                            <vcard:TITLE xml:lang="">TITLE7</vcard:TITLE>
+                            <vcard:ROLE xml:lang="">ROLE7</vcard:ROLE>
+                            <vcard:BDAY xml:lang="en-US">BDAY7</vcard:BDAY>
+                            <vcard:TEL vcard:TYPE="voice" xml:lang="">TEL7</vcard:TEL>
+                            <vcard:EMAIL vcard:TYPE="internet" vcard:OTHERTYPE="OTHERTYPE7" xml:lang="en-US">EMAIL7</vcard:EMAIL>
+                            <vcard:ADR vcard:TYPE="intl postal parcel work" xml:lang="en-US">
+                                <vcard:Pobox xml:lang="en-US">Pobox7</vcard:Pobox>
+                                <vcard:Extadd xml:lang="en-US">Extadd7</vcard:Extadd>
+                                <vcard:Street xml:lang="en-US">Street7</vcard:Street>
+                                <vcard:Locality xml:lang="">Locality7</vcard:Locality>
+                                <vcard:Region xml:lang="en-US">Region7</vcard:Region>
+                                <vcard:Pcode xml:lang="">Pcode7</vcard:Pcode>
+                                <vcard:Country xml:lang="en-US">Country7</vcard:Country>
+                            </vcard:ADR>
+                            <vcard:URL/>
+                            <vcard:LOGO vcard:ENCODING="b" vcard:TYPE="TYPE186" xml:lang="en-US">ZGVmYXVsdA==</vcard:LOGO>
+                            <vcard:NOTE xml:lang="en-US">NOTE7</vcard:NOTE>
+                        </cd:ContactDetails>
+                    </p:contactDetails>
+                </p:Person>
+            </tcol:associatedAgent>
+            <dc:relation rdf:resource="http://www.oxygenxml.com/"/>
+            <tcol:relatedCollection>relatedCollection1</tcol:relatedCollection>
+            <tcol:itemLevelAccess rdf:resource="http://www.oxygenxml.com/"/>
+            <ns6:note>note2</ns6:note>
+        </tcol:Collection>
+        <rdf:Description rdf:about="http://www.oxygenxml.com/">
+            <dc:creator>creator1</dc:creator>
+            <dc:contributor>contributor1</dc:contributor>
+            <dct:created>created1</dct:created>
+            <dct:modified>modified1</dct:modified>
+            <dc:identifier>identifier1</dc:identifier>
+            <dc:source rdf:resource="http://www.oxygenxml.com/"/>
+            <ns6:note>note3</ns6:note>
+        </rdf:Description>
+        <tcol:Collection rdf:about="http://www.oxygenxml.com/">
+            <tcol:isPartOfCollection rdf:resource="http://www.oxygenxml.com/"/>
+            
+            <tcol:alternativeId>
+                <tcol:TermWithSource>
+                    <tcol:term>term30</tcol:term>
+                    <tcol:source>source30</tcol:source>
+                    <tcol:idInSource>idInSource30</tcol:idInSource>
+                </tcol:TermWithSource>
+            </tcol:alternativeId>
+            <dc:title xml:lang="">title6</dc:title>
+            <dc:title xml:lang="">title7</dc:title>
+            <dc:title xml:lang="">title8</dc:title>
+            <dct:alternative>alternative2</dct:alternative>
+            <dc:description xml:lang="en-US">description2</dc:description>
+            <tcol:collectionType rdf:resource="http://rs.tdwg.org/ontology/voc/CollectionType#archive"/>
+            <tcol:descriptionForSpecialists>descriptionForSpecialists2</tcol:descriptionForSpecialists>
+            <tcol:knownToContainTypes>false</tcol:knownToContainTypes>
+            <dct:extent>extent2</dct:extent>
+            <tcol:primaryFocus rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#archive"/>
+            <tcol:primaryPurpose rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#education"/>
+            <tcol:citeAs>citeAs2</tcol:citeAs>
+            <tcol:formationPeriod>formationPeriod2</tcol:formationPeriod>
+            <tcol:developmentStatus rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#active"/>
+            <tcol:developmentStatusDate>2006-05-04</tcol:developmentStatusDate>
+            <tcol:conservationStatus>
+                <tcol:TermWithSource>
+                    <tcol:term>term31</tcol:term>
+                    <tcol:source>source31</tcol:source>
+                    <tcol:idInSource>idInSource31</tcol:idInSource>
+                </tcol:TermWithSource>
+            </tcol:conservationStatus>
+            <dc:format>format2</dc:format>
+            <dct:medium>medium2</dct:medium>
+            <dct:accessRights>accessRights2</dct:accessRights>
+            <tcol:usageRestrictions>usageRestrictions2</tcol:usageRestrictions>
+            <tcol:hasContact rdf:resource="http://www.oxygenxml.com/">
+                <cd:ContactDetails rdf:about="http://www.oxygenxml.com/">
+                    <vcard:N xml:lang="">
+                        <vcard:Family xml:lang="">Family8</vcard:Family>
+                        <vcard:Given xml:lang="">Given8</vcard:Given>
+                        <vcard:Other xml:lang="en-US">Other8</vcard:Other>
+                        <vcard:Prefix xml:lang="">Prefix8</vcard:Prefix>
+                        <vcard:Suffix xml:lang="">Suffix8</vcard:Suffix>
+                    </vcard:N>
+                    <vcard:ORG xml:lang="en-US">
+                        <vcard:Orgname xml:lang="">Orgname8</vcard:Orgname>
+                        <vcard:Orgunit xml:lang="en-US">Orgunit8</vcard:Orgunit>
+                    </vcard:ORG>
+                    <vcard:TITLE xml:lang="en-US">TITLE8</vcard:TITLE>
+                    <vcard:ROLE xml:lang="en-US">ROLE8</vcard:ROLE>
+                    <vcard:BDAY xml:lang="en-US">BDAY8</vcard:BDAY>
+                    <vcard:TEL vcard:TYPE="voice" xml:lang="">TEL8</vcard:TEL>
+                    <vcard:EMAIL vcard:TYPE="internet" vcard:OTHERTYPE="OTHERTYPE8" xml:lang="en-US">EMAIL8</vcard:EMAIL>
+                    <vcard:ADR vcard:TYPE="intl postal parcel work" xml:lang="">
+                        <vcard:Pobox xml:lang="en-US">Pobox8</vcard:Pobox>
+                        <vcard:Extadd xml:lang="">Extadd8</vcard:Extadd>
+                        <vcard:Street xml:lang="">Street8</vcard:Street>
+                        <vcard:Locality xml:lang="">Locality8</vcard:Locality>
+                        <vcard:Region xml:lang="">Region8</vcard:Region>
+                        <vcard:Pcode xml:lang="">Pcode8</vcard:Pcode>
+                        <vcard:Country xml:lang="en-US">Country8</vcard:Country>
+                    </vcard:ADR>
+                    <vcard:URL/>
+                    <vcard:LOGO vcard:ENCODING="b" vcard:TYPE="TYPE218" xml:lang="en-US">ZGVmYXVsdA==</vcard:LOGO>
+                    <vcard:NOTE xml:lang="en-US">NOTE8</vcard:NOTE>
+                </cd:ContactDetails>
+            </tcol:hasContact>
+            <tcol:hasOwner rdf:resource="http://www.oxygenxml.com/">
+                <inst:Institution rdf:about="http://www.oxygenxml.com/">
+                    <inst:alternativeId>
+                        <tcol:TermWithSource>
+                            <tcol:term>term32</tcol:term>
+                            <tcol:source>source32</tcol:source>
+                            <tcol:idInSource>idInSource32</tcol:idInSource>
+                        </tcol:TermWithSource>
+                    </inst:alternativeId>
+                    <inst:hasContact rdf:resource="http://www.oxygenxml.com/">
+                        <cd:ContactDetails rdf:about="http://www.oxygenxml.com/">
+                            <vcard:N xml:lang="">
+                                <vcard:Family xml:lang="en-US">Family9</vcard:Family>
+                                <vcard:Given xml:lang="en-US">Given9</vcard:Given>
+                                <vcard:Other xml:lang="">Other9</vcard:Other>
+                                <vcard:Prefix xml:lang="">Prefix9</vcard:Prefix>
+                                <vcard:Suffix xml:lang="en-US">Suffix9</vcard:Suffix>
+                            </vcard:N>
+                            <vcard:ORG xml:lang="">
+                                <vcard:Orgname xml:lang="">Orgname9</vcard:Orgname>
+                                <vcard:Orgunit xml:lang="en-US">Orgunit9</vcard:Orgunit>
+                            </vcard:ORG>
+                            <vcard:TITLE xml:lang="en-US">TITLE9</vcard:TITLE>
+                            <vcard:ROLE xml:lang="">ROLE9</vcard:ROLE>
+                            <vcard:BDAY xml:lang="">BDAY9</vcard:BDAY>
+                            <vcard:TEL vcard:TYPE="voice" xml:lang="">TEL9</vcard:TEL>
+                            <vcard:EMAIL vcard:TYPE="internet" vcard:OTHERTYPE="OTHERTYPE9" xml:lang="">EMAIL9</vcard:EMAIL>
+                            <vcard:ADR vcard:TYPE="intl postal parcel work" xml:lang="">
+                                <vcard:Pobox xml:lang="">Pobox9</vcard:Pobox>
+                                <vcard:Extadd xml:lang="">Extadd9</vcard:Extadd>
+                                <vcard:Street xml:lang="en-US">Street9</vcard:Street>
+                                <vcard:Locality xml:lang="en-US">Locality9</vcard:Locality>
+                                <vcard:Region xml:lang="">Region9</vcard:Region>
+                                <vcard:Pcode xml:lang="en-US">Pcode9</vcard:Pcode>
+                                <vcard:Country xml:lang="en-US">Country9</vcard:Country>
+                            </vcard:ADR>
+                            <vcard:URL/>
+                            <vcard:LOGO vcard:ENCODING="b" vcard:TYPE="TYPE256" xml:lang="en-US">ZGVmYXVsdA==</vcard:LOGO>
+                            <vcard:NOTE xml:lang="en-US">NOTE9</vcard:NOTE>
+                        </cd:ContactDetails>
+                    </inst:hasContact>
+                    <inst:isPartOfInstitution>
+                    </inst:isPartOfInstitution>
+                    <inst:institutionType rdf:resource="http://rs.tdwg.org/ontology/voc/InstitutionType#administration"/>
+                    <inst:acronymOrCoden>
+                        <tcol:TermWithSource>
+                            <tcol:term>term33</tcol:term>
+                            <tcol:source>source33</tcol:source>
+                            <tcol:idInSource>idInSource33</tcol:idInSource>
+                        </tcol:TermWithSource>
+                    </inst:acronymOrCoden>
+                </inst:Institution>
+            </tcol:hasOwner>
+            <tcol:physicalLocation rdf:resource="http://www.oxygenxml.com/">
+                <p:Person rdf:about="http://www.oxygenxml.com/">
+                    <p:alternativeId>
+                        <tcol:TermWithSource>
+                            <tcol:term>term34</tcol:term>
+                            <tcol:source>source34</tcol:source>
+                            <tcol:idInSource>idInSource34</tcol:idInSource>
+                        </tcol:TermWithSource>
+                    </p:alternativeId>
+                    <p:contactDetails rdf:resource="http://www.oxygenxml.com/">
+                        <cd:ContactDetails rdf:about="http://www.oxygenxml.com/">
+                            <vcard:N xml:lang="">
+                                <vcard:Family xml:lang="en-US">Family10</vcard:Family>
+                                <vcard:Given xml:lang="">Given10</vcard:Given>
+                                <vcard:Other xml:lang="en-US">Other10</vcard:Other>
+                                <vcard:Prefix xml:lang="">Prefix10</vcard:Prefix>
+                                <vcard:Suffix xml:lang="en-US">Suffix10</vcard:Suffix>
+                            </vcard:N>
+                            <vcard:ORG xml:lang="">
+                                <vcard:Orgname xml:lang="en-US">Orgname10</vcard:Orgname>
+                                <vcard:Orgunit xml:lang="en-US">Orgunit10</vcard:Orgunit>
+                            </vcard:ORG>
+                            <vcard:TITLE xml:lang="en-US">TITLE10</vcard:TITLE>
+                            <vcard:ROLE xml:lang="en-US">ROLE10</vcard:ROLE>
+                            <vcard:BDAY xml:lang="en-US">BDAY10</vcard:BDAY>
+                            <vcard:TEL vcard:TYPE="voice" xml:lang="en-US">TEL10</vcard:TEL>
+                            <vcard:EMAIL vcard:TYPE="internet" vcard:OTHERTYPE="OTHERTYPE10" xml:lang="">EMAIL10</vcard:EMAIL>
+                            <vcard:ADR vcard:TYPE="intl postal parcel work" xml:lang="en-US">
+                                <vcard:Pobox xml:lang="">Pobox10</vcard:Pobox>
+                                <vcard:Extadd xml:lang="">Extadd10</vcard:Extadd>
+                                <vcard:Street xml:lang="en-US">Street10</vcard:Street>
+                                <vcard:Locality xml:lang="en-US">Locality10</vcard:Locality>
+                                <vcard:Region xml:lang="en-US">Region10</vcard:Region>
+                                <vcard:Pcode xml:lang="">Pcode10</vcard:Pcode>
+                                <vcard:Country xml:lang="">Country10</vcard:Country>
+                            </vcard:ADR>
+                            <vcard:URL/>
+                            <vcard:LOGO vcard:ENCODING="b" vcard:TYPE="TYPE274" xml:lang="">ZGVmYXVsdA==</vcard:LOGO>
+                            <vcard:NOTE xml:lang="">NOTE10</vcard:NOTE>
+                        </cd:ContactDetails>
+                    </p:contactDetails>
+                </p:Person>
+            </tcol:physicalLocation>
+            <dc:rights xml:lang="">rights2</dc:rights>
+            <dct:provenance>provenance2</dct:provenance>
+            <tcol:taxonCoverage>
+                <tcol:TermWithSource>
+                    <tcol:term>term35</tcol:term>
+                    <tcol:source>source35</tcol:source>
+                    <tcol:idInSource>idInSource35</tcol:idInSource>
+                </tcol:TermWithSource>
+            </tcol:taxonCoverage>
+            <tcol:taxonCoverageStrength>
+                <tcol:TermWithSource>
+                    <tcol:term>term36</tcol:term>
+                    <tcol:source>source36</tcol:source>
+                    <tcol:idInSource>idInSource36</tcol:idInSource>
+                </tcol:TermWithSource>
+            </tcol:taxonCoverageStrength>
+            <tcol:commonNameCoverage>
+                <tcol:TermWithSource>
+                    <tcol:term>term37</tcol:term>
+                    <tcol:source>source37</tcol:source>
+                    <tcol:idInSource>idInSource37</tcol:idInSource>
+                </tcol:TermWithSource>
+            </tcol:commonNameCoverage>
+            <tcol:commonNameCoverageStrength>
+                <tcol:TermWithSource>
+                    <tcol:term>term38</tcol:term>
+                    <tcol:source>source38</tcol:source>
+                    <tcol:idInSource>idInSource38</tcol:idInSource>
+                </tcol:TermWithSource>
+            </tcol:commonNameCoverageStrength>
+            <tcol:geospatialCoverage>
+                <tcol:TermWithSource>
+                    <tcol:term>term39</tcol:term>
+                    <tcol:source>source39</tcol:source>
+                    <tcol:idInSource>idInSource39</tcol:idInSource>
+                </tcol:TermWithSource>
+            </tcol:geospatialCoverage>
+            <tcol:geospatialCoverageStrength>
+                <tcol:TermWithSource>
+                    <tcol:term>term40</tcol:term>
+                    <tcol:source>source40</tcol:source>
+                    <tcol:idInSource>idInSource40</tcol:idInSource>
+                </tcol:TermWithSource>
+            </tcol:geospatialCoverageStrength>
+            <tcol:livingTimePeriodCoverage>
+                <tcol:TermWithSource>
+                    <tcol:term>term41</tcol:term>
+                    <tcol:source>source41</tcol:source>
+                    <tcol:idInSource>idInSource41</tcol:idInSource>
+                </tcol:TermWithSource>
+            </tcol:livingTimePeriodCoverage>
+            <tcol:livingTimePeriodCoverageStrength>
+                <tcol:TermWithSource>
+                    <tcol:term>term42</tcol:term>
+                    <tcol:source>source42</tcol:source>
+                    <tcol:idInSource>idInSource42</tcol:idInSource>
+                </tcol:TermWithSource>
+            </tcol:livingTimePeriodCoverageStrength>
+            <tcol:specimenPreservationMethod rdf:resource="http://rs.tdwg.org/ontology/voc/CollectionType#dried"/>
+            <tcol:expeditionNameCoverage>
+                <tcol:TermWithSource>
+                    <tcol:term>term43</tcol:term>
+                    <tcol:source>source43</tcol:source>
+                    <tcol:idInSource>idInSource43</tcol:idInSource>
+                </tcol:TermWithSource>
+            </tcol:expeditionNameCoverage>
+            <tcol:collectorNameCoverage>
+                <tcol:TermWithSource>
+                    <tcol:term>term44</tcol:term>
+                    <tcol:source>source44</tcol:source>
+                    <tcol:idInSource>idInSource44</tcol:idInSource>
+                </tcol:TermWithSource>
+            </tcol:collectorNameCoverage>
+            <tcol:associatedAgent rdf:resource="http://www.oxygenxml.com/">
+                <inst:Institution rdf:about="http://www.oxygenxml.com/">
+                    <inst:alternativeId>
+                        <tcol:TermWithSource>
+                            <tcol:term>term45</tcol:term>
+                            <tcol:source>source45</tcol:source>
+                            <tcol:idInSource>idInSource45</tcol:idInSource>
+                        </tcol:TermWithSource>
+                    </inst:alternativeId>
+                    <inst:hasContact rdf:resource="http://www.oxygenxml.com/">
+                        <cd:ContactDetails rdf:about="http://www.oxygenxml.com/">
+                            <vcard:N xml:lang="en-US">
+                                <vcard:Family xml:lang="en-US">Family11</vcard:Family>
+                                <vcard:Given xml:lang="en-US">Given11</vcard:Given>
+                                <vcard:Other xml:lang="en-US">Other11</vcard:Other>
+                                <vcard:Prefix xml:lang="en-US">Prefix11</vcard:Prefix>
+                                <vcard:Suffix xml:lang="en-US">Suffix11</vcard:Suffix>
+                            </vcard:N>
+                            <vcard:ORG xml:lang="en-US">
+                                <vcard:Orgname xml:lang="">Orgname11</vcard:Orgname>
+                                <vcard:Orgunit xml:lang="en-US">Orgunit11</vcard:Orgunit>
+                            </vcard:ORG>
+                            <vcard:TITLE xml:lang="en-US">TITLE11</vcard:TITLE>
+                            <vcard:ROLE xml:lang="en-US">ROLE11</vcard:ROLE>
+                            <vcard:BDAY xml:lang="">BDAY11</vcard:BDAY>
+                            <vcard:TEL vcard:TYPE="voice" xml:lang="">TEL11</vcard:TEL>
+                            <vcard:EMAIL vcard:TYPE="internet" vcard:OTHERTYPE="OTHERTYPE11" xml:lang="en-US">EMAIL11</vcard:EMAIL>
+                            <vcard:ADR vcard:TYPE="intl postal parcel work" xml:lang="en-US">
+                                <vcard:Pobox xml:lang="en-US">Pobox11</vcard:Pobox>
+                                <vcard:Extadd xml:lang="">Extadd11</vcard:Extadd>
+                                <vcard:Street xml:lang="">Street11</vcard:Street>
+                                <vcard:Locality xml:lang="">Locality11</vcard:Locality>
+                                <vcard:Region xml:lang="">Region11</vcard:Region>
+                                <vcard:Pcode xml:lang="en-US">Pcode11</vcard:Pcode>
+                                <vcard:Country xml:lang="en-US">Country11</vcard:Country>
+                            </vcard:ADR>
+                            <vcard:URL/>
+                            <vcard:LOGO vcard:ENCODING="b" vcard:TYPE="TYPE295" xml:lang="">ZGVmYXVsdA==</vcard:LOGO>
+                            <vcard:NOTE xml:lang="">NOTE11</vcard:NOTE>
+                        </cd:ContactDetails>
+                    </inst:hasContact>
+                    <inst:isPartOfInstitution>
+                    </inst:isPartOfInstitution>
+                    <inst:institutionType rdf:resource="http://rs.tdwg.org/ontology/voc/InstitutionType#administration"/>
+                    <inst:acronymOrCoden>
+                        <tcol:TermWithSource>
+                            <tcol:term>term46</tcol:term>
+                            <tcol:source>source46</tcol:source>
+                            <tcol:idInSource>idInSource46</tcol:idInSource>
+                        </tcol:TermWithSource>
+                    </inst:acronymOrCoden>
+                </inst:Institution>
+            </tcol:associatedAgent>
+            <dc:relation rdf:resource="http://www.oxygenxml.com/"/>
+            <tcol:relatedCollection>relatedCollection2</tcol:relatedCollection>
+            <tcol:itemLevelAccess rdf:resource="http://www.oxygenxml.com/"/>
+            <ns6:note>note4</ns6:note>
+        </tcol:Collection>
+        <rdf:Description rdf:about="http://www.oxygenxml.com/">
+            <dc:creator>creator2</dc:creator>
+            <dc:contributor>contributor2</dc:contributor>
+            <dct:created>created2</dct:created>
+            <dct:modified>modified2</dct:modified>
+            <dc:identifier>identifier2</dc:identifier>
+            <dc:source rdf:resource="http://www.oxygenxml.com/"/>
+            <ns6:note>note5</ns6:note>
+        </rdf:Description>
+        <p:Person rdf:about="http://www.oxygenxml.com/">
+            <p:alternativeId>
+                <tcol:TermWithSource>
+                    <tcol:term>term47</tcol:term>
+                    <tcol:source>source47</tcol:source>
+                    <tcol:idInSource>idInSource47</tcol:idInSource>
+                </tcol:TermWithSource>
+            </p:alternativeId>
+            <p:contactDetails rdf:resource="http://www.oxygenxml.com/">
+                <cd:ContactDetails rdf:about="http://www.oxygenxml.com/">
+                    <vcard:N xml:lang="en-US">
+                        <vcard:Family xml:lang="en-US">Family12</vcard:Family>
+                        <vcard:Given xml:lang="">Given12</vcard:Given>
+                        <vcard:Other xml:lang="">Other12</vcard:Other>
+                        <vcard:Prefix xml:lang="en-US">Prefix12</vcard:Prefix>
+                        <vcard:Suffix xml:lang="">Suffix12</vcard:Suffix>
+                    </vcard:N>
+                    <vcard:ORG xml:lang="">
+                        <vcard:Orgname xml:lang="en-US">Orgname12</vcard:Orgname>
+                        <vcard:Orgunit xml:lang="en-US">Orgunit12</vcard:Orgunit>
+                    </vcard:ORG>
+                    <vcard:TITLE xml:lang="">TITLE12</vcard:TITLE>
+                    <vcard:ROLE xml:lang="en-US">ROLE12</vcard:ROLE>
+                    <vcard:BDAY xml:lang="en-US">BDAY12</vcard:BDAY>
+                    <vcard:TEL vcard:TYPE="voice" xml:lang="en-US">TEL12</vcard:TEL>
+                    <vcard:EMAIL vcard:TYPE="internet" vcard:OTHERTYPE="OTHERTYPE12" xml:lang="en-US">EMAIL12</vcard:EMAIL>
+                    <vcard:ADR vcard:TYPE="intl postal parcel work" xml:lang="en-US">
+                        <vcard:Pobox xml:lang="en-US">Pobox12</vcard:Pobox>
+                        <vcard:Extadd xml:lang="en-US">Extadd12</vcard:Extadd>
+                        <vcard:Street xml:lang="en-US">Street12</vcard:Street>
+                        <vcard:Locality xml:lang="en-US">Locality12</vcard:Locality>
+                        <vcard:Region xml:lang="">Region12</vcard:Region>
+                        <vcard:Pcode xml:lang="en-US">Pcode12</vcard:Pcode>
+                        <vcard:Country xml:lang="">Country12</vcard:Country>
+                    </vcard:ADR>
+                    <vcard:URL/>
+                    <vcard:LOGO vcard:ENCODING="b" vcard:TYPE="TYPE326" xml:lang="">ZGVmYXVsdA==</vcard:LOGO>
+                    <vcard:NOTE xml:lang="en-US">NOTE12</vcard:NOTE>
+                </cd:ContactDetails>
+            </p:contactDetails>
+        </p:Person>
+        <rdf:Description rdf:about="http://www.oxygenxml.com/">
+            <dc:creator>creator3</dc:creator>
+            <dc:contributor>contributor3</dc:contributor>
+            <dct:created>created3</dct:created>
+            <dct:modified>modified3</dct:modified>
+            <dc:identifier>identifier3</dc:identifier>
+            <dc:source rdf:resource="http://www.oxygenxml.com/"/>
+            <ns6:note>note6</ns6:note>
+        </rdf:Description>
+        <p:Person rdf:about="http://www.oxygenxml.com/">
+            <p:alternativeId>
+                <tcol:TermWithSource>
+                    <tcol:term>term48</tcol:term>
+                    <tcol:source>source48</tcol:source>
+                    <tcol:idInSource>idInSource48</tcol:idInSource>
+                </tcol:TermWithSource>
+            </p:alternativeId>
+            <p:contactDetails rdf:resource="http://www.oxygenxml.com/">
+                <cd:ContactDetails rdf:about="http://www.oxygenxml.com/">
+                    <vcard:N xml:lang="en-US">
+                        <vcard:Family xml:lang="en-US">Family13</vcard:Family>
+                        <vcard:Given xml:lang="">Given13</vcard:Given>
+                        <vcard:Other xml:lang="">Other13</vcard:Other>
+                        <vcard:Prefix xml:lang="">Prefix13</vcard:Prefix>
+                        <vcard:Suffix xml:lang="en-US">Suffix13</vcard:Suffix>
+                    </vcard:N>
+                    <vcard:ORG xml:lang="">
+                        <vcard:Orgname xml:lang="">Orgname13</vcard:Orgname>
+                        <vcard:Orgunit xml:lang="en-US">Orgunit13</vcard:Orgunit>
+                    </vcard:ORG>
+                    <vcard:TITLE xml:lang="en-US">TITLE13</vcard:TITLE>
+                    <vcard:ROLE xml:lang="en-US">ROLE13</vcard:ROLE>
+                    <vcard:BDAY xml:lang="">BDAY13</vcard:BDAY>
+                    <vcard:TEL vcard:TYPE="voice" xml:lang="en-US">TEL13</vcard:TEL>
+                    <vcard:EMAIL vcard:TYPE="internet" vcard:OTHERTYPE="OTHERTYPE13" xml:lang="">EMAIL13</vcard:EMAIL>
+                    <vcard:ADR vcard:TYPE="intl postal parcel work" xml:lang="">
+                        <vcard:Pobox xml:lang="en-US">Pobox13</vcard:Pobox>
+                        <vcard:Extadd xml:lang="en-US">Extadd13</vcard:Extadd>
+                        <vcard:Street xml:lang="">Street13</vcard:Street>
+                        <vcard:Locality xml:lang="">Locality13</vcard:Locality>
+                        <vcard:Region xml:lang="en-US">Region13</vcard:Region>
+                        <vcard:Pcode xml:lang="en-US">Pcode13</vcard:Pcode>
+                        <vcard:Country xml:lang="">Country13</vcard:Country>
+                    </vcard:ADR>
+                    <vcard:URL/>
+                    <vcard:LOGO vcard:ENCODING="b" vcard:TYPE="TYPE356" xml:lang="en-US">ZGVmYXVsdA==</vcard:LOGO>
+                    <vcard:NOTE xml:lang="en-US">NOTE13</vcard:NOTE>
+                </cd:ContactDetails>
+            </p:contactDetails>
+        </p:Person>
+        <rdf:Description rdf:about="http://www.oxygenxml.com/">
+            <dc:creator>creator4</dc:creator>
+            <dc:contributor>contributor4</dc:contributor>
+            <dct:created>created4</dct:created>
+            <dct:modified>modified4</dct:modified>
+            <dc:identifier>identifier4</dc:identifier>
+            <dc:source rdf:resource="http://www.oxygenxml.com/"/>
+            <ns6:note>note7</ns6:note>
+        </rdf:Description>
+        <p:Person rdf:about="http://www.oxygenxml.com/">
+            <p:alternativeId>
+                <tcol:TermWithSource>
+                    <tcol:term>term49</tcol:term>
+                    <tcol:source>source49</tcol:source>
+                    <tcol:idInSource>idInSource49</tcol:idInSource>
+                </tcol:TermWithSource>
+            </p:alternativeId>
+            <p:contactDetails rdf:resource="http://www.oxygenxml.com/">
+                <cd:ContactDetails rdf:about="http://www.oxygenxml.com/">
+                    <vcard:N xml:lang="">
+                        <vcard:Family xml:lang="">Family14</vcard:Family>
+                        <vcard:Given xml:lang="en-US">Given14</vcard:Given>
+                        <vcard:Other xml:lang="">Other14</vcard:Other>
+                        <vcard:Prefix xml:lang="">Prefix14</vcard:Prefix>
+                        <vcard:Suffix xml:lang="">Suffix14</vcard:Suffix>
+                    </vcard:N>
+                    <vcard:ORG xml:lang="">
+                        <vcard:Orgname xml:lang="">Orgname14</vcard:Orgname>
+                        <vcard:Orgunit xml:lang="">Orgunit14</vcard:Orgunit>
+                    </vcard:ORG>
+                    <vcard:TITLE xml:lang="">TITLE14</vcard:TITLE>
+                    <vcard:ROLE xml:lang="en-US">ROLE14</vcard:ROLE>
+                    <vcard:BDAY xml:lang="en-US">BDAY14</vcard:BDAY>
+                    <vcard:TEL vcard:TYPE="voice" xml:lang="">TEL14</vcard:TEL>
+                    <vcard:EMAIL vcard:TYPE="internet" vcard:OTHERTYPE="OTHERTYPE14" xml:lang="">EMAIL14</vcard:EMAIL>
+                    <vcard:ADR vcard:TYPE="intl postal parcel work" xml:lang="en-US">
+                        <vcard:Pobox xml:lang="">Pobox14</vcard:Pobox>
+                        <vcard:Extadd xml:lang="">Extadd14</vcard:Extadd>
+                        <vcard:Street xml:lang="en-US">Street14</vcard:Street>
+                        <vcard:Locality xml:lang="">Locality14</vcard:Locality>
+                        <vcard:Region xml:lang="">Region14</vcard:Region>
+                        <vcard:Pcode xml:lang="">Pcode14</vcard:Pcode>
+                        <vcard:Country xml:lang="en-US">Country14</vcard:Country>
+                    </vcard:ADR>
+                    <vcard:URL/>
+                    <vcard:LOGO vcard:ENCODING="b" vcard:TYPE="TYPE389" xml:lang="">ZGVmYXVsdA==</vcard:LOGO>
+                    <vcard:NOTE xml:lang="en-US">NOTE14</vcard:NOTE>
+                </cd:ContactDetails>
+            </p:contactDetails>
+        </p:Person>
+        <rdf:Description rdf:about="http://www.oxygenxml.com/">
+            <dc:creator>creator5</dc:creator>
+            <dc:contributor>contributor5</dc:contributor>
+            <dct:created>created5</dct:created>
+            <dct:modified>modified5</dct:modified>
+            <dc:identifier>identifier5</dc:identifier>
+            <dc:source rdf:resource="http://www.oxygenxml.com/"/>
+            <ns6:note>note8</ns6:note>
+        </rdf:Description>
+        <inst:Institution rdf:about="http://www.oxygenxml.com/">
+            <inst:alternativeId>
+                <tcol:TermWithSource>
+                    <tcol:term>term50</tcol:term>
+                    <tcol:source>source50</tcol:source>
+                    <tcol:idInSource>idInSource50</tcol:idInSource>
+                </tcol:TermWithSource>
+            </inst:alternativeId>
+            <inst:hasContact rdf:resource="http://www.oxygenxml.com/">
+                <cd:ContactDetails rdf:about="http://www.oxygenxml.com/">
+                    <vcard:N xml:lang="en-US">
+                        <vcard:Family xml:lang="">Family15</vcard:Family>
+                        <vcard:Given xml:lang="en-US">Given15</vcard:Given>
+                        <vcard:Other xml:lang="en-US">Other15</vcard:Other>
+                        <vcard:Prefix xml:lang="">Prefix15</vcard:Prefix>
+                        <vcard:Suffix xml:lang="">Suffix15</vcard:Suffix>
+                    </vcard:N>
+                    <vcard:ORG xml:lang="en-US">
+                        <vcard:Orgname xml:lang="">Orgname15</vcard:Orgname>
+                        <vcard:Orgunit xml:lang="">Orgunit15</vcard:Orgunit>
+                    </vcard:ORG>
+                    <vcard:TITLE xml:lang="">TITLE15</vcard:TITLE>
+                    <vcard:ROLE xml:lang="en-US">ROLE15</vcard:ROLE>
+                    <vcard:BDAY xml:lang="">BDAY15</vcard:BDAY>
+                    <vcard:TEL vcard:TYPE="voice" xml:lang="en-US">TEL15</vcard:TEL>
+                    <vcard:EMAIL vcard:TYPE="internet" vcard:OTHERTYPE="OTHERTYPE15" xml:lang="en-US">EMAIL15</vcard:EMAIL>
+                    <vcard:ADR vcard:TYPE="intl postal parcel work" xml:lang="">
+                        <vcard:Pobox xml:lang="">Pobox15</vcard:Pobox>
+                        <vcard:Extadd xml:lang="en-US">Extadd15</vcard:Extadd>
+                        <vcard:Street xml:lang="en-US">Street15</vcard:Street>
+                        <vcard:Locality xml:lang="">Locality15</vcard:Locality>
+                        <vcard:Region xml:lang="en-US">Region15</vcard:Region>
+                        <vcard:Pcode xml:lang="en-US">Pcode15</vcard:Pcode>
+                        <vcard:Country xml:lang="en-US">Country15</vcard:Country>
+                    </vcard:ADR>
+                    <vcard:URL/>
+                    <vcard:LOGO vcard:ENCODING="b" vcard:TYPE="TYPE396" xml:lang="">ZGVmYXVsdA==</vcard:LOGO>
+                    <vcard:NOTE xml:lang="">NOTE15</vcard:NOTE>
+                </cd:ContactDetails>
+            </inst:hasContact>
+            <inst:isPartOfInstitution>
+            </inst:isPartOfInstitution>
+            <inst:institutionType rdf:resource="http://rs.tdwg.org/ontology/voc/InstitutionType#administration"/>
+            <inst:acronymOrCoden>
+                <tcol:TermWithSource>
+                    <tcol:term>term51</tcol:term>
+                    <tcol:source>source51</tcol:source>
+                    <tcol:idInSource>idInSource51</tcol:idInSource>
+                </tcol:TermWithSource>
+            </inst:acronymOrCoden>
+        </inst:Institution>
+        <rdf:Description rdf:about="http://www.oxygenxml.com/">
+            <dc:creator>creator6</dc:creator>
+            <dc:contributor>contributor6</dc:contributor>
+            <dct:created>created6</dct:created>
+            <dct:modified>modified6</dct:modified>
+            <dc:identifier>identifier6</dc:identifier>
+            <dc:source rdf:resource="http://www.oxygenxml.com/"/>
+            <ns6:note>note9</ns6:note>
+        </rdf:Description>
+        <inst:Institution rdf:about="http://www.oxygenxml.com/">
+            <inst:alternativeId>
+                <tcol:TermWithSource>
+                    <tcol:term>term52</tcol:term>
+                    <tcol:source>source52</tcol:source>
+                    <tcol:idInSource>idInSource52</tcol:idInSource>
+                </tcol:TermWithSource>
+            </inst:alternativeId>
+            <inst:hasContact rdf:resource="http://www.oxygenxml.com/">
+                <cd:ContactDetails rdf:about="http://www.oxygenxml.com/">
+                    <vcard:N xml:lang="en-US">
+                        <vcard:Family xml:lang="">Family16</vcard:Family>
+                        <vcard:Given xml:lang="en-US">Given16</vcard:Given>
+                        <vcard:Other xml:lang="">Other16</vcard:Other>
+                        <vcard:Prefix xml:lang="">Prefix16</vcard:Prefix>
+                        <vcard:Suffix xml:lang="">Suffix16</vcard:Suffix>
+                    </vcard:N>
+                    <vcard:ORG xml:lang="en-US">
+                        <vcard:Orgname xml:lang="">Orgname16</vcard:Orgname>
+                        <vcard:Orgunit xml:lang="">Orgunit16</vcard:Orgunit>
+                    </vcard:ORG>
+                    <vcard:TITLE xml:lang="">TITLE16</vcard:TITLE>
+                    <vcard:ROLE xml:lang="en-US">ROLE16</vcard:ROLE>
+                    <vcard:BDAY xml:lang="">BDAY16</vcard:BDAY>
+                    <vcard:TEL vcard:TYPE="voice" xml:lang="en-US">TEL16</vcard:TEL>
+                    <vcard:EMAIL vcard:TYPE="internet" vcard:OTHERTYPE="OTHERTYPE16" xml:lang="en-US">EMAIL16</vcard:EMAIL>
+                    <vcard:ADR vcard:TYPE="intl postal parcel work" xml:lang="">
+                        <vcard:Pobox xml:lang="en-US">Pobox16</vcard:Pobox>
+                        <vcard:Extadd xml:lang="en-US">Extadd16</vcard:Extadd>
+                        <vcard:Street xml:lang="">Street16</vcard:Street>
+                        <vcard:Locality xml:lang="en-US">Locality16</vcard:Locality>
+                        <vcard:Region xml:lang="en-US">Region16</vcard:Region>
+                        <vcard:Pcode xml:lang="en-US">Pcode16</vcard:Pcode>
+                        <vcard:Country xml:lang="en-US">Country16</vcard:Country>
+                    </vcard:ADR>
+                    <vcard:URL/>
+                    <vcard:LOGO vcard:ENCODING="b" vcard:TYPE="TYPE424" xml:lang="en-US">ZGVmYXVsdA==</vcard:LOGO>
+                    <vcard:NOTE xml:lang="">NOTE16</vcard:NOTE>
+                </cd:ContactDetails>
+            </inst:hasContact>
+            <inst:isPartOfInstitution>
+            </inst:isPartOfInstitution>
+            <inst:institutionType rdf:resource="http://rs.tdwg.org/ontology/voc/InstitutionType#administration"/>
+            <inst:acronymOrCoden>
+                <tcol:TermWithSource>
+                    <tcol:term>term53</tcol:term>
+                    <tcol:source>source53</tcol:source>
+                    <tcol:idInSource>idInSource53</tcol:idInSource>
+                </tcol:TermWithSource>
+            </inst:acronymOrCoden>
+        </inst:Institution>
+        <rdf:Description rdf:about="http://www.oxygenxml.com/">
+            <dc:creator>creator7</dc:creator>
+            <dc:contributor>contributor7</dc:contributor>
+            <dct:created>created7</dct:created>
+            <dct:modified>modified7</dct:modified>
+            <dc:identifier>identifier7</dc:identifier>
+            <dc:source rdf:resource="http://www.oxygenxml.com/"/>
+            <ns6:note>note10</ns6:note>
+        </rdf:Description>
+        <inst:Institution rdf:about="http://www.oxygenxml.com/">
+            <inst:alternativeId>
+                <tcol:TermWithSource>
+                    <tcol:term>term54</tcol:term>
+                    <tcol:source>source54</tcol:source>
+                    <tcol:idInSource>idInSource54</tcol:idInSource>
+                </tcol:TermWithSource>
+            </inst:alternativeId>
+            <inst:hasContact rdf:resource="http://www.oxygenxml.com/">
+                <cd:ContactDetails rdf:about="http://www.oxygenxml.com/">
+                    <vcard:N xml:lang="en-US">
+                        <vcard:Family xml:lang="">Family17</vcard:Family>
+                        <vcard:Given xml:lang="en-US">Given17</vcard:Given>
+                        <vcard:Other xml:lang="en-US">Other17</vcard:Other>
+                        <vcard:Prefix xml:lang="">Prefix17</vcard:Prefix>
+                        <vcard:Suffix xml:lang="">Suffix17</vcard:Suffix>
+                    </vcard:N>
+                    <vcard:ORG xml:lang="en-US">
+                        <vcard:Orgname xml:lang="">Orgname17</vcard:Orgname>
+                        <vcard:Orgunit xml:lang="en-US">Orgunit17</vcard:Orgunit>
+                    </vcard:ORG>
+                    <vcard:TITLE xml:lang="">TITLE17</vcard:TITLE>
+                    <vcard:ROLE xml:lang="">ROLE17</vcard:ROLE>
+                    <vcard:BDAY xml:lang="">BDAY17</vcard:BDAY>
+                    <vcard:TEL vcard:TYPE="voice" xml:lang="en-US">TEL17</vcard:TEL>
+                    <vcard:EMAIL vcard:TYPE="internet" vcard:OTHERTYPE="OTHERTYPE17" xml:lang="">EMAIL17</vcard:EMAIL>
+                    <vcard:ADR vcard:TYPE="intl postal parcel work" xml:lang="">
+                        <vcard:Pobox xml:lang="en-US">Pobox17</vcard:Pobox>
+                        <vcard:Extadd xml:lang="">Extadd17</vcard:Extadd>
+                        <vcard:Street xml:lang="">Street17</vcard:Street>
+                        <vcard:Locality xml:lang="en-US">Locality17</vcard:Locality>
+                        <vcard:Region xml:lang="en-US">Region17</vcard:Region>
+                        <vcard:Pcode xml:lang="">Pcode17</vcard:Pcode>
+                        <vcard:Country xml:lang="en-US">Country17</vcard:Country>
+                    </vcard:ADR>
+                    <vcard:URL/>
+                    <vcard:LOGO vcard:ENCODING="b" vcard:TYPE="TYPE457" xml:lang="">ZGVmYXVsdA==</vcard:LOGO>
+                    <vcard:NOTE xml:lang="">NOTE17</vcard:NOTE>
+                </cd:ContactDetails>
+            </inst:hasContact>
+            <inst:isPartOfInstitution>
+            </inst:isPartOfInstitution>
+            <inst:institutionType rdf:resource="http://rs.tdwg.org/ontology/voc/InstitutionType#administration"/>
+            <inst:acronymOrCoden>
+                <tcol:TermWithSource>
+                    <tcol:term>term55</tcol:term>
+                    <tcol:source>source55</tcol:source>
+                    <tcol:idInSource>idInSource55</tcol:idInSource>
+                </tcol:TermWithSource>
+            </inst:acronymOrCoden>
+        </inst:Institution>
+        <rdf:Description rdf:about="http://www.oxygenxml.com/">
+            <dc:creator>creator8</dc:creator>
+            <dc:contributor>contributor8</dc:contributor>
+            <dct:created>created8</dct:created>
+            <dct:modified>modified8</dct:modified>
+            <dc:identifier>identifier8</dc:identifier>
+            <dc:source rdf:resource="http://www.oxygenxml.com/"/>
+            <ns6:note>note11</ns6:note>
+        </rdf:Description>
+        <cd:ContactDetails rdf:about="http://www.oxygenxml.com/">
+            <vcard:N xml:lang="">
+                <vcard:Family xml:lang="en-US">Family18</vcard:Family>
+                <vcard:Given xml:lang="">Given18</vcard:Given>
+                <vcard:Other xml:lang="en-US">Other18</vcard:Other>
+                <vcard:Prefix xml:lang="">Prefix18</vcard:Prefix>
+                <vcard:Suffix xml:lang="">Suffix18</vcard:Suffix>
+            </vcard:N>
+            <vcard:ORG xml:lang="en-US">
+                <vcard:Orgname xml:lang="">Orgname18</vcard:Orgname>
+                <vcard:Orgunit xml:lang="">Orgunit18</vcard:Orgunit>
+            </vcard:ORG>
+            <vcard:TITLE xml:lang="en-US">TITLE18</vcard:TITLE>
+            <vcard:ROLE xml:lang="">ROLE18</vcard:ROLE>
+            <vcard:BDAY xml:lang="en-US">BDAY18</vcard:BDAY>
+            <vcard:TEL vcard:TYPE="voice" xml:lang="">TEL18</vcard:TEL>
+            <vcard:EMAIL vcard:TYPE="internet" vcard:OTHERTYPE="OTHERTYPE18" xml:lang="">EMAIL18</vcard:EMAIL>
+            <vcard:ADR vcard:TYPE="intl postal parcel work" xml:lang="en-US">
+                <vcard:Pobox xml:lang="">Pobox18</vcard:Pobox>
+                <vcard:Extadd xml:lang="en-US">Extadd18</vcard:Extadd>
+                <vcard:Street xml:lang="">Street18</vcard:Street>
+                <vcard:Locality xml:lang="">Locality18</vcard:Locality>
+                <vcard:Region xml:lang="en-US">Region18</vcard:Region>
+                <vcard:Pcode xml:lang="en-US">Pcode18</vcard:Pcode>
+                <vcard:Country xml:lang="">Country18</vcard:Country>
+            </vcard:ADR>
+            <vcard:URL/>
+            <vcard:LOGO vcard:ENCODING="b" vcard:TYPE="TYPE475" xml:lang="">ZGVmYXVsdA==</vcard:LOGO>
+            <vcard:NOTE xml:lang="en-US">NOTE18</vcard:NOTE>
+        </cd:ContactDetails>
+        <rdf:Description rdf:about="http://www.oxygenxml.com/">
+            <dc:creator>creator9</dc:creator>
+            <dc:contributor>contributor9</dc:contributor>
+            <dct:created>created9</dct:created>
+            <dct:modified>modified9</dct:modified>
+            <dc:identifier>identifier9</dc:identifier>
+            <dc:source rdf:resource="http://www.oxygenxml.com/"/>
+            <ns6:note>note12</ns6:note>
+        </rdf:Description>
+        <cd:ContactDetails rdf:about="http://www.oxygenxml.com/">
+            <vcard:N xml:lang="en-US">
+                <vcard:Family xml:lang="">Family19</vcard:Family>
+                <vcard:Given xml:lang="en-US">Given19</vcard:Given>
+                <vcard:Other xml:lang="">Other19</vcard:Other>
+                <vcard:Prefix xml:lang="en-US">Prefix19</vcard:Prefix>
+                <vcard:Suffix xml:lang="">Suffix19</vcard:Suffix>
+            </vcard:N>
+            <vcard:ORG xml:lang="en-US">
+                <vcard:Orgname xml:lang="en-US">Orgname19</vcard:Orgname>
+                <vcard:Orgunit xml:lang="">Orgunit19</vcard:Orgunit>
+            </vcard:ORG>
+            <vcard:TITLE xml:lang="">TITLE19</vcard:TITLE>
+            <vcard:ROLE xml:lang="">ROLE19</vcard:ROLE>
+            <vcard:BDAY xml:lang="">BDAY19</vcard:BDAY>
+            <vcard:TEL vcard:TYPE="voice" xml:lang="en-US">TEL19</vcard:TEL>
+            <vcard:EMAIL vcard:TYPE="internet" vcard:OTHERTYPE="OTHERTYPE19" xml:lang="">EMAIL19</vcard:EMAIL>
+            <vcard:ADR vcard:TYPE="intl postal parcel work" xml:lang="en-US">
+                <vcard:Pobox xml:lang="en-US">Pobox19</vcard:Pobox>
+                <vcard:Extadd xml:lang="">Extadd19</vcard:Extadd>
+                <vcard:Street xml:lang="">Street19</vcard:Street>
+                <vcard:Locality xml:lang="">Locality19</vcard:Locality>
+                <vcard:Region xml:lang="">Region19</vcard:Region>
+                <vcard:Pcode xml:lang="">Pcode19</vcard:Pcode>
+                <vcard:Country xml:lang="">Country19</vcard:Country>
+            </vcard:ADR>
+            <vcard:URL/>
+            <vcard:LOGO vcard:ENCODING="b" vcard:TYPE="TYPE499" xml:lang="en-US">ZGVmYXVsdA==</vcard:LOGO>
+            <vcard:NOTE xml:lang="en-US">NOTE19</vcard:NOTE>
+        </cd:ContactDetails>
+        <rdf:Description rdf:about="http://www.oxygenxml.com/">
+            <dc:creator>creator10</dc:creator>
+            <dc:contributor>contributor10</dc:contributor>
+            <dct:created>created10</dct:created>
+            <dct:modified>modified10</dct:modified>
+            <dc:identifier>identifier10</dc:identifier>
+            <dc:source rdf:resource="http://www.oxygenxml.com/"/>
+            <ns6:note>note13</ns6:note>
+        </rdf:Description>
+        <cd:ContactDetails rdf:about="http://www.oxygenxml.com/">
+            <vcard:N xml:lang="">
+                <vcard:Family xml:lang="">Family20</vcard:Family>
+                <vcard:Given xml:lang="en-US">Given20</vcard:Given>
+                <vcard:Other xml:lang="en-US">Other20</vcard:Other>
+                <vcard:Prefix xml:lang="en-US">Prefix20</vcard:Prefix>
+                <vcard:Suffix xml:lang="">Suffix20</vcard:Suffix>
+            </vcard:N>
+            <vcard:ORG xml:lang="en-US">
+                <vcard:Orgname xml:lang="">Orgname20</vcard:Orgname>
+                <vcard:Orgunit xml:lang="en-US">Orgunit20</vcard:Orgunit>
+            </vcard:ORG>
+            <vcard:TITLE xml:lang="en-US">TITLE20</vcard:TITLE>
+            <vcard:ROLE xml:lang="en-US">ROLE20</vcard:ROLE>
+            <vcard:BDAY xml:lang="en-US">BDAY20</vcard:BDAY>
+            <vcard:TEL vcard:TYPE="voice" xml:lang="">TEL20</vcard:TEL>
+            <vcard:EMAIL vcard:TYPE="internet" vcard:OTHERTYPE="OTHERTYPE20" xml:lang="en-US">EMAIL20</vcard:EMAIL>
+            <vcard:ADR vcard:TYPE="intl postal parcel work" xml:lang="en-US">
+                <vcard:Pobox xml:lang="en-US">Pobox20</vcard:Pobox>
+                <vcard:Extadd xml:lang="">Extadd20</vcard:Extadd>
+                <vcard:Street xml:lang="en-US">Street20</vcard:Street>
+                <vcard:Locality xml:lang="">Locality20</vcard:Locality>
+                <vcard:Region xml:lang="en-US">Region20</vcard:Region>
+                <vcard:Pcode xml:lang="en-US">Pcode20</vcard:Pcode>
+                <vcard:Country xml:lang="">Country20</vcard:Country>
+            </vcard:ADR>
+            <vcard:URL/>
+            <vcard:LOGO vcard:ENCODING="b" vcard:TYPE="TYPE514" xml:lang="en-US">ZGVmYXVsdA==</vcard:LOGO>
+            <vcard:NOTE xml:lang="en-US">NOTE20</vcard:NOTE>
+        </cd:ContactDetails>
+        <rdf:Description rdf:about="http://www.oxygenxml.com/">
+            <dc:creator>creator11</dc:creator>
+            <dc:contributor>contributor11</dc:contributor>
+            <dct:created>created11</dct:created>
+            <dct:modified>modified11</dct:modified>
+            <dc:identifier>identifier11</dc:identifier>
+            <dc:source rdf:resource="http://www.oxygenxml.com/"/>
+            <ns6:note>note14</ns6:note>
+        </rdf:Description>
+</rdf:RDF>

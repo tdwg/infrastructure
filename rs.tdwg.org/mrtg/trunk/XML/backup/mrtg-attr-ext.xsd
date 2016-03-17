@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://tdwg.mrtg-attr-ext/">
+<xsd:annotation><xsd:documentation>$Id: mrtg-attr-ext.xsd 1533 2009-10-19 14:55:08Z JoseCuadra $</xsd:documentation></xsd:annotation>
+<xsd:annotation><xsd:documentation>Attribution Vocabulary v0.7 Extension Layer</xsd:documentation></xsd:annotation>
+
+</xsd:schema>

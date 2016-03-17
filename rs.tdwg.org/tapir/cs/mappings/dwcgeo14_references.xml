@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappingReferences for="http://rs.tdwg.org/dwc/geospatial/">
+  <baseConcept id="http://rs.tdwg.org/dwc/geospatial/DecimalLongitude">
+    <ref>
+      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/Longitude"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/geospatial/DecimalLatitude">
+    <ref>
+      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/Latitude"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/geospatial/CoordinateUncertaintyInMeters">
+    <ref>
+      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/CoordinatePrecision"/>
+    </ref>
+  </baseConcept>
+</mappingReferences>

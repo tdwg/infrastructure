@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<outputModel xmlns="http://rs.tdwg.org/tapir/1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="
+    http://rs.tdwg.org/tapir/1.0
+    http://rs.tdwg.org/tapir/1.0/schema/tapir.xsd">
+    <label>TCS 1.01</label>
+    <documentation>Canonical Taxonomic Content Schema model version 1.01.</documentation>
+    <structure>
+
+        <schema location="http://tdwg.napier.ac.uk/TCS_1.01/v101.xsd"/>
+    </structure>
+    <indexingElement path="/DataSet/TaxonConcepts/TaxonConcept"/>
+    <mapping automapping="true"/>
+</outputModel>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+  targetNamespace="http://rs.tdwg.org/ontology/voc/ContactDetails#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:tcd="http://rs.tdwg.org/ontology/voc/ContactDetails#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#"
+  xmlns:tcom="http://rs.tdwg.org/ontology/voc/Common#">
+  <xs:import namespace="http://purl.org/dc/elements/1.1/" schemaLocation="dc.xsd"/>
+  <xs:import namespace="http://purl.org/dc/terms/" schemaLocation="dcterms.xsd"/>
+  <xs:import namespace="http://rs.tdwg.org/ontology/voc/Common#" schemaLocation="tcom.xsd"/>
+  <xs:import namespace="http://www.w3.org/1999/02/22-rdf-syntax-ns#" schemaLocation="ncd.xsd"/>
+  <xs:import namespace="http://www.w3.org/2002/07/owl#" schemaLocation="owl.xsd"/>
+  <xs:import namespace="http://www.w3.org/2001/vcard-rdf/3.0#" schemaLocation="vcard.xsd"/>
+  
+  <xs:element name="ContactDetails" type="tcd:ContactDetailsType">
+  </xs:element>
+
+  <xs:complexType name="ContactDetailsType">
+    <xs:sequence>        
+      <!--Datatype Properties-->
+      <xs:element ref="vCard:N" minOccurs="0"/>
+      <xs:element ref="vCard:ORG" minOccurs="0"/>
+      <xs:element ref="vCard:TITLE" minOccurs="0"/>
+      <xs:element ref="vCard:ROLE" minOccurs="0"/>
+      <xs:element ref="vCard:BDAY" minOccurs="0"/>
+      <xs:element ref="vCard:TEL" minOccurs="0"/>
+      <xs:element ref="vCard:EMAIL" minOccurs="0"/>
+      <xs:element ref="vCard:ADR" minOccurs="0"/>
+      <xs:element ref="vCard:URL" minOccurs="0"/>
+      <xs:element ref="vCard:LOGO" minOccurs="0"/>
+      <xs:element ref="vCard:NOTE" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute ref="rdf:about" use="optional"/>
+  </xs:complexType>
+
+  <xs:complexType name="ContactDetailsLinkType">
+    <xs:sequence>
+      <xs:element ref="tcd:ContactDetails" maxOccurs="1" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute ref="rdf:resource" use="optional"/>
+  </xs:complexType>
+
+
+</xs:schema>

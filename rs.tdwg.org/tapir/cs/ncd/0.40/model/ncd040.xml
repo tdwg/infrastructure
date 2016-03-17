@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<outputModel xmlns="http://rs.tdwg.org/tapir/1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="
+    http://rs.tdwg.org/tapir/1.0
+    http://rs.tdwg.org/tapir/1.0/schema/tapir.xsd">
+    <label>NCD 0.40</label>
+    <documentation>Canonical Natural Collections Descriptions model version 0.40.</documentation>
+    <structure>
+
+        <schema location="http://www.tdwg.org/NCD/NCDv0pt34.xsd"/>
+    </structure>
+    <indexingElement path="/Collections/Collection"/>
+    <mapping automapping="true"/>
+</outputModel>

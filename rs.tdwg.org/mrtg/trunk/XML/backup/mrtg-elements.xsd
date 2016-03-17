@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://tdwg.mrtg-elements/">
+<xsd:annotation><xsd:documentation>$Id: mrtg-elements.xsd 1533 2009-10-19 14:55:08Z JoseCuadra $</xsd:documentation></xsd:annotation>
+<xsd:element name="MetadataLanguage" />
+<xsd:element name="ProviderManagedID" />
+<xsd:element name="Commenter" />
+<xsd:element name="ReviewerName" >
+   <xsd:complexType>
+ 
+    <xsd:attribute name="name"/>
+    <xsd:attribute name="ID"/>
+
+   </xsd:complexType>
+ </xsd:element>
+<xsd:element name="ReviewerComments"/>
+<xsd:element name="subtype"/>
+</xsd:schema>

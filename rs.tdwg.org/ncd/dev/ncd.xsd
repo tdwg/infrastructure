@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="qualified" 
+  targetNamespace="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:tcol="http://rs.tdwg.org/ontology/voc/Collection#"
+  xmlns:tp="http://rs.tdwg.org/ontology/voc/Person#"
+  xmlns:tcd="http://rs.tdwg.org/ontology/voc/ContactDetails#" 
+  xmlns:tinst="http://rs.tdwg.org/ontology/voc/Institution#"
+  xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dcterm="http://purl.org/dc/terms/"
+  xmlns:tcom="http://rs.tdwg.org/ontology/voc/Common#"
+  >
+  <xs:import namespace="http://rs.tdwg.org/ontology/voc/Collection#" schemaLocation="Collection.xsd"/>
+  <xs:import namespace="http://rs.tdwg.org/ontology/voc/Person#" schemaLocation="Person.xsd"/>
+  <xs:import namespace="http://rs.tdwg.org/ontology/voc/Institution#" schemaLocation="Institution.xsd"/>
+  <xs:import namespace="http://rs.tdwg.org/ontology/voc/ContactDetails#" schemaLocation="ContactDetails.xsd"/>
+  <xs:import namespace="http://purl.org/dc/elements/1.1/" schemaLocation="dc.xsd"/>
+  <xs:import namespace="http://purl.org/dc/terms/" schemaLocation="dcterms.xsd"/>
+  <xs:import namespace="http://rs.tdwg.org/ontology/voc/Common#" schemaLocation="tcom.xsd"/>
+  <xs:import namespace="http://www.w3.org/2001/vcard-rdf/3.0#" schemaLocation="vcard.xsd"/>
+  
+  <xs:element name="RDF">
+    <xs:complexType>
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+          <xs:choice>
+            <xs:element ref="tcol:Collection" />
+            <xs:element ref="tcol:DerivedCollection" />
+            <xs:element ref="tp:Person" />
+            <xs:element ref="tinst:Institution" />
+            <xs:element ref="tcd:ContactDetails" />
+          </xs:choice>
+          <xs:element ref="rdf:Description" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="about" type="xs:anyURI"/>
+  <xs:attribute name="resource" type="xs:anyURI"/>
+  
+  <xs:element name="Description" type="rdf:DigitalRecordMetadataType">
+    <xs:annotation>
+    <xs:documentation>
+      This element contains the metadata for the digital record as identified in the rdf:about attribute.
+      Using it implies the digital record has a separate URI to the data containing record identified by the rdf:about in the data element.
+    </xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="DigitalRecordMetadataType">
+    <xs:sequence>
+      <xs:element ref="dc:creator" minOccurs="0" maxOccurs="unbounded">
+        <xs:annotation>
+          <xs:documentation>***</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element ref="dc:contributor" minOccurs="0" maxOccurs="unbounded">
+        <xs:annotation>
+          <xs:documentation>***</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element ref="dcterm:created" minOccurs="0" maxOccurs="unbounded">
+        <xs:annotation>
+          <xs:documentation>***</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element ref="dcterm:modified" minOccurs="0" maxOccurs="unbounded">
+        <xs:annotation>
+          <xs:documentation>***</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element ref="dc:identifier" minOccurs="0" maxOccurs="unbounded">
+        <xs:annotation>
+          <xs:documentation>***</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element ref="dc:source" minOccurs="0" maxOccurs="unbounded">
+        <xs:annotation>
+          <xs:documentation>***</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element ref="tcom:note" minOccurs="0" maxOccurs="unbounded">
+        <xs:annotation>
+          <xs:documentation>***</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="about" type="xs:anyURI" use="required"/>
+  </xs:complexType>
+
+
+  <xs:complexType name="CollectionTypeEnumerationType">
+    <xs:attribute name="resource" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:anyURI">
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/CollectionType#archive">
+            <xs:annotation>
+              <xs:documentation>fixme -</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/CollectionType#culture">
+            <xs:annotation>
+              <xs:documentation>fixme -</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/CollectionType#dormant">
+            <xs:annotation>
+              <xs:documentation>fixme -</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/CollectionType#fossil">
+            <xs:annotation>
+              <xs:documentation>fixme -</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/CollectionType#herbarium">
+            <xs:annotation>
+              <xs:documentation>fixme -</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/CollectionType#library">
+            <xs:annotation>
+              <xs:documentation>fixme -</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/CollectionType#living">
+            <xs:annotation>
+              <xs:documentation>fixme -</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/CollectionType#observations">
+            <xs:annotation>
+              <xs:documentation>fixme -</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/CollectionType#photography">
+            <xs:annotation>
+              <xs:documentation>fixme -</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/CollectionType#preserved">
+            <xs:annotation>
+              <xs:documentation>fixme -</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+
+  <xs:complexType name="PrimaryFocusEnumerationType">
+    <xs:attribute name="resource" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:anyURI">
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/Collection#archive">
+            <xs:annotation>
+              <xs:documentation>fixme -</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/Collection#artwork">
+            <xs:annotation>
+              <xs:documentation>fixme -</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/Collection#bibliographic">
+            <xs:annotation>
+              <xs:documentation>fixme -</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/Collection#expedition">
+            <xs:annotation>
+              <xs:documentation>fixme -</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/Collection#regional">
+            <xs:annotation>
+              <xs:documentation>fixme -</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/Collection#library">
+            <xs:annotation>
+              <xs:documentation>fixme -</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/Collection#taxonomic">
+            <xs:annotation>
+              <xs:documentation>fixme -</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/Collection#temporal">
+            <xs:annotation>
+              <xs:documentation>fixme -</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+  
+  <xs:complexType name="PrimaryPurposeEnumerationType">
+    <xs:attribute name="resource" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:anyURI">
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/Collection#education">
+            <xs:annotation>
+              <xs:documentation>fixme -</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/Collection#exhibition">
+            <xs:annotation>
+              <xs:documentation>fixme -</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/Collection#ornamental">
+            <xs:annotation>
+              <xs:documentation>fixme -</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/Collection#research">
+            <xs:annotation>
+              <xs:documentation>fixme -</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+
+  <xs:complexType name="PreservationMethodEnumerationType">
+    <xs:attribute name="resource" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:anyURI">
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/CollectionType#dried">
+            <xs:annotation>
+              <xs:documentation>fixme -</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+  
+  <xs:complexType name="DevelopmentStatusEnumerationType">
+    <xs:attribute name="resource" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:anyURI">
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/Collection#active">
+            <xs:annotation>
+              <xs:documentation>fixme -</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/Collection#closed">
+            <xs:annotation>
+              <xs:documentation>fixme -</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/Collection#decreasing">
+            <xs:annotation>
+              <xs:documentation>fixme -</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/Collection#lost">
+            <xs:annotation>
+              <xs:documentation>fixme -</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/Collection#passive">
+            <xs:annotation>
+              <xs:documentation>fixme -</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/Collection#sampling">
+            <xs:annotation>
+              <xs:documentation>fixme -</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>          
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/Collection#static">
+            <xs:annotation>
+              <xs:documentation>fixme -</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>    
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+
+  <xs:complexType name="InstitutionTypeEnumerationType">
+    <xs:attribute name="resource" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:anyURI">
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/InstitutionType#administration">
+            <xs:annotation>
+              <xs:documentation>FIXME</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/InstitutionType#association">
+            <xs:annotation>
+              <xs:documentation>FIXME</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/InstitutionType#botanic_garden">
+            <xs:annotation>
+              <xs:documentation>FIXME</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/InstitutionType#field_station">
+            <xs:annotation>
+              <xs:documentation>FIXME</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/InstitutionType#herbarium">
+            <xs:annotation>
+              <xs:documentation>FIXME</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/InstitutionType#horticulture">
+            <xs:annotation>
+              <xs:documentation>FIXME</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/InstitutionType#independent_expert">
+            <xs:annotation>
+              <xs:documentation>FIXME</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/InstitutionType#laboratory">
+            <xs:annotation>
+              <xs:documentation>FIXME</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/InstitutionType#library">
+            <xs:annotation>
+              <xs:documentation>FIXME</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/InstitutionType#museum">
+            <xs:annotation>
+              <xs:documentation>FIXME</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/InstitutionType#nature_education_centre">
+            <xs:annotation>
+              <xs:documentation>FIXME</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/InstitutionType#nature_reserves_management">
+            <xs:annotation>
+              <xs:documentation>FIXME</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/InstitutionType#non_university_college">
+            <xs:annotation>
+              <xs:documentation>FIXME</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/InstitutionType#private_company">
+            <xs:annotation>
+              <xs:documentation>FIXME</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/InstitutionType#research_institute">
+            <xs:annotation>
+              <xs:documentation>FIXME</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/InstitutionType#university">
+            <xs:annotation>
+              <xs:documentation>FIXME</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/InstitutionType#voluntary_observer">
+            <xs:annotation>
+              <xs:documentation>FIXME</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/InstitutionType#zoo_or_aquarium">
+            <xs:annotation>
+              <xs:documentation>FIXME</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+  
+  <xs:complexType name="KingdomTypeEnumerationType">
+    <xs:attribute name="resource" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:anyURI">
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/Collection.rdf#Animalia">
+            <xs:annotation>
+              <xs:documentation>FIXME</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/Collection.rdf#Plantae">
+            <xs:annotation>
+              <xs:documentation>FIXME</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/Collection.rdf#Fungi">
+            <xs:annotation>
+              <xs:documentation>FIXME</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/Collection.rdf#Protista">
+            <xs:annotation>
+              <xs:documentation>FIXME</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/Collection.rdf#Eubacteria">
+            <xs:annotation>
+              <xs:documentation>FIXME</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/Collection.rdf#Archaebacteria">
+            <xs:annotation>
+              <xs:documentation>FIXME</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+  
+  <xs:complexType name="ConservationStatusEnumerationType">
+    <xs:attribute name="resource" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:anyURI">
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/Collection.rdf#McGinley1">
+            <xs:annotation>
+              <xs:documentation>FIXME</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/Collection.rdf#McGinley2">
+            <xs:annotation>
+              <xs:documentation>FIXME</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/Collection.rdf#McGinley3">
+            <xs:annotation>
+              <xs:documentation>FIXME</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/Collection.rdf#McGinley4">
+            <xs:annotation>
+              <xs:documentation>FIXME</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/Collection.rdf#McGinley5">
+            <xs:annotation>
+              <xs:documentation>FIXME</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/Collection.rdf#McGinley6">
+            <xs:annotation>
+              <xs:documentation>FIXME</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/Collection.rdf#McGinley7">
+            <xs:annotation>
+              <xs:documentation>FIXME</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="http://rs.tdwg.org/ontology/voc/Collection.rdf#McGinley8">
+            <xs:annotation>
+              <xs:documentation>FIXME</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+  
+</xs:schema>

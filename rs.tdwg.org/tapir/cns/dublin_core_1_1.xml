@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cns>
+<schema namespace="http://purl.org/dc/elements/1.1/">
+<label>Dublin Core v1.1</label>
+<alias>dc_1_1</alias>
+<location>http://rs.tdwg.org/tapir/cns/dublin_core_1_1.xml</location>
+<concepts>
+<concept id="http://purl.org/dc/elements/1.1/title">
+<alias>title</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+</concept>
+<concept id="http://purl.org/dc/elements/1.1/creator">
+<alias>creator</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+</concept>
+<concept id="http://purl.org/dc/elements/1.1/subject">
+<alias>subject</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+</concept>
+<concept id="http://purl.org/dc/elements/1.1/description">
+<alias>description</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+</concept>
+<concept id="http://purl.org/dc/elements/1.1/publisher">
+<alias>publisher</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+</concept>
+<concept id="http://purl.org/dc/elements/1.1/contributor">
+<alias>contributor</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+</concept>
+<concept id="http://purl.org/dc/elements/1.1/date">
+<alias>date</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+</concept>
+<concept id="http://purl.org/dc/elements/1.1/type">
+<alias>type</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+</concept>
+<concept id="http://purl.org/dc/elements/1.1/format">
+<alias>format</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+</concept>
+<concept id="http://purl.org/dc/elements/1.1/identifier">
+<alias>identifier</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+</concept>
+<concept id="http://purl.org/dc/elements/1.1/source">
+<alias>source</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+</concept>
+<concept id="http://purl.org/dc/elements/1.1/language">
+<alias>language</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+</concept>
+<concept id="http://purl.org/dc/elements/1.1/relation">
+<alias>relation</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+</concept>
+<concept id="http://purl.org/dc/elements/1.1/coverage">
+<alias>coverage</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+</concept>
+<concept id="http://purl.org/dc/elements/1.1/rights">
+<alias>rights</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+</concept>
+</concepts>
+</schema>
+</cns>

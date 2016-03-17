@@ -1,0 +1,84 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified"
+    elementFormDefault="qualified" targetNamespace="http://www.biomoby.org/moby">
+    <xs:element name="Collection">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" name="Simple">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Coordinates">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="LongitudeDecimal">
+                                          <xs:complexType>
+                                            <xs:sequence>
+                                              <xs:element name="Float">
+                                                <xs:complexType>
+                                                  <xs:simpleContent>
+                                                    <xs:extension base="xs:decimal">
+                                                      <xs:attribute name="id" type="xs:string"/>
+                                                      <xs:attribute name="namespace" type="xs:string"/>
+                                                      <xs:attribute name="articleName" type="xs:string"/>
+                                                    </xs:extension>
+                                                  </xs:simpleContent>
+                                                </xs:complexType>
+                                              </xs:element>
+                                            </xs:sequence>
+                                            <xs:attribute name="id" type="xs:string"/>
+                                            <xs:attribute name="namespace" type="xs:string"/>
+                                            <xs:attribute name="articleName" type="xs:string"/>
+                                          </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="LatitudeDecimal">
+                                          <xs:complexType>
+                                            <xs:sequence>
+                                              <xs:element name="Float">
+                                                <xs:complexType>
+                                                  <xs:simpleContent>
+                                                    <xs:extension base="xs:decimal">
+                                                      <xs:attribute name="id" type="xs:string"/>
+                                                      <xs:attribute name="namespace" type="xs:string"/>
+                                                      <xs:attribute name="articleName" type="xs:string"/>
+                                                    </xs:extension>
+                                                  </xs:simpleContent>
+                                                </xs:complexType>
+                                              </xs:element>
+                                            </xs:sequence>
+                                            <xs:attribute name="id" type="xs:string"/>
+                                            <xs:attribute name="namespace" type="xs:string"/>
+                                            <xs:attribute name="articleName" type="xs:string"/>
+                                          </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="SpatialDatum">
+                                          <xs:complexType>
+                                            <xs:sequence>
+                                              <xs:element name="String">
+                                                <xs:complexType>
+                                                  <xs:simpleContent>
+                                                    <xs:extension base="xs:string">
+                                                      <xs:attribute name="id" type="xs:string"/>
+                                                      <xs:attribute name="namespace" type="xs:string"/>
+                                                      <xs:attribute name="articleName" type="xs:string"/>
+                                                    </xs:extension>
+                                                  </xs:simpleContent>
+                                                </xs:complexType>
+                                              </xs:element>
+                                            </xs:sequence>
+                                            <xs:attribute name="id" type="xs:string"/>
+                                            <xs:attribute name="namespace" type="xs:string"/>
+                                            <xs:attribute name="articleName" type="xs:string"/>
+                                          </xs:complexType>
+                                        </xs:element>
+                                      </xs:sequence>
+                                      <xs:attribute name="id" type="xs:string"/>
+                                      <xs:attribute name="namespace" type="xs:string"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="articleName" type="xs:string"/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

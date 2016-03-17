@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archive xmlns="http://rs.tdwg.org/dwc/text/"
+	fileRoot="http://data.gbif.org/download/"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xsi:schemaLocation="http://rs.tdwg.org/dwc/text/ ../../text/tdwg_dwc_text.xsd"
+	>
+	
+	<!-- Here is an example that will define the structure of 
+		
+		 institutionCode,collectionCode,recordedBy,CollectorNumber,count,date,
+		 "Kew gardens, (Kew)",Plant Specimens,Tim Robertson,12,,12,20010101-12:12:01
+		 "Kew gardens, (Kew)",Plant Specimens,Markus Döring,14,,,, 
+	-->
+	<file 
+		rowType="http://rs.tdwg.org/dwc/terms/text/DarwinRecord"
+		location="occurrence-search-123255244678924570.zip"
+		fieldsTerminatedBy=","
+		linesTerminatedBy="\n"
+		fieldsEnclosedBy="&quot;"
+		compression="GZIP" 
+		encoding="UTF-8"
+		ignoreHeaderLines="1">
+			<!-- This is how you set a default value for a field in the file if it is empty -->
+			<field index="3" 
+				   term="http://rs.tdwg.org/dwc/terms/recordNumber" 
+				   type="xs:string" 
+				   default="timrobertson100"/>
+			<field index="4" 
+				   term="http://rs.tdwg.org/dwc/terms/individualCount" 
+				   type="xs:integer" 
+				   default="1"/>
+			<field index="5" 
+				   term="http://rs.tdwg.org/dwc/terms/fieldNumber" 
+				   type="xs:integer"/>
+			<field index="6" 
+				   term="http://rs.tdwg.org/dwc/terms/eventDate" 
+				   type="xs:dateTime"/>
+			<!-- This is how you set a constant value for a field not in the file -->
+			<field term="http://rs.tdwg.org/dwc/terms/datasetID"
+				   type="xs:string"
+				   default="urn:lsid:tim.lsid.tdwg.org:collections:1" />
+	</file>
+</archive>

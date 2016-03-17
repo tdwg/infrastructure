@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+  targetNamespace="http://rs.tdwg.org/ontology/voc/Institution#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:tinst="http://rs.tdwg.org/ontology/voc/Institution#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#"
+  xmlns:tcol="http://rs.tdwg.org/ontology/voc/Collection#" 
+  xmlns:tcd="http://rs.tdwg.org/ontology/voc/ContactDetails#" 
+  xmlns:tcom="http://rs.tdwg.org/ontology/voc/Common#">
+  <xs:import namespace="http://purl.org/dc/elements/1.1/" schemaLocation="dc.xsd"/>
+  <xs:import namespace="http://purl.org/dc/terms/" schemaLocation="dcterms.xsd"/>
+  <xs:import namespace="http://rs.tdwg.org/ontology/voc/Common#" schemaLocation="tcom.xsd"/>
+  <xs:import namespace="http://www.w3.org/1999/02/22-rdf-syntax-ns#" schemaLocation="ncd.xsd"/>
+  <xs:import namespace="http://www.w3.org/2002/07/owl#" schemaLocation="owl.xsd"/>
+  <xs:import namespace="http://www.w3.org/2001/vcard-rdf/3.0#" schemaLocation="vcard.xsd"/>
+  <xs:import namespace="http://rs.tdwg.org/ontology/voc/Collection#" schemaLocation="Collection.xsd"/>
+  <xs:import namespace="http://rs.tdwg.org/ontology/voc/ContactDetails#" schemaLocation="ContactDetails.xsd"/>
+  
+  <xs:element name="Institution">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="alternativeId" type="tcol:TermWithSourceType" maxOccurs="unbounded" minOccurs="0" />
+        <xs:element name="hasContact" maxOccurs="unbounded" minOccurs="0" type="tcd:ContactDetailsLinkType"/>
+        <xs:element name="isPartOfInstitution" minOccurs="0"/>
+        <xs:element name="institutionType" type="rdf:InstitutionTypeEnumerationType" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="acronymOrCoden" type="tcol:TermWithSourceType" minOccurs="0" maxOccurs="unbounded" />
+      </xs:sequence>
+      <xs:attribute ref="rdf:about" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="InstitutionLinkType">
+    <xs:sequence>
+      <xs:element ref="tinst:Institution" maxOccurs="1" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute ref="rdf:resource" use="optional"/>
+  </xs:complexType>
+
+</xs:schema>

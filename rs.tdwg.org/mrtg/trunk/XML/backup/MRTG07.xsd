@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" 
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:xmp="http://ns.adobe.com/xap/1.0/"
+	xmlns:mrtg="http://tdwg.mrtg-elements/">
+	<xs:annotation><xs:documentation>$Id: MRTG07.xsd 1533 2009-10-19 14:55:08Z JoseCuadra $</xs:documentation></xs:annotation>
+ <xs:import namespace="http://purl.org/dc/terms/" schemaLocation="http://dublincore.org/schemas/xmls/qdc/2008/02/11/dcterms.xsd"/>
+  <xs:import namespace="http://ns.adobe.com/xap/1.0/" schemaLocation="xmp.xsd" />
+  <xs:import namespace="http://tdwg.mrtg-elements/" schemaLocation="mrtg-elements.xsd" />
+  <xs:import namespace="http://tdwg.mrtg-mgmt-core/" schemaLocation="mrtg-mgmt-core.xsd" /> 
+  <xs:import namespace="http://tdwg.mrtg-mgmt-ext/" schemaLocation="mrtg-mgmt-ext.xsd" />
+  <xs:import namespace="http://tdwg.mrtg-attr-core/" schemaLocation="mrtg-attr-core.xsd" />
+  <xs:import namespace="http://tdwg.mrtg-attr-ext/" schemaLocation="mrtg-attr-ext.xsd" />
+  
+  <xs:complexType name="MRTG_ItemT">
+      <xs:sequence >
+        <xs:element ref="dcterms:identifier" minOccurs="1" maxOccurs="1"/>
+		<xs:element ref="dcterms:type" minOccurs="1" maxOccurs="1" />
+        <xs:element ref="mrtg:subtype"/>
+		<xs:element ref="dcterms:title" minOccurs="1" maxOccurs="1" />
+		<xs:element ref="xmp:MetadataDate" maxOccurs="1" />
+		<xs:element ref="mrtg:MetadataLanguage" minOccurs="1" maxOccurs="1" />
+		<xs:element ref="mrtg:ProviderManagedID"/>
+		<xs:element ref="xmp:Rating" maxOccurs="1" />
+		<xs:element ref="mrtg:Commenter" maxOccurs="unbounded"/>
+		<xs:element ref="mrtg:ReviewerName" maxOccurs="1" />
+		<xs:choice/>
+		<xs:element ref="mrtg:ReviewerComments" maxOccurs="unbounded" />
+		<xs:choice maxOccurs="unbounded">
+			<xs:element ref="dcterms:modified" maxOccurs="unbounded" />
+      		<xs:element ref="xmp:ModifyDate" maxOccurs="unbounded"/>
+	  	</xs:choice>
+		<xs:element ref="dcterms:available" maxOccurs="1" />
+		<xs:element ref="dcterms:accrualPolicy" maxOccurs="1"/>
+
+	  </xs:sequence>
+  </xs:complexType>
+
+ 
+  <xs:element name="MRTG_Item" type="MRTG_ItemT"/>
+
+
+</xs:schema>
