@@ -1,17 +1,8 @@
 # Virtual aliases for tdwg.org
 
-### Ricardo is nowhere to be found so I setup a blackhole 
-### for his email address rahter than bounce it back
-
-ricardo@tdwg.org	blackhole@tdwg.org
-
 jedi@tdwg.org           mdoering@gbif.org
 
-###
-
-
-postmaster@tdwg.org	admin@gbif.org, mdoering@gbif.org
-
+postmaster@tdwg.org	    admin@gbif.org, mdoering@gbif.org
 
 #
 # TIP team members
@@ -19,13 +10,13 @@ postmaster@tdwg.org	admin@gbif.org, mdoering@gbif.org
 lee@tdwg.org            leebelbin@gmail.com
 stan@tdwg.org           stanblum@gmail.com
 markus@tdwg.org         mdoering@gbif.org
-dave@tdwg.org		dave.matthews@ala.org.au
+dave@tdwg.org		    dave.matthews@ala.org.au
 
 
 #
 # TDWG various roles
 #
-chair@tdwg.org     	csparr@gmail.com
+chair@tdwg.org     	    csparr@gmail.com
 chairman@tdwg.org       csparr@gmail.com
 
 treasurer@tdwg.org     	william_ulate_r@yahoo.com, stanblum@gmail.com
@@ -33,28 +24,30 @@ secretary@tdwg.org    	Mergen.Patricia@gmail.com, d.koureas@nhm.ac.uk, stanblum@
 webmaster@tdwg.org      secretary@tdwg.org, treasurer@tdwg.org
 accounts@tdwg.org       secretary@tdwg.org, treasurer@tdwg.org
 
-#editor@tdwg.org         WEITZMAN@si.edu
+#editor@tdwg.org        WEITZMAN@si.edu
 outreach@tdwg.org       stanblum@gmail.com
 
 stdtrack@tdwg.org       stanblum@gmail.com
 charters@tdwg.org       stanblum@gmail.com
 
-convener@tdwg.org	w.berendsohn@bgbm.org, stk2@cornell.edu, tuco@berkeley.edu, asimpson@usgs.gov, stanblum@gmail.com, G.M.Hagedorn@gmail.com, renato@cria.org.br, leebelbin@gmail.com, richardsk777@gmail, eotuama@gbif.org, WEITZMAN@si.edu, rbeaman@flmnh.ufl.edu, deepreef@bishopmuseum.org, ghw@anbg.gov.au, mole@oeb.harvard.edu, wouter.addink@naturalis.nl, jones@nceas.ucsb.edu, ncellinese@flmnh.ufl.edu, hlapp@nescent.org, steve.baskauf@vanderbilt.edu, jsachs@csee.umbc.edu, morris.bob@gmail.com, jdeck@berkeley.edu
+convener@tdwg.org	    w.berendsohn@bgbm.org, stk2@cornell.edu, tuco@berkeley.edu, asimpson@usgs.gov, stanblum@gmail.com, G.M.Hagedorn@gmail.com, renato@cria.org.br, leebelbin@gmail.com, richardsk777@gmail, eotuama@gbif.org, WEITZMAN@si.edu, rbeaman@flmnh.ufl.edu, deepreef@bishopmuseum.org, ghw@anbg.gov.au, mole@oeb.harvard.edu, wouter.addink@naturalis.nl, jones@nceas.ucsb.edu, ncellinese@flmnh.ufl.edu, hlapp@nescent.org, steve.baskauf@vanderbilt.edu, jsachs@csee.umbc.edu, morris.bob@gmail.com, jdeck@berkeley.edu
 
 xcom@tdwg.org           csparr@gmail.com, d.koureas@nhm.ac.uk, william_ulate_r@yahoo.com, charles.miller@mobot.org, ctsakem@yahoo.fr, dannyvelezv@gmail.com, edalcin@jbrj.org, gkamp@illinois.edu, gordonojwang@gmail.com, james.macklin@gmail.com, ji@ioz.ac.cn,  mergen.patricia@gmail.com, peter.desmet.work@gmail.com, prabha.prabhakar@gmail.com, stanblum@gmail.com, trobertson@gbif.org, whitbread.greg@gmail.com, WiltonA@landcareresearch.co.nz
 
 secretariat@tdwg.org	william_ulate_r@yahoo.com, stanblum@gmail.com
 
-systems@tdwg.org	stanblum@gmail.com, william_ulate_r@yahoo.com
+systems@tdwg.org	    stanblum@gmail.com, william_ulate_r@yahoo.com
 
-root			admin@gbif.org
+root			        admin@gbif.org
 
 # Time and Place Committee
-tardis@tdwg.org    mergen.patricia@gmail.com
+tardis@tdwg.org         mergen.patricia@gmail.com
 
 # CONFERENCE
 # conference used for questions about the program and logistics
 conference@tdwg.org     emata@itcr.ac.cr, gkamp@illinois.edu, paco.pando@gmail.com, mmora@inbio.ac.cr, mvargas@inbio.ac.cr, joel.sachs@agr.gc.ca, csparr@gmail.com, d.koureas@nhm.ac.uk, william_ulate_r@yahoo.com, stanblum@gmail.com
 
 # OCS
-OCS@tdwg.org    gkamp@illinois.edu, william_ulate_r@yahoo.com
+OCS@tdwg.org            gkamp@illinois.edu, william_ulate_r@yahoo.com
+
+testing@tdwg.org	    mblissett@gbif.org
