@@ -5,7 +5,7 @@
 #     git pull
 #     make
 
-postmaster@tdwg.org	admin@gbif.org, mdoering@gbif.org
+postmaster@tdwg.org	sysadmin@gbif.org, mdoering@gbif.org
 
 #
 # TIP team members
@@ -40,7 +40,7 @@ secretariat@tdwg.org	william_ulate_r@yahoo.com, stanblum@gmail.com
 
 systems@tdwg.org	stanblum@gmail.com, william_ulate_r@yahoo.com
 
-root			admin@gbif.org
+root			sysadmin@gbif.org
 
 # Time and Place Committee
 tardis@tdwg.org         mergen.patricia@gmail.com

@@ -11,7 +11,7 @@
 
 
 # Person who should get root's mail. Don't receive mail as root!
-root:		admin@gbif.org
+root:		sysadmin@gbif.org
 
 ## blackhole to silently discard variour email addresses
 blackhole:	/dev/null
