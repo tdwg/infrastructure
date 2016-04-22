@@ -6,7 +6,7 @@
 * Give the repository a longer, human friendly title: `Darwin Core`
 * Initalize the repository with a `README.md`
 * Enable the issue tracker (default)
-* Desactive Wiki until used
+* Deactive Wiki until used
 * Add the standard website next to the description if available: http://rs.tdwg.org/dwc/
 
 ## README
