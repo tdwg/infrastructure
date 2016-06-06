@@ -1,4 +1,4 @@
-soft_bounce = yes
+soft_bounce = no
 
 queue_directory = /var/spool/postfix
 command_directory = /usr/sbin
@@ -27,6 +27,8 @@ sender_canonical_classes = envelope_sender
 recipient_canonical_maps = tcp:localhost:10002
 recipient_canonical_classes= envelope_recipient,header_recipient
 
+greylist_time_limit = 3600
+
 # Restrict email from obvious spam sources
 smtpd_recipient_restrictions =
 		reject_invalid_hostname,
@@ -43,6 +45,7 @@ smtpd_recipient_restrictions =
 		reject_rbl_client bl.spamcop.net,
         	reject_rbl_client b.barracudacentral.org,
 		reject_rbl_client dnsbl.sorbs.net,
+		check_policy_service unix:private/greylist,
 		permit
 
 alias_maps = hash:/etc/aliases, hash:/etc/mailman/aliases
