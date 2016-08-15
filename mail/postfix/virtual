@@ -4,6 +4,7 @@
 #     cd /etc/postfix
 #     git pull
 #     make
+# *If you created or deleted an alias, add or delete it from the spam filtering service*
 
 postmaster@tdwg.org	sysadmin@gbif.org, mdoering@gbif.org
 

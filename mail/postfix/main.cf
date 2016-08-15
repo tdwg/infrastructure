@@ -13,7 +13,7 @@ myorigin = $mydomain
 inet_interfaces = all
 inet_protocols = ipv4
 
-mydestination = $myhostname, localhost.$mydomain, localhost, $mydomain
+mydestination = $myhostname, $mydomain, localhost.$mydomain, localhost
 
 virtual_maps = hash:/etc/postfix/virtual
 
@@ -27,8 +27,13 @@ sender_canonical_classes = envelope_sender
 recipient_canonical_maps = tcp:localhost:10002
 recipient_canonical_classes= envelope_recipient,header_recipient
 
-# Restrict email from obvious spam sources
+# Only allow mail to tdwg.org from the filtering service.
+# Filter all mail (tdwg.org plus lists.tdwg.org) using available services.
+smtpd_restriction_classes = viafilterservice, fromanywhere
+viafilterservice = check_client_access cidr:/etc/postfix/spamfilter, permit
+fromanywhere = permit
 smtpd_recipient_restrictions =
+		check_recipient_access hash:/etc/postfix/recipient_access
 		reject_invalid_hostname,
 		reject_non_fqdn_hostname,
 		reject_non_fqdn_sender,
