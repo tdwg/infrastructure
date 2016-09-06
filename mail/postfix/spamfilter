@@ -10,6 +10,7 @@
 # (Except LAN, for testing)
 # 192.38.28.0/26	PERMIT
 192.38.28.64/26	PERMIT
+127.0.0.0/8	PERMIT
 
 # Reject everyone else
 0.0.0.0/0	REJECT

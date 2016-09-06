@@ -1,5 +1,3 @@
-soft_bounce = no
-
 queue_directory = /var/spool/postfix
 command_directory = /usr/sbin
 daemon_directory = /usr/libexec/postfix
@@ -29,11 +27,16 @@ recipient_canonical_classes= envelope_recipient,header_recipient
 
 # Only allow mail to tdwg.org from the filtering service.
 # Filter all mail (tdwg.org plus lists.tdwg.org) using available services.
-smtpd_restriction_classes = viafilterservice, fromanywhere
+smtpd_restriction_classes =
+		viafilterservice,
+		fromanywhere,
+		subscribers_tdwg,
+		subscribers_tdwg-content,
+		subscribers_tdwg-phylo,
+		subscribers_tdwg-tag,
+		subscribers_test
 viafilterservice = check_client_access cidr:/etc/postfix/spamfilter, permit
-fromanywhere = permit
-smtpd_recipient_restrictions =
-		check_recipient_access hash:/etc/postfix/recipient_access
+fromanywhere =
 		reject_invalid_hostname,
 		reject_non_fqdn_hostname,
 		reject_non_fqdn_sender,
@@ -42,6 +45,7 @@ smtpd_recipient_restrictions =
 		reject_unauth_pipelining,
 		permit_mynetworks,
 		reject_unauth_destination,
+		check_policy_service unix:private/policy-spf,
 		reject_rbl_client zen.spamhaus.org,
 		reject_rbl_client list.dsbl.org,
 		reject_rbl_client korea.services.net,
@@ -49,6 +53,37 @@ smtpd_recipient_restrictions =
         	reject_rbl_client b.barracudacentral.org,
 		reject_rbl_client dnsbl.sorbs.net,
 		permit
+
+smtpd_recipient_restrictions =
+		check_recipient_access hash:/etc/postfix/recipient_access
+
+# Check senders are subscribed to the mailing list to which they are trying
+# to post, and reject them at SMTP time if not.
+# This should avoid backscatter.
+#
+# Mailing list addresses must be specified in check_subscribers, and the
+# checking script in master.cf.
+smtpd_sender_restrictions =
+		check_recipient_access hash:/etc/postfix/check_subscribers,
+		permit
+subscribers_tdwg =
+		check_sender_access tcp:127.0.0.1:26001,
+		permit
+subscribers_tdwg-content =
+		check_sender_access tcp:127.0.0.1:26002,
+		permit
+subscribers_tdwg-phylo =
+		check_sender_access tcp:127.0.0.1:26003,
+		permit
+subscribers_tdwg-tag =
+		check_sender_access tcp:127.0.0.1:26004,
+		permit
+subscribers_test =
+		check_sender_access tcp:127.0.0.1:26005,
+		permit
+
+# Check SPF policy
+policy-spf_time_limit = 3600s
 
 alias_maps = hash:/etc/aliases, hash:/etc/mailman/aliases
 alias_database = hash:/etc/aliases

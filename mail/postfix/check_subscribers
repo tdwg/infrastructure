@@ -1,0 +1,6 @@
+# A mapping for each email address to the Postfix category to filter who can post to it.
+tdwg@lists.tdwg.org		subscribers_tdwg
+tdwg-content@lists.tdwg.org	subscribers_tdwg-content
+tdwg-phylo@lists.tdwg.org	subscribers_tdwg-phylo
+tdwg-tag@lists.tdwg.org		subscribers_tdwg-tag
+test@lists.tdwg.org		subscribers_test
