@@ -14,34 +14,34 @@ postmaster@tdwg.org	sysadmin@gbif.org, mdoering@gbif.org
 lee@tdwg.org            leebelbin@gmail.com
 stan@tdwg.org           stanblum@gmail.com
 markus@tdwg.org         mdoering@gbif.org
-dave@tdwg.org		dave.matthews@ala.org.au
+dave@tdwg.org	          dave.matthews@ala.org.au
 
 #
 # TDWG various roles
 #
-chair@tdwg.org     	csparr@gmail.com
-chairman@tdwg.org       csparr@gmail.com
+chair@tdwg.org     	    d.koureas@nhm.ac.uk
+chairman@tdwg.org       d.koureas@nhm.ac.uk
 
 treasurer@tdwg.org     	william_ulate_r@yahoo.com, stanblum@gmail.com
-secretary@tdwg.org    	Mergen.Patricia@gmail.com, d.koureas@nhm.ac.uk, stanblum@gmail.com
-webmaster@tdwg.org      secretary@tdwg.org, treasurer@tdwg.org
-accounts@tdwg.org       secretary@tdwg.org, treasurer@tdwg.org
+secretary@tdwg.org    	quentingroom@gmail.com, stanblum@gmail.com
+webmaster@tdwg.org      secretary@tdwg.org, treasurer@tdwg.org, stanblum@gmail.com
+accounts@tdwg.org       secretary@tdwg.org, treasurer@tdwg.org, stanblum@gmail.com
 
 #editor@tdwg.org        WEITZMAN@si.edu
-outreach@tdwg.org       stanblum@gmail.com
+outreach@tdwg.org       prabha.prabhakar@gmail.com
 
 stdtrack@tdwg.org       stanblum@gmail.com
 charters@tdwg.org       stanblum@gmail.com
 
-convener@tdwg.org	w.berendsohn@bgbm.org, stk2@cornell.edu, tuco@berkeley.edu, asimpson@usgs.gov, stanblum@gmail.com, G.M.Hagedorn@gmail.com, renato@cria.org.br, leebelbin@gmail.com, richardsk777@gmail, eotuama@gbif.org, WEITZMAN@si.edu, rbeaman@flmnh.ufl.edu, deepreef@bishopmuseum.org, ghw@anbg.gov.au, mole@oeb.harvard.edu, wouter.addink@naturalis.nl, jones@nceas.ucsb.edu, ncellinese@flmnh.ufl.edu, hlapp@nescent.org, steve.baskauf@vanderbilt.edu, jsachs@csee.umbc.edu, morris.bob@gmail.com, jdeck@berkeley.edu
+convener@tdwg.org	      w.berendsohn@bgbm.org, stk2@cornell.edu, tuco@berkeley.edu, asimpson@usgs.gov, stanblum@gmail.com, G.M.Hagedorn@gmail.com, renato@cria.org.br, leebelbin@gmail.com, richardsk777@gmail, eotuama@gbif.org, WEITZMAN@si.edu, rbeaman@flmnh.ufl.edu, deepreef@bishopmuseum.org, ghw@anbg.gov.au, mole@oeb.harvard.edu, wouter.addink@naturalis.nl, jones@nceas.ucsb.edu, ncellinese@flmnh.ufl.edu, hlapp@nescent.org, steve.baskauf@vanderbilt.edu, jsachs@csee.umbc.edu, morris.bob@gmail.com, jdeck@berkeley.edu
 
-xcom@tdwg.org           csparr@gmail.com, d.koureas@nhm.ac.uk, william_ulate_r@yahoo.com, charles.miller@mobot.org, ctsakem@yahoo.fr, dannyvelezv@gmail.com, edalcin@jbrj.org, gkamp@illinois.edu, gordonojwang@gmail.com, james.macklin@gmail.com, ji@ioz.ac.cn,  mergen.patricia@gmail.com, peter.desmet.work@gmail.com, prabha.prabhakar@gmail.com, stanblum@gmail.com, trobertson@gbif.org, whitbread.greg@gmail.com, WiltonA@landcareresearch.co.nz
+xcom@tdwg.org           d.koureas@nhm.ac.uk, James.Macklin@agr.gc.ca, quentingroom@gmail.com, william_ulate_r@yahoo.com, whitbread.greg@gmail.com, martin.kalfatovic@gmail.com, trobertson@gbif.org, prabha.prabhakar@gmail.com, mergen.patricia@gmail.com, lucy.waruingi@acc.or.ke, ji@ioz.ac.cn, wouter.addink@naturalis.nl, balbertini@gmail.com, csparr@gmail.com, wiltona@landcareresearch.co.nz
 
-secretariat@tdwg.org	  d.koureas@nhm.ac.uk, william_ulate_r@yahoo.com, stanblum@gmail.com
+secretariat@tdwg.org	  quentingroom@gmail.com, william_ulate_r@yahoo.com, stanblum@gmail.com
 
-systems@tdwg.org	stanblum@gmail.com, william_ulate_r@yahoo.com
+systems@tdwg.org	      stanblum@gmail.com, william_ulate_r@yahoo.com
 
-root			sysadmin@gbif.org
+root			              sysadmin@gbif.org
 
 # Time and Place Committee
 tardis@tdwg.org         mergen.patricia@gmail.com
