@@ -7,6 +7,8 @@ mail_owner = postfix
 myhostname = lists.tdwg.org
 mydomain = tdwg.org
 myorigin = $mydomain
+mynetworks_style = subnet
+mynetworks = 127.0.0.0/8, 130.225.43.42/32
 
 inet_interfaces = all
 inet_protocols = ipv4
