@@ -53,8 +53,8 @@ fromanywhere =
 		reject_rbl_client korea.services.net,
 		reject_rbl_client bl.spamcop.net,
         	reject_rbl_client b.barracudacentral.org,
-		reject_rbl_client dnsbl.sorbs.net,
 		permit
+#		reject_rbl_client dnsbl.sorbs.net,
 
 smtpd_recipient_restrictions =
 		check_recipient_access hash:/etc/postfix/recipient_access
