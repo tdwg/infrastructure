@@ -6,7 +6,7 @@
 #     make
 # *If you created or deleted an alias, add or delete it from the spam filtering service*
 
-postmaster@tdwg.org	sysadmin@gbif.org, mdoering@gbif.org
+postmaster@tdwg.org	sysadmin@gbif.org, mdoering@gbif.org, treasurer@tdwg.org
 
 #
 # TIP team members
