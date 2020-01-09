@@ -8,6 +8,8 @@
 
 postmaster@tdwg.org	sysadmin@gbif.org, mdoering@gbif.org, treasurer@tdwg.org
 
+root			              systems@gbif.org
+
 #
 # TIP team members
 # 
@@ -17,36 +19,32 @@ markus@tdwg.org         mdoering@gbif.org
 dave@tdwg.org	          dave.matthews@ala.org.au
 
 #
-# TDWG various roles
+# TDWG Officer Roles
 #
 chair@tdwg.org     	    james.macklin@gmail.com
 chairman@tdwg.org       james.macklin@gmail.com
-
 treasurer@tdwg.org     	william_ulate_r@yahoo.com, stanblum@gmail.com
 secretary@tdwg.org    	quentin.groom@plantentuinmeise.be, stanblum@gmail.com
-webmaster@tdwg.org      secretary@tdwg.org, treasurer@tdwg.org, stanblum@gmail.com
-accounts@tdwg.org       secretary@tdwg.org, treasurer@tdwg.org, stanblum@gmail.com
 
-# for Biodiversity Information Science and Standards editor/managing editors. To receive questions.
-editor@tdwg.org        gkamp@illinois.edu, dpaul@fsu.edu
-
+# Subcommittee Chairs
 outreach@tdwg.org       prabha.prabhakar@gmail.com
-
-stdtrack@tdwg.org       stanblum@gmail.com
-charters@tdwg.org       stanblum@gmail.com
-
-conveners@tdwg.org	    a.guentsch@bgbm.org, alan.kv@gmail.com, asimpson@usgs.gov, biodiv_2@achapman.org, deepreef@bishopmuseum.org, eellwood@bio.fsu.edu, gregor.hagedorn@mfn.berlin.de, gtuco.btuco@gmail.com, hanna.koivula@helsinki.fi, hilmar.lapp@duke.edu, james.macklin@agr.gc.ca, jdeck@berkeley.edu, jones@nceas.ucsb.edu, KalfatovicM@si.edu, leebelbin@gmail.com, martin.kalfatovic@gmail.com, mergen.patricia@gmail.com, Miles.Nicholls@csiro.au, mole@morris.net, ncellinese@flmnh.ufl.edu, niall.beard@manchester.ac.uk, pando@rjb.csic.es, prabha.prabhakar@gmail.com, ram@cs.umb.edu, renato@cria.org.br, rbeaman@gmail.com, rdstevenson10@gmail.com, reedd@austin.utexas.edu, rwalls@cyverse.org, saraiva@usp.br, stanblum@gmail.com, steve.baskauf@vanderbilt.edu, stk2@cornell.edu, trobertson@gbif.org, w.berendsohn@bgbm.org, whitbread.greg@gmail.com
-
-xcom@tdwg.org           James.Macklin@agr.gc.ca, dpaul@fsu.edu, quentin.groom@plantentuinmeise.be, william_ulate_r@yahoo.com, mole@morris.net, crinaldo@oeb.harvard.edu, trobertson@gbif.org, prabha.prabhakar@gmail.com, mergen.patricia@gmail.com, B.Daly@sanbi.org.za, ji@ioz.ac.cn, wouter.addink@naturalis.nl, balbertini@gmail.com, Simon.Checksfield@csiro.au, littleh@si.edu, gkamp@illinois.edu, stanblum@gmail.com
-
-secretariat@tdwg.org	  quentin.groom@plantentuinmeise.be, william_ulate_r@yahoo.com, stanblum@gmail.com
-
-systems@tdwg.org	      stanblum@gmail.com, william_ulate_r@yahoo.com
-
-root			              systems@gbif.org
-
 # Time and Place Committee
 tardis@tdwg.org         mergen.patricia@gmail.com
+
+# EXECUTIVE COMMITTEE
+xcom@tdwg.org           James.Macklin@agr.gc.ca, dpaul@fsu.edu, quentin.groom@plantentuinmeise.be, william_ulate_r@yahoo.com, mole@morris.net, crinaldo@oeb.harvard.edu, trobertson@gbif.org, prabha.prabhakar@gmail.com, mergen.patricia@gmail.com, B.Daly@sanbi.org.za, ji@ioz.ac.cn, wouter.addink@naturalis.nl, balbertini@gmail.com, Simon.Checksfield@csiro.au, littleh@si.edu, gkamp@illinois.edu, stanblum@gmail.com
+
+
+# OPERATIONAL ROLES
+secretariat@tdwg.org	  quentin.groom@plantentuinmeise.be, william_ulate_r@yahoo.com, stanblum@gmail.com
+systems@tdwg.org	      stanblum@gmail.com, william_ulate_r@yahoo.com
+webmaster@tdwg.org      secretary@tdwg.org, treasurer@tdwg.org, stanblum@gmail.com
+
+# Interest & Task Group Conveners
+conveners@tdwg.org	    a.guentsch@bgbm.org, alan.kv@gmail.com, asimpson@usgs.gov, biodiv_2@achapman.org, deepreef@bishopmuseum.org, eellwood@bio.fsu.edu, gregor.hagedorn@mfn.berlin.de, gtuco.btuco@gmail.com, hanna.koivula@helsinki.fi, hilmar.lapp@duke.edu, james.macklin@agr.gc.ca, jdeck@berkeley.edu, jones@nceas.ucsb.edu, KalfatovicM@si.edu, leebelbin@gmail.com, martin.kalfatovic@gmail.com, mergen.patricia@gmail.com, Miles.Nicholls@csiro.au, mole@morris.net, ncellinese@flmnh.ufl.edu, niall.beard@manchester.ac.uk, pando@rjb.csic.es, prabha.prabhakar@gmail.com, ram@cs.umb.edu, renato@cria.org.br, rbeaman@gmail.com, rdstevenson10@gmail.com, reedd@austin.utexas.edu, rwalls@cyverse.org, saraiva@usp.br, stanblum@gmail.com, steve.baskauf@vanderbilt.edu, stk2@cornell.edu, trobertson@gbif.org, w.berendsohn@bgbm.org, whitbread.greg@gmail.com
+
+# BISS - Biodiversity Information Science and Standards editor/managing editors. To receive questions.
+editor@tdwg.org        gkamp@illinois.edu, dpaul@fsu.edu, gnelson@floridamuseum.ufl.edu
 
 # CONFERENCE
 # conference used by potential participants for questions about the program and logistics
@@ -58,10 +56,16 @@ conference@tdwg.org     gkamp@illinois.edu, artarip@unav.es, Ely.Wallis@csiro.au
 # conf-submissions to receive submissions and distributed to line editors
 # conf-submissions        joel.sachs@agr.gc.ca, james.macklin@gmail.com, gkamp@illinois.edu
 
+
 # SurveyMonkey registered email shared among people who create surveys
 cheeky@tdwg.org    gkamp@illinois.edu, stanblum@gmail.com
 
 # OCS
 OCS@tdwg.org            gkamp@illinois.edu, william_ulate_r@yahoo.com
+
+# Not used; using secretary and secretariat
+stdtrack@tdwg.org       stanblum@gmail.com
+charters@tdwg.org       stanblum@gmail.com
+accounts@tdwg.org       secretary@tdwg.org, treasurer@tdwg.org, stanblum@gmail.com
 
 testing@tdwg.org	mblissett@gbif.org
