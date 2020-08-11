@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<searchTemplate xmlns="http://rs.tdwg.org/tapir/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://rs.tdwg.org/tapir/1.0 http://rs.tdwg.org/tapir/1.0/schema/tapir.xsd">
-<label>Full Darwin terms record through collection id/collection code/genus/species</label>
-<documentation>Return a full Darwin Core terms record with optional collection id, collection code, genus and specific epithet parameters.</documentation>
-
-<externalOutputModel location="http://rs.tdwg.org/tapir/cs/dwc/terms/2009-09-23/model/dwc_simple.xml"/>
-
-<filter><and><equals><concept id="http://rs.tdwg.org/dwc/terms/institutionCode"/><parameter name="ins_code"/></equals><equals><concept id="http://rs.tdwg.org/dwc/terms/collectionID"/><parameter name="col_id"/></equals><equals><concept id="http://rs.tdwg.org/dwc/terms/collectionCode"/><parameter name="col_code"/></equals><equals><concept id="http://rs.tdwg.org/dwc/terms/genus"/><parameter name="genus"/></equals><equals><concept id="http://rs.tdwg.org/dwc/terms/specificEpithet"/><parameter name="species"/></equals><equals><concept id="http://rs.tdwg.org/dwc/terms/infraspecificEpithet"/><parameter name="subspecies"/></equals></and></filter>
-</searchTemplate>

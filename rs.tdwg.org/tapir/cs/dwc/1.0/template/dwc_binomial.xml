@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<searchTemplate xmlns="http://rs.tdwg.org/tapir/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://rs.tdwg.org/tapir/1.0 http://rs.tdwg.org/tapir/1.0/schema/tapir.xsd">
-<label>Full Darwin 1.0 record based on genus/species</label>
-<documentation>Return a full Darwin Core 1.0 record given genus and specific epithet parameters.</documentation>
-
-<externalOutputModel location="http://rs.tdwg.org/tapir/cs/dwc/1.0/model/dwc.xml"/>
-
-<filter><and><equals><concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/Genus"/><parameter name="genus"/></equals><equals><concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/Species"/><parameter name="species"/></equals></and></filter>
-</searchTemplate>
