@@ -88,5 +88,29 @@ scache    unix  -       -       n       -       1       scache
 127.0.0.1:26005 inet    n       n       n       -       1       spawn
 	user=mailman argv=/usr/lib/mailman/scripts/check_subscriber test
 
+127.0.0.1:26006 inet    n       n       n       -       1       spawn
+        user=mailman argv=/usr/lib/mailman/scripts/check_subscriber dwc-material-sample
+
+127.0.0.1:26007 inet    n       n       n       -       1       spawn
+        user=mailman argv=/usr/lib/mailman/scripts/check_subscriber dwc-mixs
+
+127.0.0.1:26008 inet    n       n       n       -       1       spawn
+        user=mailman argv=/usr/lib/mailman/scripts/check_subscriber mailman
+
+127.0.0.1:26009 inet    n       n       n       -       1       spawn
+        user=mailman argv=/usr/lib/mailman/scripts/check_subscriber phenology
+
+127.0.0.1:26010 inet    n       n       n       -       1       spawn
+        user=mailman argv=/usr/lib/mailman/scripts/check_subscriber tdwg-gbwg
+
+127.0.0.1:26011 inet    n       n       n       -       1       spawn
+        user=mailman argv=/usr/lib/mailman/scripts/check_subscriber tdwg-humboldt
+
+127.0.0.1:26012 inet    n       n       n       -       1       spawn
+        user=mailman argv=/usr/lib/mailman/scripts/check_subscriber tdwg-mids
+
+127.0.0.1:26013 inet    n       n       n       -       1       spawn
+        user=mailman argv=/usr/lib/mailman/scripts/check_subscriber tdwg-mobs
+
 policy-spf  unix  -       n       n       -       0       spawn
      user=nobody argv=/usr/libexec/postfix/policyd-spf

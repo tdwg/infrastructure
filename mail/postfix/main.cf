@@ -1,19 +1,24 @@
-queue_directory = /var/spool/postfix
-command_directory = /usr/sbin
-daemon_directory = /usr/libexec/postfix
-data_directory = /var/lib/postfix
-mail_owner = postfix
+biff = no
+
+# GBIF network doesn't use IPv6
+inet_protocols = ipv4
+
+# Accept mail from the network
+inet_interfaces = all
 
 myhostname = lists.tdwg.org
 mydomain = tdwg.org
 myorigin = $mydomain
 mynetworks_style = subnet
 mynetworks = 127.0.0.0/8, 130.225.43.42/32
-
-inet_interfaces = all
-inet_protocols = ipv4
-
 mydestination = $myhostname, $mydomain, localhost.$mydomain, localhost
+smtp_tls_security_level = may
+
+# OpenDKIM
+smtpd_milters = inet:localhost:8891
+non_smtpd_milters = $smtpd_milters
+milter_default_action = accept
+internal_mail_filter_classes = bounce
 
 virtual_maps = hash:/etc/postfix/virtual
 
@@ -83,13 +88,44 @@ subscribers_tdwg-tag =
 subscribers_test =
 		check_sender_access tcp:127.0.0.1:26005,
 		permit
+subscribers_dwc-material-sample =
+		check_sender_access tcp:127.0.0.1:26006,
+		permit
+subscribers_dwc-mixs =
+		check_sender_access tcp:127.0.0.1:26007,
+		permit
+subscribers_mailman =
+		check_sender_access tcp:127.0.0.1:26008,
+		permit
+subscribers_phenology =
+		check_sender_access tcp:127.0.0.1:26009,
+		permit
+subscribers_tdwg-gbwg =
+		check_sender_access tcp:127.0.0.1:26010,
+		permit
+subscribers_tdwg-humboldt =
+		check_sender_access tcp:127.0.0.1:26011,
+		permit
+subscribers_tdwg-mids =
+		check_sender_access tcp:127.0.0.1:26012,
+		permit
+subscribers_tdwg-mobs =
+		check_sender_access tcp:127.0.0.1:26013,
+		permit
 
 # Check SPF policy
 policy-spf_time_limit = 3600s
 
 alias_maps = hash:/etc/aliases, hash:/etc/mailman/aliases
 alias_database = hash:/etc/aliases
+
+# Boring default stuff
 sendmail_path = /usr/sbin/sendmail.postfix
+html_directory = no
+setgid_group = postdrop
+command_directory = /usr/sbin
+daemon_directory = /usr/libexec/postfix
 newaliases_path = /usr/bin/newaliases.postfix
 mailq_path = /usr/bin/mailq.postfix
-setgid_group = postdrop
+queue_directory = /var/spool/postfix
+mail_owner = postfix

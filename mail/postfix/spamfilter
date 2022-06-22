@@ -1,16 +1,17 @@
 # Allow MX Guard Dog servers access
 # List is from https://mxguarddog.com/faq.ip_list/#start
-122.103.250.12	PERMIT
-64.38.239.80/29	PERMIT
-66.37.25.64/28	PERMIT
-85.195.83.79	PERMIT
+64.38.239.80/29   PERMIT
+66.37.25.64/28    PERMIT
+207.81.189.178/32 PERMIT
+66.228.130.216/29 PERMIT
 
-# Allow GBIF IP ranges
-130.226.238.0/24	PERMIT
-# (Except LAN, for testing)
-# 192.38.28.0/26	PERMIT
-192.38.28.64/26	PERMIT
-127.0.0.0/8	PERMIT
+# GBIF IP ranges
+#130.225.45.0/24  PERMIT
+#130.226.238.0/24 PERMIT
+#192.38.28.64/26  PERMIT
+
+# Localhost
+127.0.0.0/8       PERMIT
 
 # Reject everyone else
-0.0.0.0/0	REJECT
+0.0.0.0/0         REJECT
