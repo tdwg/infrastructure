@@ -48,7 +48,7 @@ conveners@tdwg.org	    a.guentsch@bgbm.org, alan.kv@gmail.com, annethessen@gmail
 editor@tdwg.org         gkamp@illinois.edu, ely.wallis@csiro.au, tina.loo@naturalis.nl
 
 # People with the password for this Zoom ID can manage our Zoom account
-mtg-kahuna@tdwg.org     william_ulate_r@yahoo.com, stanblum@gmail.com, dlpaul@illinois.edu, gkamp@illinois.edu
+mtg-kahuna@tdwg.org     william_ulate_r@yahoo.com, stanblum@gmail.com, dlpaul@illinois.edu, gkamp@illinois.edu, visotheary.ung@mnhn.fr
 
 
 # CONFERENCE
@@ -59,11 +59,8 @@ mtg-kahuna@tdwg.org     william_ulate_r@yahoo.com, stanblum@gmail.com, dlpaul@il
 conf-organizers         vijay.barve@gmail.com, jitendra.gaikwad@uni-jena.de, k.hristova@pensoft.net, gkamp@illinois.edu, dlpaul@illinois.edu, ely.wallis@csiro.au, visotheary.ung@mnhn.fr, william_ulate_r@yahoo.com, stanblum@gmail.com
 
 # Zoom accounts for Conferences
-track1@tdwg.org    stanblum@gmail.com
-# k.hristova@pensoft.net, gkamp@illinois.edu, dlpaul@illinois.edu, ely.wallis@csiro.au, visotheary.ung@mnhn.fr, littleh@si.edu, james.macklin@gmail.com, william_ulate_r@yahoo.com, stanblum@gmail.com
-
-track2@tdwg.org    stanblum@gmail.com
-# k.hristova@pensoft.net, gkamp@illinois.edu, dlpaul@illinois.edu, ely.wallis@csiro.au, visotheary.ung@mnhn.fr, littleh@si.edu, james.macklin@gmail.com, william_ulate_r@yahoo.com, stanblum@gmail.com
+track1@tdwg.org    k.hristova@pensoft.net, gkamp@illinois.edu, dlpaul@illinois.edu, ely.wallis@csiro.au, visotheary.ung@mnhn.fr, littleh@si.edu, james.macklin@gmail.com, william_ulate_r@yahoo.com, stanblum@gmail.com
+track2@tdwg.org    k.hristova@pensoft.net, gkamp@illinois.edu, dlpaul@illinois.edu, ely.wallis@csiro.au, visotheary.ung@mnhn.fr, littleh@si.edu, james.macklin@gmail.com, william_ulate_r@yahoo.com, stanblum@gmail.com
 
 
 # code of conduct committee
