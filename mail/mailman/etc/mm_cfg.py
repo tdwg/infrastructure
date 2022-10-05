@@ -80,6 +80,7 @@ MAILMAN_GID = grp.getgrnam('mailman')[2]
 
 DEFAULT_URL_HOST   = 'lists.tdwg.org'
 DEFAULT_EMAIL_HOST = 'lists.tdwg.org'
+DEFAULT_URL_PATTERN = 'https://%s/mailman/'
 
 # Because we've overriden the virtual hosts above add_virtualhost
 # MUST be called after they have been defined.

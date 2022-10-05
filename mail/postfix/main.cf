@@ -41,7 +41,15 @@ smtpd_restriction_classes =
 		subscribers_tdwg-content,
 		subscribers_tdwg-phylo,
 		subscribers_tdwg-tag,
-		subscribers_test
+		subscribers_test,
+		subscribers_dwc-material-sample,
+		subscribers_dwc-mixs,
+		subscribers_mailman,
+		subscribers_phenology,
+		subscribers_tdwg-gbwg,
+		subscribers_tdwg-humboldt,
+		subscribers_tdwg-mids,
+		subscribers_tdwg-mobs,
 viafilterservice = check_client_access cidr:/etc/postfix/spamfilter, permit
 fromanywhere =
 		reject_invalid_hostname,
@@ -70,48 +78,20 @@ smtpd_recipient_restrictions =
 #
 # Mailing list addresses must be specified in check_subscribers, and the
 # checking script in master.cf.
-smtpd_sender_restrictions =
-		check_recipient_access hash:/etc/postfix/check_subscribers,
-		permit
-subscribers_tdwg =
-		check_sender_access tcp:127.0.0.1:26001,
-		permit
-subscribers_tdwg-content =
-		check_sender_access tcp:127.0.0.1:26002,
-		permit
-subscribers_tdwg-phylo =
-		check_sender_access tcp:127.0.0.1:26003,
-		permit
-subscribers_tdwg-tag =
-		check_sender_access tcp:127.0.0.1:26004,
-		permit
-subscribers_test =
-		check_sender_access tcp:127.0.0.1:26005,
-		permit
-subscribers_dwc-material-sample =
-		check_sender_access tcp:127.0.0.1:26006,
-		permit
-subscribers_dwc-mixs =
-		check_sender_access tcp:127.0.0.1:26007,
-		permit
-subscribers_mailman =
-		check_sender_access tcp:127.0.0.1:26008,
-		permit
-subscribers_phenology =
-		check_sender_access tcp:127.0.0.1:26009,
-		permit
-subscribers_tdwg-gbwg =
-		check_sender_access tcp:127.0.0.1:26010,
-		permit
-subscribers_tdwg-humboldt =
-		check_sender_access tcp:127.0.0.1:26011,
-		permit
-subscribers_tdwg-mids =
-		check_sender_access tcp:127.0.0.1:26012,
-		permit
-subscribers_tdwg-mobs =
-		check_sender_access tcp:127.0.0.1:26013,
-		permit
+smtpd_sender_restrictions = check_recipient_access hash:/etc/postfix/check_subscribers, permit
+subscribers_tdwg =                check_sender_access tcp:127.0.0.1:26001, permit
+subscribers_tdwg-content =        check_sender_access tcp:127.0.0.1:26002, permit
+subscribers_tdwg-phylo =          check_sender_access tcp:127.0.0.1:26003, permit
+subscribers_tdwg-tag =            check_sender_access tcp:127.0.0.1:26004, permit
+subscribers_test =                check_sender_access tcp:127.0.0.1:26005, permit
+subscribers_dwc-material-sample = check_sender_access tcp:127.0.0.1:26006, permit
+subscribers_dwc-mixs =            check_sender_access tcp:127.0.0.1:26007, permit
+subscribers_mailman =             check_sender_access tcp:127.0.0.1:26008, permit
+subscribers_phenology =           check_sender_access tcp:127.0.0.1:26009, permit
+subscribers_tdwg-gbwg =           check_sender_access tcp:127.0.0.1:26010, permit
+subscribers_tdwg-humboldt =       check_sender_access tcp:127.0.0.1:26011, permit
+subscribers_tdwg-mids =           check_sender_access tcp:127.0.0.1:26012, permit
+subscribers_tdwg-mobs =           check_sender_access tcp:127.0.0.1:26013, permit
 
 # Check SPF policy
 policy-spf_time_limit = 3600s
