@@ -1,0 +1,20 @@
+smtpd_banner = $myhostname ESMTP $mail_name
+biff = no
+
+# GBIF network doesn't use IPv6
+inet_protocols = ipv4
+
+# Strip the hostname
+masquerade_domains = tdwg.org
+masquerade_classes = envelope_sender, envelope_recipient
+
+# Accept mail only from users on this server
+mynetworks_style = host
+inet_interfaces = loopback-only
+
+# Forward mail received from this machine to the GBIF SMTP server
+#myhostname = x.tdwg.org
+myorigin = $mydomain
+mydestination =
+relayhost = [lists.tdwg.org]
+alias_maps = hash:/etc/aliases
