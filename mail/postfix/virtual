@@ -21,8 +21,8 @@ dave@tdwg.org	          dave.matthews@ala.org.au
 #
 # TDWG Officer Roles
 #
-chair@tdwg.org     	    dlpaul@illinois.edu
-chairman@tdwg.org       dlpaul@illinois.edu
+chair@tdwg.org     	    ely.wallis@csiro.au
+chairman@tdwg.org       ely.wallis@csiro.au
 treasurer@tdwg.org     	william_ulate_r@yahoo.com, stanblum@gmail.com
 secretary@tdwg.org    	visotheary.ung@mnhn.fr, stanblum@gmail.com
 
@@ -32,7 +32,7 @@ outreach@tdwg.org       mareike.petersen@mfn.berlin
 tardis@tdwg.org         mergen.patricia@gmail.com
 
 # EXECUTIVE COMMITTEE
-xcom@tdwg.org           ely.wallis@csiro.au, dbloom@vertnet.org, visotheary.ung@mnhn.fr, william_ulate_r@yahoo.com, steve.baskauf@vanderbilt.edu, james.macklin@gmail.com, Mareike.Petersen@mfn.berlin, mergen.patricia@gmail.com, trobertson@gbif.org, ianicus.za@gmail.com, vijay.barve@gmail.com, nakazato@dbcls.rois.ac.jp, l.livermore@nhm.ac.uk, pzermoglio@gmail.com, chandra.earl@bishopmuseum.org, shelley.james@dbca.wa.gov.au, gkamp@illinois.edu, stanblum@gmail.com, tina.loo@naturalis.nl, dlpaul@illinois.edu
+xcom@tdwg.org           ely.wallis@csiro.au, dbloom@vertnet.org, visotheary.ung@mnhn.fr, william_ulate_r@yahoo.com, steve.baskauf@vanderbilt.edu, james.macklin@gmail.com, Mareike.Petersen@mfn.berlin, mergen.patricia@gmail.com, trobertson@gbif.org, ianicus.za@gmail.com, vijay.barve@gmail.com, nakazato@dbcls.rois.ac.jp, l.livermore@nhm.ac.uk, pzermoglio@gmail.com, chandra.earl@bishopmuseum.org, shelley.james@dbca.wa.gov.au, gkamp@illinois.edu, stanblum@gmail.com, tina.loo@naturalis.nl
 
 
 # OPERATIONAL ROLES
@@ -46,8 +46,15 @@ conveners@tdwg.org	    a.guentsch@bgbm.org, alan.kv@gmail.com, annethessen@gmail
 # BISS - Biodiversity Information Science and Standards editor/managing editors. To receive questions.
 editor@tdwg.org         gkamp@illinois.edu, ely.wallis@csiro.au, tina.loo@naturalis.nl
 
-# People with the password for this Zoom ID can manage our Zoom account
-mtg-kahuna@tdwg.org     william_ulate_r@yahoo.com, stanblum@gmail.com, dlpaul@illinois.edu, gkamp@illinois.edu, visotheary.ung@mnhn.fr
+# ZOOM accounts:  
+# the first below is the owner (can configure other users, but only has basic hosting license)
+mtg-kahuna@tdwg.org     william_ulate_r@yahoo.com, stanblum@gmail.com, gkamp@illinois.edu, visotheary.ung@mnhn.fr
+
+# xcom@tdwg.org (see members above) is also a Zoom account with license to host a meeting
+
+# for Conferences -- can host a meeting session when licensed
+track1@tdwg.org    k.hristova@pensoft.net, gkamp@illinois.edu, ely.wallis@csiro.au, visotheary.ung@mnhn.fr, littleh@si.edu, james.macklin@gmail.com, william_ulate_r@yahoo.com, stanblum@gmail.com
+track2@tdwg.org    k.hristova@pensoft.net, gkamp@illinois.edu, ely.wallis@csiro.au, visotheary.ung@mnhn.fr, littleh@si.edu, james.macklin@gmail.com, william_ulate_r@yahoo.com, stanblum@gmail.com
 
 
 # CONFERENCE
@@ -56,11 +63,6 @@ mtg-kahuna@tdwg.org     william_ulate_r@yahoo.com, stanblum@gmail.com, dlpaul@il
 
 # conf-organizers the program and local organizing committees
 conf-organizers         vijay.barve@gmail.com, jitendra.gaikwad@uni-jena.de, k.hristova@pensoft.net, m.kolesnikova@pensoft.net, gkamp@illinois.edu, dlpaul@illinois.edu, ely.wallis@csiro.au, visotheary.ung@mnhn.fr, william_ulate_r@yahoo.com, stanblum@gmail.com
-
-# Zoom accounts for Conferences
-track1@tdwg.org    k.hristova@pensoft.net, gkamp@illinois.edu, dlpaul@illinois.edu, ely.wallis@csiro.au, visotheary.ung@mnhn.fr, littleh@si.edu, james.macklin@gmail.com, william_ulate_r@yahoo.com, stanblum@gmail.com
-track2@tdwg.org    k.hristova@pensoft.net, gkamp@illinois.edu, dlpaul@illinois.edu, ely.wallis@csiro.au, visotheary.ung@mnhn.fr, littleh@si.edu, james.macklin@gmail.com, william_ulate_r@yahoo.com, stanblum@gmail.com
-
 
 # code of conduct committee
 ccc@tdwg.org            gkamp@illinois.edu, dlpaul@illinois.edu, ely.wallis@csiro.au, visotheary.ung@mnhn.fr
