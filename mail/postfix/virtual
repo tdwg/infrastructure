@@ -23,7 +23,7 @@ dave@tdwg.org	          dave.matthews@ala.org.au
 #
 chair@tdwg.org     	    ely.wallis@csiro.au
 chairman@tdwg.org       ely.wallis@csiro.au
-treasurer@tdwg.org     	william_ulate_r@yahoo.com, stanblum@gmail.com
+treasurer@tdwg.org     	stanblum@gmail.com
 secretary@tdwg.org    	visotheary.ung@mnhn.fr, stanblum@gmail.com
 
 # Subcommittee Chairs with an email alias (addressable by role)
@@ -32,12 +32,12 @@ outreach@tdwg.org       mareike.petersen@mfn.berlin
 tardis@tdwg.org         mergen.patricia@gmail.com, chandra.earl@bishopmuseum.org
 
 # EXECUTIVE COMMITTEE
-xcom@tdwg.org           ely.wallis@csiro.au, dbloom@vertnet.org, visotheary.ung@mnhn.fr, william_ulate_r@yahoo.com, steve.baskauf@vanderbilt.edu, james.macklin@gmail.com, Mareike.Petersen@mfn.berlin, mergen.patricia@gmail.com, trobertson@gbif.org, ianicus.za@gmail.com, vijay.barve@gmail.com, nakazato.tkr@gmail.com, l.livermore@nhm.ac.uk, pzermoglio@gmail.com, chandra.earl@bishopmuseum.org, shelley.james@dbca.wa.gov.au, gkamp@illinois.edu, stanblum@gmail.com
+xcom@tdwg.org           ely.wallis@csiro.au, dbloom@vertnet.org, visotheary.ung@mnhn.fr, steve.baskauf@vanderbilt.edu, james.macklin@gmail.com, Mareike.Petersen@mfn.berlin, mergen.patricia@gmail.com, trobertson@gbif.org, ianicus.za@gmail.com, vijay.barve@gmail.com, nakazato.tkr@gmail.com, l.livermore@nhm.ac.uk, pzermoglio@gmail.com, chandra.earl@bishopmuseum.org, shelley.james@dbca.wa.gov.au, gkamp@illinois.edu, stanblum@gmail.com
 
 
 # OPERATIONAL ROLES
-secretariat@tdwg.org	  visotheary.ung@mnhn.fr, william_ulate_r@yahoo.com, stanblum@gmail.com
-systems@tdwg.org	      stanblum@gmail.com, william_ulate_r@yahoo.com
+secretariat@tdwg.org	  visotheary.ung@mnhn.fr, stanblum@gmail.com
+systems@tdwg.org	      stanblum@gmail.com
 webmaster@tdwg.org      secretary@tdwg.org, treasurer@tdwg.org, stanblum@gmail.com
 
 # Interest & Task Group Conveners
@@ -48,7 +48,7 @@ editor@tdwg.org         gkamp@illinois.edu, ely.wallis@csiro.au, shelley.james@d
 
 # ZOOM accounts:  
 # the first below is the owner (can configure other users, but only has basic hosting license)
-mtg-kahuna@tdwg.org    ely.wallis@csiro.au, william_ulate_r@yahoo.com, stanblum@gmail.com, gkamp@illinois.edu, visotheary.ung@mnhn.fr
+mtg-kahuna@tdwg.org    ely.wallis@csiro.au, stanblum@gmail.com, gkamp@illinois.edu, visotheary.ung@mnhn.fr
 
 # xcom@tdwg.org (see members above) is also a Zoom account with license to host a meeting
 
@@ -63,7 +63,7 @@ track3@tdwg.org    ely.wallis@csiro.au, tania.laity@csiro.au, shelley.james@dbca
 # conference@tdwg.org     gkamp@illinois.edu, Ely.Wallis@csiro.au
 
 # conf-organizers the program and local organizing committees
-conf-organizers         gkamp@illinois.edu, ely.wallis@csiro.au, visotheary.ung@mnhn.fr, william_ulate_r@yahoo.com, stanblum@gmail.com
+conf-organizers         gkamp@illinois.edu, ely.wallis@csiro.au, visotheary.ung@mnhn.fr, stanblum@gmail.com
 
 # code of conduct committee
 ccc@tdwg.org            gkamp@illinois.edu, dlpaul@illinois.edu, ely.wallis@csiro.au, visotheary.ung@mnhn.fr
@@ -75,7 +75,7 @@ WrkSessCoord@tdwg.org     littleh@si.edu, mergen.patricia@gmail.com, nakazato.tk
 # conf-submissions      joel.sachs@agr.gc.ca, james.macklin@gmail.com, gkamp@illinois.edu
 
 # OCS
-# OCS@tdwg.org            gkamp@illinois.edu, william_ulate_r@yahoo.com
+# OCS@tdwg.org            gkamp@illinois.edu
 
 # Not used; using secretary and secretariat
 # stdtrack@tdwg.org       stanblum@gmail.com
