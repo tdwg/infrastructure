@@ -10,7 +10,8 @@ myhostname = lists.tdwg.org
 mydomain = tdwg.org
 myorigin = $mydomain
 mynetworks_style = subnet
-mynetworks = 127.0.0.0/8, 130.225.43.42/32
+# If changing mynetworks, also edit /etc/opendkim/TrustedHosts
+mynetworks = 127.0.0.0/8, 130.225.43.33/32, 130.225.43.42/32, 130.225.43.43/32
 mydestination = $myhostname, $mydomain, localhost.$mydomain, localhost
 smtp_tls_security_level = may
 
@@ -109,3 +110,7 @@ newaliases_path = /usr/bin/newaliases.postfix
 mailq_path = /usr/bin/mailq.postfix
 queue_directory = /var/spool/postfix
 mail_owner = postfix
+readme_directory = /usr/share/doc/postfix-2.10.1/README_FILES
+sample_directory = /usr/share/doc/postfix-2.10.1/samples
+manpage_directory = /usr/share/man
+data_directory = /var/lib/postfix

@@ -7,7 +7,8 @@
 # *If you created or deleted an alias, add or delete it from the spam filtering service*
 
 postmaster@tdwg.org	sysadmin@gbif.org, mdoering@gbif.org, treasurer@tdwg.org
-
+quarantine@tdwg.org	mblissett@gbif.org
+testing@tdwg.org	mblissett@gbif.org
 root			              systems@gbif.org
 
 #
@@ -79,5 +80,3 @@ WrkSessCoord@tdwg.org     littleh@si.edu, mergen.patricia@gmail.com, nakazato.tk
 # stdtrack@tdwg.org       stanblum@gmail.com
 # charters@tdwg.org       stanblum@gmail.com
 # accounts@tdwg.org       secretary@tdwg.org, treasurer@tdwg.org, stanblum@gmail.com
-
-testing@tdwg.org	mblissett@gbif.org
