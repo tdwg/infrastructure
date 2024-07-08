@@ -11,10 +11,10 @@ masquerade_classes = envelope_sender, envelope_recipient
 # Accept mail only from users on this server
 mynetworks_style = host
 inet_interfaces = loopback-only
+smtpd_relay_restrictions = defer_unauth_destination
 
 # Forward mail received from this machine to the GBIF SMTP server
 #myhostname = x.tdwg.org
 myorigin = $mydomain
 mydestination =
 relayhost = [lists.tdwg.org]
-alias_maps = hash:/etc/aliases
