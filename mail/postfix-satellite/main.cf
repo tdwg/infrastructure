@@ -18,3 +18,4 @@ smtpd_relay_restrictions = defer_unauth_destination
 myorigin = $mydomain
 mydestination =
 relayhost = [lists.tdwg.org]
+alias_maps = static:
