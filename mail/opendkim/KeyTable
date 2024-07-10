@@ -1,7 +1,0 @@
-# OPENDKIM KEY TABLE
-# To use this file, uncomment the #KeyTable option in /etc/opendkim.conf,
-# then uncomment the following line and replace example.com with your domain
-# name, then restart OpenDKIM. Additional keys may be added on separate lines.
-
-2022._domainkey.tdwg.org tdwg.org:2022:/etc/opendkim/keys/2022.private
-2022._domainkey.lists.tdwg.org lists.tdwg.org:2022:/etc/opendkim/keys/2022.private
